@@ -5083,6 +5083,9 @@ footer .copy-right .fas {
     height: auto !important;
     position: relative;
   }
+  .homepage .second_section .txt-container {
+    margin-top: -110%;
+  }
   .homepage .second_section .my-order1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -5115,8 +5118,14 @@ footer .copy-right .fas {
   .homepage .fourth-section {
     padding: 1rem;
   }
+  .homepage .fourth-section .txt-container {
+    margin-top: -45%;
+  }
   .homepage .fourth-section .img-con {
     margin: auto !important;
+  }
+  .homepage .fourth-section .img-con img {
+    margin-top: -58rem;
   }
   .homepage .fifth-section {
     padding: 1rem !important;

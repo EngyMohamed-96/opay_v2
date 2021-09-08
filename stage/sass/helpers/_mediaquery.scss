@@ -743,10 +743,10 @@
       height: auto !important;
       position: relative;
 
-      // .txt-container {
-      //   // margin-top: -110%;
+      .txt-container {
+        margin-top: -110%;
 
-      // }
+      }
 
       .my-order1 {
         order: 1;
@@ -796,8 +796,16 @@
     .fourth-section {
       padding: 1rem;
 
+      .txt-container {
+        margin-top: -45%;
+      }
+
       .img-con {
         margin: auto !important;
+
+        img {
+          margin-top: -58rem;
+        }
       }
     }
 
