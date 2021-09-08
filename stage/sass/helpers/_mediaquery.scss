@@ -797,14 +797,14 @@
       padding: 1rem;
 
       .txt-container {
-        margin-top: -45%;
+        margin-top: -45% !important;
       }
 
       .img-con {
         margin: auto !important;
 
         img {
-          margin-top: -58rem;
+          margin-top: -58rem !important;
         }
       }
     }
