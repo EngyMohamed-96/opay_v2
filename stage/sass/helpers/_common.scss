@@ -30,3 +30,18 @@ html {
     }
 
 }
+
+.header-content {
+    @include breakpoint(smmobile) {
+        margin-top: 8rem !important;
+    }
+}
+
+.homepage {
+    .header-content {
+        @include breakpoint(smmobile) {
+            margin-top: 0 !important;
+        }
+
+    }
+}

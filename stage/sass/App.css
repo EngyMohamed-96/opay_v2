@@ -4540,6 +4540,18 @@ footer .copy-right .fas {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .header-content {
+    margin-top: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .homepage .header-content {
+    margin-top: 0 !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #opay-logo {
     width: 5rem;
