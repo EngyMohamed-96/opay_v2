@@ -34,7 +34,8 @@ html {
 .header-content {
     .slogan {
         @include breakpoint(mobile) {
-            top: 68vh !important;
+            font-size: 6rem !important;
+            top: 60vh !important;
         }
 
         @include breakpoint(smmobile) {
