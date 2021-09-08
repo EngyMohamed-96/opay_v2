@@ -32,8 +32,12 @@ html {
 }
 
 .header-content {
+    @include breakpoint(mobile) {
+        margin-top: 8rem !important;
+    }
+
     @include breakpoint(smmobile) {
-        margin-top: 12rem !important;
+        margin-top: 8rem !important;
     }
 }
 
