@@ -3731,6 +3731,7 @@ header .header-wrapper p {
   background-color: #5a7184;
   width: 100vw;
   padding: 3rem;
+  position: relative;
 }
 
 .second_section .bg-section {
@@ -3743,6 +3744,16 @@ header .header-wrapper p {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.second_section .txt-container {
+  padding-top: 5rem !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .second_section .txt-container {
+    padding-top: 2rem;
+  }
 }
 
 .second_section .txt-container h2 {
@@ -4892,7 +4903,6 @@ footer .copy-right .fas {
   }
   .txt-container .Sign-up {
     font-size: 0.6rem !important;
-    margin: 0 auto !important;
     padding: 0.7rem 0.9rem;
   }
   .bg-footer {
@@ -4970,16 +4980,11 @@ footer .copy-right .fas {
   footer .copy-right .languages .lang i {
     font-size: 0.9rem;
   }
-  .homepage .txt-container {
-    text-align: center !important;
-  }
   .homepage .txt-container h2 {
     font-size: 1.5rem !important;
-    text-align: center !important;
   }
   .homepage .txt-container p {
     font-size: 0.9rem !important;
-    text-align: center !important;
   }
   .homepage .header-content {
     padding-top: 0 !important;
@@ -5076,10 +5081,7 @@ footer .copy-right .fas {
   .homepage .second_section {
     padding: 1rem !important;
     height: auto !important;
-    margin-bottom: -3rem;
-  }
-  .homepage .second_section .txt-container {
-    margin-top: -110%;
+    position: relative;
   }
   .homepage .second_section .my-order1 {
     -webkit-box-ordinal-group: 2;
@@ -5098,7 +5100,6 @@ footer .copy-right .fas {
   }
   .homepage .second_section .img-con img {
     width: 100% !important;
-    margin-top: -55rem !important;
   }
   .homepage .Third-section {
     padding: 1rem !important;
@@ -5116,9 +5117,6 @@ footer .copy-right .fas {
   }
   .homepage .fourth-section .img-con {
     margin: auto !important;
-  }
-  .homepage .fourth-section .img-con img {
-    margin-top: -54rem !important;
   }
   .homepage .fifth-section {
     padding: 1rem !important;

@@ -519,7 +519,7 @@
   .txt-container {
     .Sign-up {
       font-size: 0.6rem !important;
-      margin: 0 auto !important;
+
       padding: 0.7rem 0.9rem;
     }
   }
@@ -606,21 +606,16 @@
 
   .homepage {
 
-
-
     .txt-container {
-
-      text-align: center !important;
 
       h2 {
         font-size: 1.5rem !important;
-        text-align: center !important;
 
       }
 
       p {
         font-size: 0.9rem !important;
-        text-align: center !important;
+
       }
     }
 
@@ -746,12 +741,12 @@
     .second_section {
       padding: 1rem !important;
       height: auto !important;
-      margin-bottom: -3rem;
+      position: relative;
 
-      .txt-container {
-        margin-top: -110%;
+      // .txt-container {
+      //   // margin-top: -110%;
 
-      }
+      // }
 
       .my-order1 {
         order: 1;
@@ -771,7 +766,7 @@
 
         img {
           width: 100% !important;
-          margin-top: -55rem !important;
+          // margin-top: -55rem !important;
 
         }
       }
@@ -803,10 +798,6 @@
 
       .img-con {
         margin: auto !important;
-
-        img {
-          margin-top: -54rem !important;
-        }
       }
     }
 

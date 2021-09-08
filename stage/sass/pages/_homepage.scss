@@ -611,6 +611,8 @@ header {
   background-color: #5a7184;
   width: 100vw;
   padding: 3rem;
+  position: relative;
+
 
   .bg-section {
     position: absolute;
@@ -626,6 +628,11 @@ header {
 
   .txt-container {
     // margin-top: -80%;
+    padding-top: 5rem !important;
+
+    @include breakpoint(mobile) {
+      padding-top: 2rem;
+    }
 
     h2 {
       font-size: 2rem;
