@@ -2250,11 +2250,74 @@ header .shareable-links-header .right-col .images-contaner .image2 {
 }
 
 header {
-  height: 100vh;
+  height: auto !important;
 }
 
 header .bg {
   height: 100%;
+}
+
+@media only screen and (max-width: 1366px) {
+  header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-content-data {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (max-width: 1366px) {
+  header .header-content-data {
+    top: -3rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (max-width: 768px) {
+  header .header-content-data {
+    top: 3rem !important;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .header-content {
+    height: auto;
+  }
+}
+
+header .header-content .payment-primaryTitle {
+  color: #5a7184;
+  font-weight: bold;
+}
+
+header .header-content .payment-primaryTitle span {
+  color: #179070;
+}
+
+header .header-content p {
+  color: #5a7184;
+}
+
+header .header-content .header-image {
+  width: 100%;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header .header-content .header-image {
+    margin: 4rem auto;
+    max-width: 18rem;
+  }
+}
+
+header .header-content .header-image img {
+  width: 100%;
 }
 
 header .invoicing-header {
@@ -2572,7 +2635,7 @@ html {
 
 header {
   width: 100vw;
-  height: 80vh !important;
+  height: 80vh;
   position: relative;
   overflow: hidden;
 }

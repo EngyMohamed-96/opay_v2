@@ -1,29 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 header {
-  height: 100vh;
+  height: auto !important;
   // min-height: 100vh;
 
   .bg {
     height: 100%;
   }
 
+  .header-content {
+
+    @include breakpoint(smlaptop) {
+      display: flex;
+      align-items: center;
+
+      &-data {
+
+        // display: flex;
+        // justify-content: center;
+        position: relative;
+        // align-items: center;
+
+        @include breakpoint(smlaptop) {
+          top: -3rem;
+        }
+
+        @include breakpoint(lgmobile) {
+          top: 3rem !important;
+          padding: 0 1rem;
+        }
+      }
+
+    }
+
+    @include breakpoint(lgmobile) {
+      height: auto;
+    }
+
+    .payment-primaryTitle {
+      color: #5a7184;
+      font-weight: bold;
+
+      span {
+        color: #179070;
+      }
+    }
+
+    p {
+      color: #5a7184;
+    }
+
+    .header-image {
+      width: 100%;
+      max-width: 23rem;
+      margin: 0 auto;
+
+      @include breakpoint(lgmobile) {
+        margin: 4rem auto;
+        max-width: 18rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .invoicing-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     img {
-        max-width: 100%;
+      max-width: 100%;
     }
+
     .header-text {
       min-height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+
     p {
-        color: #5a7184;
+      color: #5a7184;
     }
+
     .invoice-content-header {
       text-transform: capitalize;
       font-weight: Bold;
@@ -143,11 +205,13 @@ header {
     width: 100%;
 
     .images-container {
-        position: relative;
+      position: relative;
+
       .image1 {
         box-shadow: 3px 3px 5px rgb(153, 153, 153);
         max-width: 100%;
       }
+
       .image2 {
         box-shadow: 3px 3px 5px rgb(153, 153, 153);
         max-width: 60%;
@@ -158,19 +222,22 @@ header {
     }
 
     .right-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & div {
-            &:last-child {
-                margin-left: -60px;
-                a {
-                    &:hover {
-                        color: #179070;
-                    }
-                }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & div {
+        &:last-child {
+          margin-left: -60px;
+
+          a {
+            &:hover {
+              color: #179070;
             }
+          }
         }
+      }
+
       .start-now-features {
         width: 420px;
         margin-bottom: 12px;
