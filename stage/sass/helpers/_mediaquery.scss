@@ -51,33 +51,33 @@
 
 
 
-// @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 
-//   html {
-//     font-size: 16px !important;
-//   }
+  html {
+    font-size: 16px !important;
+  }
 
-//   #opay-logo {
-//     width: 5rem;
-//   }
+  #opay-logo {
+    width: 5rem;
+  }
 
-//   .navbar {
-//     .nav-list {
+  .navbar {
+    .nav-list {
 
-//       opacity: 0;
-//       visibility: hidden;
-//       display: none !important;
-//     }
+      opacity: 0;
+      visibility: hidden;
+      display: none !important;
+    }
 
-//     .menu-btn {
-//       visibility: visible !important;
-//       opacity: 1 !important;
-//     }
-//   }
+    .menu-btn {
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
 
 
-// }
+}
 
 
 /* Start Contact-us Page */

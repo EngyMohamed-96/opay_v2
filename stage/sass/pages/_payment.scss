@@ -1,9 +1,9 @@
 header {
-    a {
-        &:hover {
-            color: #179070;
-        }
+  a {
+    &:hover {
+      color: #179070;
     }
+  }
 }
 
 
@@ -16,6 +16,23 @@ header {
 
 .payments-header {
   .header-content {
+    @include breakpoint(smlaptop) {
+      display: flex;
+      align-items: center;
+
+      &-data {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+        @include breakpoint(smlaptop) {
+          top: -3rem;
+        }
+      }
+
+    }
+
     .payment-primaryTitle {
       color: #5a7184;
       font-weight: bold;
@@ -27,6 +44,16 @@ header {
 
     p {
       color: #5a7184;
+    }
+
+    .header-image {
+      width: 100%;
+      max-width: 23rem;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

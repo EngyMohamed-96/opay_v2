@@ -1793,6 +1793,35 @@ header a:hover {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1366px) {
+  .payments-header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payments-header .header-content-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (max-width: 1366px) {
+  .payments-header .header-content-data {
+    top: -3rem;
+  }
+}
+
 .payments-header .header-content .payment-primaryTitle {
   color: #5a7184;
   font-weight: bold;
@@ -1804,6 +1833,16 @@ header a:hover {
 
 .payments-header .header-content p {
   color: #5a7184;
+}
+
+.payments-header .header-content .header-image {
+  width: 100%;
+  max-width: 23rem;
+  margin: 0 auto;
+}
+
+.payments-header .header-content .header-image img {
+  width: 100%;
 }
 
 .start_securing {
@@ -3946,6 +3985,24 @@ footer .copy-right .fas {
 @media only screen and (max-width: 1366px) {
   html {
     font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 16px !important;
+  }
+  #opay-logo {
+    width: 5rem;
+  }
+  .navbar .nav-list {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+  }
+  .navbar .menu-btn {
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
 
