@@ -1,34 +1,123 @@
 .installements-page {
-  .header-content {
-    padding-bottom: 10rem;
-  }
 
-  .header-image {
-    width: 75% !important;
-  }
+  header {
+    height: auto !important;
+    // min-height: 100vh;
 
-  .invoice-header-image {
-    width: 100% !important;
-    height: 100% !important;
+    .bg {
+      height: 100%;
+    }
+
+    .header-content {
+
+      @include breakpoint(smlaptop) {
+        display: flex;
+        align-items: center;
+
+        &-data {
+
+          // display: flex;
+          // justify-content: center;
+          position: relative;
+          // align-items: center;
+
+          @include breakpoint(smlaptop) {
+            top: -3rem;
+          }
+
+          @include breakpoint(lgmobile) {
+            top: 3rem !important;
+            padding: 0 1rem;
+          }
+        }
+
+      }
+
+      @include breakpoint(lgmobile) {
+        height: auto;
+      }
+
+      .payment-primaryTitle {
+        color: #5a7184;
+        font-weight: bold;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .header-image {
+        width: 100%;
+        max-width: 23rem;
+        margin: 0 auto;
+
+        @include breakpoint(lgmobile) {
+          margin: 4rem auto;
+          max-width: 18rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .invoicing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      .header-text {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .invoice-content-header {
+        text-transform: capitalize;
+        font-weight: Bold;
+        font-family: "Poppins", sans-serif;
+        color: #5a7184;
+        font-size: 36px;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      .invoice-content-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 2px;
+        color: #2c3e50;
+        font-weight: 500;
+
+        p {
+          margin-bottom: 2px;
+        }
+      }
+    }
   }
 
   .btns {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .contact-sales {
-      color: #179070;
-      margin: 2rem;
-      font-weight: bold;
-      align-items: center;
-    }
-  }
-
-  .header-text {
-    .btns {
-      padding-left: 0;
-    }
+    text-decoration: none;
+    color: #179070;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   .installment {
@@ -41,6 +130,7 @@
         color: #34495e;
         font-weight: bold;
         font-size: 1.5rem;
+
         span {
           font: 500 22px "Poppins", sans-serif;
         }
@@ -49,11 +139,13 @@
       p {
         font-size: 0.8rem;
         margin-top: 10px;
+
         span {
           color: #179070;
           font-weight: bold;
         }
       }
+
       .btns {
         padding-left: 0;
       }
@@ -70,9 +162,11 @@
 
   .section-clients {
     padding: 30px 0;
+
     .section-clients-content {
       .client-logo {
         width: unset;
+
         img {
           max-width: 70%;
         }
@@ -91,6 +185,7 @@
           font-weight: bold;
         }
       }
+
       .txt-con-two {
         h6 {
           color: #179070;
@@ -162,6 +257,7 @@
       padding-left: -10rem;
     }
   }
+
   .divide-section {
     margin-top: 6rem;
   }

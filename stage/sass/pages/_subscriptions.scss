@@ -3,12 +3,114 @@
     width: 90%;
   }
 
-  .header-content {
-    padding-bottom: 9rem !important;
-    .header-text {
-      .btn {
-        margin-top: 40px;
-        padding-left: 0;
+  header {
+    height: auto !important;
+    // min-height: 100vh;
+
+    .bg {
+      height: 100%;
+    }
+
+    .header-content {
+
+      @include breakpoint(smlaptop) {
+        display: flex;
+        align-items: center;
+
+        &-data {
+
+          // display: flex;
+          // justify-content: center;
+          position: relative;
+          // align-items: center;
+
+          @include breakpoint(smlaptop) {
+            top: -3rem;
+          }
+
+          @include breakpoint(lgmobile) {
+            top: 3rem !important;
+            padding: 0 1rem;
+          }
+        }
+
+      }
+
+      @include breakpoint(lgmobile) {
+        height: auto;
+      }
+
+      .payment-primaryTitle {
+        color: #5a7184;
+        font-weight: bold;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .header-image {
+        width: 100%;
+        max-width: 23rem;
+        margin: 0 auto;
+
+        @include breakpoint(lgmobile) {
+          margin: 4rem auto;
+          max-width: 18rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .invoicing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      .header-text {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .invoice-content-header {
+        text-transform: capitalize;
+        font-weight: Bold;
+        font-family: "Poppins", sans-serif;
+        color: #5a7184;
+        font-size: 36px;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      .invoice-content-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 2px;
+        color: #2c3e50;
+        font-weight: 500;
+
+        p {
+          margin-bottom: 2px;
+        }
       }
     }
   }
@@ -24,6 +126,14 @@
       font-weight: bold;
       align-items: center;
     }
+  }
+
+  .btns {
+    text-decoration: none;
+    color: #179070;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   .subscription {
@@ -44,12 +154,14 @@
 
     .txt-container {
       padding-top: 6rem;
+
       .title {
         font-size: 2rem;
         font-weight: 600;
       }
+
       .btns {
-          padding-left: 0;
+        padding-left: 0;
       }
 
       p {

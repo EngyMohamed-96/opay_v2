@@ -1,178 +1,305 @@
-.payouts {
+.payouts-page {
   p {
     color: #5a7184;
   }
+
   .header-content {
     h1 {
       font-size: 3rem;
       font-weight: 500;
     }
   }
-}
 
-.d-flex-custom {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  header {
+    height: auto !important;
+    // min-height: 100vh;
 
-  @media screen and (max-width: 769px) {
-    margin-top: 3rem;
-  }
-}
-
-.card-image {
-  width: 100%;
-  height: 100%px;
-  object-fit: cover;
-}
-
-.options {
-  background-color: #fbfcfc;
-}
-
-.img {
-  width: 100%;
-  height: 100%px;
-  object-fit: cover;
-}
-
-.make-money {
-  background-color: #fbfcfc;
-  min-height: 40rem;
-}
-
-.text-green {
-  color: #179070;
-}
-
-.secured {
-  font-size: 3rem;
-}
-
-.money-collection {
-  font-weight: Bold;
-  font-family: "Poppins", sans-serif;
-  color: #5a7184;
-  font-size: 36px;
-}
-
-.image-composition {
-  background-color: aqua;
-
-  img {
-    position: absolute;
-  }
-
-  .v {
-    bottom: -264px;
-    width: 17rem;
-    height: 14rem;
-    right: -56px;
-    border-radius: 10px;
-    object-position: center;
-  }
-
-  .hr-1 {
-    top: 315px;
-    right: 170px;
-    width: 22rem;
-    z-index: 2;
-  }
-
-  .hr-2 {
-    top: 384px;
-    right: 203px;
-    width: 14rem;
-    z-index: 2;
-  }
-}
-
-.link {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.payouts-options {
-  h2 {
-    margin-top: 3rem;
-    font-size: 2.4rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #5a7184 !important;
-  }
-
-  p {
-    line-height: 2;
-  }
-}
-.Sign-up {
-  margin-right: 40px;
-}
-.options {
-  .d-flex-custom {
-    & > div {
-      width: 100%;
+    .bg {
+      height: 100%;
     }
-  }
-  .options-container {
-    justify-content: space-around;
-    align-items: center;
-    div {
+
+    .header-content {
+
+      @include breakpoint(smlaptop) {
+        display: flex;
+        align-items: center;
+
+        &-data {
+
+          // display: flex;
+          // justify-content: center;
+          position: relative;
+          // align-items: center;
+
+          @include breakpoint(smlaptop) {
+            top: -3rem;
+          }
+
+          @include breakpoint(lgmobile) {
+            top: 3rem !important;
+            padding: 0 1rem;
+          }
+        }
+
+      }
+
+      @include breakpoint(lgmobile) {
+        height: auto;
+      }
+
+      .payment-primaryTitle {
+        color: #5a7184;
+        font-weight: bold;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .header-image {
+        width: 100%;
+        max-width: 23rem;
+        margin: 0 auto;
+
+        @include breakpoint(lgmobile) {
+          margin: 4rem auto;
+          max-width: 18rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .invoicing-header {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      svg {
-        width: 70%;
+
+      img {
+        max-width: 100%;
+      }
+
+      .header-text {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .invoice-content-header {
+        text-transform: capitalize;
+        font-weight: Bold;
+        font-family: "Poppins", sans-serif;
+        color: #5a7184;
+        font-size: 36px;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      .invoice-content-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 2px;
+        color: #2c3e50;
+        font-weight: 500;
+
+        p {
+          margin-bottom: 2px;
+        }
       }
     }
   }
-}
-.link {
-  &:hover {
+
+  .btns {
+    text-decoration: none;
+    color: #179070;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .d-flex-custom {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 769px) {
+      margin-top: 3rem;
+    }
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%px;
+    object-fit: cover;
+  }
+
+  .options {
+    background-color: #fbfcfc;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%px;
+    object-fit: cover;
+  }
+
+  .make-money {
+    background-color: #fbfcfc;
+    min-height: 40rem;
+  }
+
+  .text-green {
     color: #179070;
   }
-}
 
-.font-weight-bold {
-  font-weight: bold;
-}
+  .secured {
+    font-size: 3rem;
+  }
 
-.text-green {
-  color: #179070;
-}
+  .money-collection {
+    font-weight: Bold;
+    font-family: "Poppins", sans-serif;
+    color: #5a7184;
+    font-size: 36px;
+  }
 
-.text-gray {
-  color: #5a7184;
-}
-
-.m0 {
-  margin-top: 0 !important;
-}
-
-@media screen and (min-width: 1200px) {
   .image-composition {
+    background-color: aqua;
+
+    img {
+      position: absolute;
+    }
+
     .v {
-      top: 0;
-      width: 20rem;
-      height: 30rem;
-      right: 0;
+      bottom: -264px;
+      width: 17rem;
+      height: 14rem;
+      right: -56px;
+      border-radius: 10px;
+      object-position: center;
     }
 
     .hr-1 {
-      top: 135px;
-      right: 149px;
+      top: 315px;
+      right: 170px;
       width: 22rem;
       z-index: 2;
     }
 
     .hr-2 {
-      top: 262px;
-      right: 258px;
+      top: 384px;
+      right: 203px;
       width: 14rem;
       z-index: 2;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .payouts-options {
+    h2 {
+      margin-top: 3rem;
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: #5a7184 !important;
+    }
+
+    p {
+      line-height: 2;
+    }
+  }
+
+  .Sign-up {
+    margin-right: 40px;
+  }
+
+  .options {
+    .d-flex-custom {
+      &>div {
+        width: 100%;
+      }
+    }
+
+    .options-container {
+      justify-content: space-around;
+      align-items: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .link {
+    &:hover {
+      color: #179070;
+    }
+  }
+
+  .font-weight-bold {
+    font-weight: bold;
+  }
+
+  .text-green {
+    color: #179070;
+  }
+
+  .text-gray {
+    color: #5a7184;
+  }
+
+  .m0 {
+    margin-top: 0 !important;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .image-composition {
+      .v {
+        top: 0;
+        width: 20rem;
+        height: 30rem;
+        right: 0;
+      }
+
+      .hr-1 {
+        top: 135px;
+        right: 149px;
+        width: 22rem;
+        z-index: 2;
+      }
+
+      .hr-2 {
+        top: 262px;
+        right: 258px;
+        width: 14rem;
+        z-index: 2;
+      }
     }
   }
 }
