@@ -1203,6 +1203,15 @@ footer {
     align-items: center;
     padding-right: 0;
 
+
+    .languages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -1rem;
+    }
+
     .lang {
 
       display: flex;
@@ -1212,7 +1221,7 @@ footer {
       -webkit-box-shadow: none;
       box-shadow: none;
       border: none;
-
+      padding-left: 3rem;
 
       i {
         font-size: 0.9rem;
@@ -1267,6 +1276,7 @@ footer {
     }
   }
 }
+
 
 %resetSliderAnimation {
   visibility: visible !important;

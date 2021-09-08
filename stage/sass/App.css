@@ -1512,7 +1512,7 @@
 }
 
 .pricing-page .pricing-data {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .pricing-page .pricing-data h1 {
@@ -3926,6 +3926,20 @@ footer .copy-right {
   padding-right: 0;
 }
 
+footer .copy-right .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -1rem;
+}
+
 footer .copy-right .lang {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3936,6 +3950,7 @@ footer .copy-right .lang {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
+  padding-left: 3rem;
 }
 
 footer .copy-right .lang i {

@@ -10,6 +10,7 @@
 
   .flags {
     padding: 50px 0;
+
     .heading {
       margin-bottom: 60px;
 
@@ -17,15 +18,18 @@
         color: #2c3e50;
         font: 600 30px "Poppins", sans-serif;
       }
+
       span {
         color: #5a7184;
         font: 400 20px "Poppins", sans-serif;
       }
     }
+
     .flags-data {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .flags-content {
         display: flex;
         flex-direction: column;
@@ -33,12 +37,15 @@
         opacity: 0.4;
         transition: opacity .4s ease-in-out;
         cursor: pointer;
+
         &.active {
-            opacity: 1;
+          opacity: 1;
         }
+
         img {
           max-width: 50%;
         }
+
         h6 {
           margin-top: 20px;
         }
@@ -47,7 +54,7 @@
   }
 
   .pricing-data {
-    margin-top: 10rem;
+    margin-top: 6rem;
 
     h1 {
       font-size: 2.5rem;
@@ -280,15 +287,17 @@
             }
           }
         }
+
         a.btns {
+          color: #179070;
+          text-transform: capitalize;
+          text-decoration: none;
+          font-weight: 600;
+
+          &:hover {
             color: #179070;
-            text-transform: capitalize;
-            text-decoration: none;
-            font-weight: 600;
-            &:hover {
-                color: #179070;
-            }
           }
+        }
       }
     }
   }
