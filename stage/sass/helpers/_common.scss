@@ -33,7 +33,7 @@ html {
 
 .header-content {
     @include breakpoint(smmobile) {
-        margin-top: 8rem !important;
+        margin-top: 12rem !important;
     }
 }
 
