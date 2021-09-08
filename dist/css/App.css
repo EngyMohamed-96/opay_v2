@@ -1803,22 +1803,26 @@ header a:hover {
             align-items: center;
   }
   .payments-header .header-content-data {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
 @media only screen and (max-width: 1366px) and (max-width: 1366px) {
   .payments-header .header-content-data {
     top: -3rem;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (max-width: 768px) {
+  .payments-header .header-content-data {
+    top: 3rem !important;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .payments-header .header-content {
+    height: auto;
   }
 }
 
@@ -1839,6 +1843,13 @@ header a:hover {
   width: 100%;
   max-width: 23rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .payments-header .header-content .header-image {
+    margin: 4rem auto;
+    max-width: 18rem;
+  }
 }
 
 .payments-header .header-content .header-image img {
@@ -3988,10 +3999,13 @@ footer .copy-right .fas {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   html {
-    font-size: 16px !important;
+    font-size: 13px !important;
   }
+}
+
+@media screen and (max-width: 1024px) {
   #opay-logo {
     width: 5rem;
   }

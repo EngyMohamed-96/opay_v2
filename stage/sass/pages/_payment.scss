@@ -16,21 +16,32 @@ header {
 
 .payments-header {
   .header-content {
+
     @include breakpoint(smlaptop) {
       display: flex;
       align-items: center;
 
       &-data {
-        display: flex;
-        justify-content: center;
+
+        // display: flex;
+        // justify-content: center;
         position: relative;
-        align-items: center;
+        // align-items: center;
 
         @include breakpoint(smlaptop) {
           top: -3rem;
         }
+
+        @include breakpoint(lgmobile) {
+          top: 3rem !important;
+          padding: 0 1rem;
+        }
       }
 
+    }
+
+    @include breakpoint(lgmobile) {
+      height: auto;
     }
 
     .payment-primaryTitle {
@@ -50,6 +61,11 @@ header {
       width: 100%;
       max-width: 23rem;
       margin: 0 auto;
+
+      @include breakpoint(lgmobile) {
+        margin: 4rem auto;
+        max-width: 18rem;
+      }
 
       img {
         width: 100%;

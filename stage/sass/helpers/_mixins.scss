@@ -24,6 +24,11 @@
         }
     }
 
+    @else if $point==lgmobile {
+        @media only screen and (max-width:768px) {
+            @content;
+        }
+    }
 
     @else if $point==mobile {
         @media only screen and (max-width:575px) {
