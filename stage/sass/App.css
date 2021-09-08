@@ -3730,20 +3730,19 @@ header .header-wrapper p {
 .second_section {
   background-color: #5a7184;
   width: 100vw;
+  padding: 3rem;
 }
 
 .second_section .bg-section {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .second_section .bg-section img {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.second_section .txt-container {
-  margin-top: -80%;
 }
 
 .second_section .txt-container h2 {
@@ -3785,7 +3784,6 @@ header .header-wrapper p {
 .second_section .img-con {
   opacity: 0.9;
   margin: 3% 0 3% 15%;
-  margin-top: -60%;
 }
 
 .second_section .img-con img {
