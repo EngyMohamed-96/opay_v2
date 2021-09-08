@@ -1,0 +1,318 @@
+.careers-page {
+  header {
+    overflow: unset;
+
+    &::before {
+      content: "";
+      background-image: url("../imgs/Contact-page/Path 21255@2x.png");
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: -80px;
+      width: 580px;
+      height: 720px;
+      transform: rotate(8deg);
+    }
+
+    .header-content {
+      margin-top: 10rem;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+
+        h1 {
+          color: #179070;
+          font: 700 50px "Poppins", sans-serif;
+        }
+
+        p {
+          &:first-of-type {
+            color: #c4c4c4;
+            font: 400 30px "Poppins", sans-serif;
+          }
+
+          &:last-of-type {
+            color: #34495e;
+            font: 600 25px "Poppins", sans-serif;
+            text-align: center;
+          }
+        }
+      }
+
+      .content {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  /* End Header */
+  /* Start features */
+  .features {
+    background-color: #fbfcfc;
+    padding: 70px 0;
+
+    h2.title {
+      color: #5a7184;
+      font: 700 50px "Poppins", sans-serif;
+
+      span {
+        color: #179070;
+      }
+    }
+
+    .feature {
+      background-color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 4px 8px 14px -10px #1dcf9f;
+      border-radius: 10px;
+      padding: 20px 30px;
+      height: 230px;
+
+      .title {
+        color: #179070;
+        font: 600 25px "Poppins", sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .icon {
+          svg {
+            width: 25px
+          }
+        }
+      }
+
+      p {
+        color: #c4c4c4;
+        font: 500 20px "Poppins", sans-serif;
+      }
+    }
+  }
+
+  /* End features */
+  /* Start Our-Team */
+  .our-team {
+    padding: 70px 0;
+
+    .head {
+      h2 {
+        color: #5a7184;
+        font: 700 40px "Poppins", sans-serif;
+      }
+
+      p {
+        color: #c4c4c4;
+        font: 400 30px "Poppins", sans-serif;
+      }
+    }
+
+    .our-vacanies {
+      border: 1px solid #179070;
+      border-radius: 10px;
+      padding: 35px;
+      position: relative;
+      height: 100%;
+
+      .position {
+        .title {
+          color: #2c3e50;
+          font: 600 28px "Poppins", sans-serif;
+        }
+
+        .location {
+          color: #c4c4c4;
+          font: 400 23px "Poppins", sans-serif;
+        }
+      }
+
+      a {
+        background-color: #2c3e50;
+        color: #fff;
+        border-radius: 38px;
+        font: 500 20px "Poppins", sans-serif;
+        padding: 0.375rem 2.05rem;
+        box-shadow: none;
+        outline: none;
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .team-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  /* End Our-Team */
+  /* Start Joint-Team */
+  .join-team {
+    background-color: #fbfcfc;
+    padding: 70px 0;
+
+    .head {
+      h2 {
+        color: #5a7184;
+        font: 700 40px "Poppins", sans-serif;
+      }
+
+      p {
+        color: #c4c4c4;
+        font: 400 25px "Poppins", sans-serif;
+      }
+    }
+
+    form {
+      margin-bottom: 40px;
+
+      label,
+      select {
+        color: #179070;
+        font: 400 15px "Poppins", sans-serif;
+      }
+
+      .form-control {
+        box-shadow: none;
+        outline: none;
+        border-color: #179070;
+        padding: 0.875rem 0.75rem;
+      }
+
+      ::placeholder,
+      select {
+        color: #179070;
+        font: 400 15px "Poppins", sans-serif;
+      }
+
+      select {
+        appearance: auto;
+      }
+
+      .job-title,
+      .phone,
+      .upload,
+      .country {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .upload {
+        position: relative;
+
+        input[type="file"] {
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+
+        .icon-upload {
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          pointer-events: none;
+          transform: translateY(-50%);
+
+          svg {
+            width: 16px;
+          }
+        }
+      }
+
+      .check {
+        display: flex;
+        align-items: baseline;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        input[type="checkbox"] {
+          appearance: none;
+
+          &:checked {
+            &+label::before {
+              background-color: #179070;
+            }
+
+            &+label::after {
+              content: "";
+              border-top: 1px solid transparent;
+              border-bottom: 1px solid #fff;
+              border-right: 1px solid #fff;
+              border-left: 1px solid transparent;
+              width: 9px;
+              height: 13px;
+              transform: rotate(37deg);
+              position: absolute;
+              left: 5px;
+              top: 4px;
+            }
+          }
+        }
+
+        label {
+          color: #c4c4c4;
+          font: 400 20px "Poppins", sans-serif;
+          position: relative;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid #179070;
+            border-radius: 2px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+          }
+        }
+      }
+
+      input[type="submit"] {
+        background-color: #2c3e50;
+        color: #fff;
+        border-radius: 999px;
+        font: 500 25px "Poppins", sans-serif;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+  /* End Joint-Team */
+  /* Start About-Company */
+  .about-company {
+    padding-top: 70px;
+
+    .head {
+      h2 {
+        color: #5a7184;
+        font: 700 37px "Poppins", sans-serif;
+      }
+
+      a {
+        color: #179070;
+        font: 500 25px "Poppins", sans-serif;
+        box-shadow: none;
+        outline: none;
+      }
+
+      hr {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  /* End About-Company */
+}

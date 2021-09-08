@@ -1,0 +1,115 @@
+.privacy {
+    .policy {
+        background: #fff;
+
+    }
+
+    header {
+        width: 100vw;
+        height: 5rem !important;
+        min-height: 5rem !important;
+        position: relative;
+    }
+
+    .privacy-dataContainer {
+        margin-top: 3rem;
+
+
+
+        height: auto !important;
+
+        h1 {
+            color: #179070;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        p {
+            color: #5A7184;
+        }
+
+        .text-container {
+            text-align: left;
+
+            h2 {
+                color: #179070;
+                font-weight: bold;
+            }
+
+            p {
+
+
+                span {
+                    color: #5A7184;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    color: #34495E;
+                    font-weight: bold;
+                }
+            }
+
+            li {
+                color: #5A7184;
+                font-size: 1rem;
+            }
+
+            .data {
+                padding-left: 2rem;
+            }
+
+            h4 {
+                color: #5A7184;
+                font-weight: bolder;
+                font-size: 1.2rem;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    .privacy-logos {
+        margin-top: 4rem;
+
+        svg {
+            width: 80vw;
+        }
+    }
+
+
+
+    .btns {
+
+        display: flex;
+        margin: 3rem;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+
+            .Sign-up {
+                margin-left: 1rem;
+                background-color: #2C3E50;
+
+                &:hover {
+                    background: none;
+                    color: #2C3E50;
+                    border: 0.1rem solid#2C3E50;
+                }
+            }
+
+            .sign-ch {
+                margin-left: 2rem;
+                background: none;
+                color: #2C3E50;
+                border: 0.1rem solid #2C3E50;
+
+                &:hover {
+                    background-color: #2C3E50;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

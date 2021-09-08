@@ -1,0 +1,1325 @@
+// @media screen and (max-width:1366px) and (max-height:900px) {
+//   html {
+//     font-size: 15px !important;
+//   }
+// }
+
+// @media screen and (max-width:1366px) and (max-height:768px) {
+//   html {
+//     font-size: 13px !important;
+//   }
+// }
+
+// @media screen and (max-width: 1680px) {
+
+
+//   html {
+//     font-size: 18px !important;
+//   }
+
+//   header {
+
+
+
+//     .img-container {
+
+
+//       .secure {
+//         width: 80%;
+//       }
+
+//     }
+
+//     .header-wrapper {
+//       margin-top: -3rem;
+
+//       &.change {
+//         margin-top: -3rem;
+//       }
+
+//       &.S-change {
+//         margin-top: -3rem;
+//       }
+
+//     }
+
+//   }
+
+
+// }
+
+
+
+
+// @media screen and (max-width: 1024px) {
+
+
+//   html {
+//     font-size: 16px !important;
+//   }
+
+//   #opay-logo {
+//     width: 5rem;
+//   }
+
+//   .navbar {
+//     .nav-list {
+
+//       opacity: 0;
+//       visibility: hidden;
+//       display: none !important;
+//     }
+
+//     .menu-btn {
+//       visibility: visible !important;
+//       opacity: 1 !important;
+//     }
+//   }
+
+
+// }
+
+
+/* Start Contact-us Page */
+@media (max-width: 767px) {
+  .contact-page {
+    header {
+      overflow: unset;
+
+      &::before {
+        display: none;
+      }
+
+      .header-content {
+        margin-top: 8rem;
+
+        .heading {
+          h1 {
+            font-size: 40px !important;
+          }
+
+          p {
+            text-align: center !important;
+            font-size: 30px !important;
+          }
+        }
+
+        .content {
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    /* Start contact-content Section */
+    .contact-content {
+      padding-top: 150px;
+
+      .title {
+        text-align: center;
+
+        .icon {
+          svg {
+            width: 15%;
+          }
+        }
+      }
+
+      .content {
+        text-align: center;
+
+        p {
+          width: 100%;
+        }
+      }
+
+      address {
+        text-align: center;
+      }
+    }
+
+    /* End contact-content Section */
+    /* Start contact-form Section */
+    .contact-form {
+      .heading {
+        text-align: center;
+      }
+
+      .contact-footer {
+        .title {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+
+    /* End contact-form Section */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+  .contact-page {
+
+    /* Start Header */
+    header {
+      overflow: unset;
+
+      &::before {
+        top: -50px;
+      }
+
+      .header-content {
+        margin-top: 8rem;
+
+        .heading {
+          text-align: center;
+        }
+
+        .content {
+          h3 {
+            font-size: 25px;
+          }
+
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+
+    /* End Header */
+    /* Start contact-content Section */
+    .contact-content {
+      .title {
+        .icon {
+          svg {
+            width: 8%;
+          }
+        }
+      }
+
+      .content {
+        p {
+          width: 100%;
+          font-size: 24px;
+        }
+      }
+
+      address {
+        .title {
+          .icon {
+            svg {
+              width: 13%;
+            }
+          }
+        }
+      }
+    }
+
+    /* End contact-content Section */
+    /* Start contact-form Section */
+    .contact-form {
+      .heading {
+        text-align: center;
+      }
+
+      .contact-footer {
+        .title {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+
+    /* End contact-form Section */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  .contact-page {
+
+    /* Start Header */
+    header {
+      .header-content {
+        .heading {
+          text-align: center;
+        }
+
+        .content {
+          h3 {
+            font-size: 25px;
+          }
+
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+
+    /* End Header */
+    /* Start contact-content Section */
+    .contact-content {
+      .title {
+        .icon {
+          svg {
+            width: 5%;
+          }
+        }
+      }
+
+      .content {
+        p {
+          width: 100%;
+          font-size: 24px;
+        }
+      }
+
+      address {
+        .title {
+          .icon {
+            svg {
+              width: 13%;
+            }
+          }
+        }
+      }
+    }
+
+    /* End contact-content Section */
+    /* Start contact-form Section */
+    .contact-form {
+      .heading {
+        text-align: center;
+      }
+
+      .contact-footer {
+        .title {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+
+    /* End contact-form Section */
+  }
+}
+
+// /* End Contact-us Page */
+
+// /* Start Careers Page */
+@media (max-width: 767px) {
+  .careers-page {
+    header {
+      &::before {
+        display: none;
+      }
+
+      .header-content {
+        .heading {
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            &:first-of-type {
+              font-size: 22px;
+              text-align: center;
+            }
+          }
+        }
+
+        .content {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .careers-page {
+    .features {
+      padding-top: 800px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .careers-page {
+    .features {
+      margin-top: 300px;
+
+      .feature {
+        .title {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-team {
+    .head {
+      h2 {
+        font-size: 30px;
+      }
+    }
+
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .our-vacanies {
+      font-size: 19px;
+
+      .position {
+        text-align: center;
+
+        .title {
+          font-size: 19px !important;
+        }
+
+        .location {
+          font-size: 18px !important;
+        }
+      }
+
+      a {
+        padding: 0.375rem 0.75rem !important;
+      }
+    }
+
+    .team-img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-team {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .our-vacanies {
+      font-size: 19px;
+
+      .position {
+        text-align: center;
+      }
+    }
+
+    .team-img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .careers-page {
+    .join-team {
+      .first-name {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .careers-page {
+    .join-team {
+      .head {
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+
+// /* End Careers Page */
+
+@media(max-width: 575px) {
+
+  .s-dropdown {
+    width: 54rem !important;
+    height: auto;
+    font-size: 13px !important;
+
+    ul {
+
+      flex-direction: column;
+      align-items: flex-start !important;
+      left: -1 !important;
+      padding: 0 !important;
+    }
+  }
+
+  .divide-section {
+    padding: 1rem;
+    margin: 0 auto !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .seven-section {
+    padding: 1rem;
+    margin: 0 !important;
+    height: 30vh;
+
+    .bg-steps {
+      display: none !important;
+
+    }
+
+    .steps {
+      margin: 0;
+      height: 50vh;
+
+      .icon {
+
+        height: 1rem !important;
+
+        font-size: 2rem !important;
+      }
+
+      .sev-text {
+        margin-top: 2rem;
+
+        h4 {
+          font-size: 0.7rem !important;
+        }
+      }
+    }
+
+    .btns {
+      padding: 0 !important;
+      margin-top: -23rem;
+
+      .Sign-up {
+        margin: 0 auto !important;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+
+
+  }
+
+  .txt-container {
+    .Sign-up {
+      font-size: 0.6rem !important;
+      margin: 0 auto !important;
+      padding: 0.7rem 0.9rem;
+    }
+  }
+
+  .bg-footer {
+
+    background-size: cover;
+    background-image: url(../imgs/footerbg.png);
+    background-repeat: no-repeat;
+    height: 8rem !important;
+  }
+
+  footer {
+
+    padding: 3rem 1rem 1rem 1rem;
+
+
+
+    .footer-logos {
+
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      margin: 0 auto !important;
+
+      .logos-partaions img {
+        width: 15% !important;
+      }
+
+      .social-icons {
+        left: 0 !important;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .footer-logo {
+        margin: auto !important;
+
+        svg {
+          width: 50%;
+          position: relative;
+          left: 3rem !important;
+        }
+
+      }
+
+
+
+    }
+
+    .copy-right {
+      justify-content: center !important;
+      flex-direction: column !important;
+      align-items: center !important;
+
+      p {
+        font-size: 0.5rem !important;
+
+      }
+
+      .languages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -4rem !important;
+
+
+        .lang {
+          font-size: 0.8rem;
+          margin: 0 auto !important;
+          padding: 0.5rem !important;
+          margin-top: 4rem !important;
+
+          i {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+    }
+  }
+
+  .homepage {
+
+
+
+    .txt-container {
+
+      text-align: center !important;
+
+      h2 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+
+      }
+
+      p {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+      }
+    }
+
+    .header-content {
+
+      .swiper-slide {
+        height: 90vh;
+      }
+
+      .my-order1 {
+        order: 1;
+      }
+
+      .my-order2 {
+        order: 2;
+      }
+
+      padding-top: 0 !important;
+
+      .header-wrapper {
+        display: flex;
+        align-items: center !important;
+        justify-content: center;
+        flex-direction: column !important;
+        margin-top: 0;
+        padding: 1rem !important;
+
+        h1 {
+          font-size: 18px !important;
+          line-height: 2rem !important;
+          text-align: center !important;
+        }
+
+        &.change {
+          p {
+            text-align: center !important;
+          }
+
+        }
+
+        &.S-change {
+          p {
+            text-align: center !important;
+
+          }
+
+        }
+      }
+
+      .img-container {
+        width: 100%;
+        height: 100%;
+
+        .secure {
+          position: absolute;
+          top: 0.3rem;
+          width: 43% !important;
+        }
+
+        .worldDotts {
+
+          width: 43% !important;
+
+        }
+
+        img {
+          position: relative;
+
+          margin: auto !important;
+          width: 65%;
+        }
+      }
+
+    }
+
+    header {
+      .headerSlide {
+
+        margin-top: -15rem !important;
+      }
+    }
+
+    .slogan {
+      font-size: 3.375rem;
+      top: 365px;
+
+    }
+
+
+
+
+
+    .section-clients {
+      margin: -5rem 0rem 1rem 0;
+      padding: 1rem;
+      justify-content: space-between !important;
+
+      h3 {
+        font-size: 18px !important;
+      }
+
+      .client-logo {
+        width: 6rem !important;
+
+        &.makeItSmall {
+          width: 3rem !important;
+        }
+
+        svg {
+
+          width: 90%;
+          height: 90%;
+        }
+
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+
+    }
+
+    .second_section {
+      padding: 1rem !important;
+      height: auto !important;
+      margin-bottom: -3rem;
+
+      .txt-container {
+        margin-top: -110%;
+
+      }
+
+      .my-order1 {
+        order: 1;
+      }
+
+      .my-order2 {
+        order: 2;
+      }
+
+
+
+      .img-con {
+        width: 100%;
+        opacity: 0.9;
+
+        margin: auto !important;
+
+        img {
+          width: 100% !important;
+          margin-top: -55rem !important;
+
+        }
+      }
+
+    }
+
+    .Third-section {
+      padding: 1rem !important;
+
+      .txt-container {
+        margin-top: 1rem !important;
+
+        margin: auto !important;
+
+
+      }
+
+      .img-con {
+
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+      }
+    }
+
+
+    .fourth-section {
+      padding: 1rem;
+
+      .img-con {
+        margin: auto !important;
+
+        img {
+          margin-top: -54rem !important;
+        }
+      }
+    }
+
+    .fifth-section {
+      padding: 1rem !important;
+      height: auto !important;
+      padding-bottom: 2rem !important;
+
+
+      .img-con {
+
+        margin-left: -3rem;
+      }
+
+      .txt-container {
+        margin: auto !important;
+
+        .txt-con-two {
+          margin-top: 2rem;
+        }
+
+      }
+    }
+
+
+    .six-section {
+      padding: 1rem;
+
+      .con-data {
+        margin-top: -3rem !important;
+
+        h2 {
+          text-align: center !important;
+        }
+      }
+
+      .img-container {
+        margin: 0 auto !important;
+
+      }
+
+    }
+
+
+
+  }
+
+  .installements-page {
+
+    .header-content {
+      padding: 1rem;
+
+      .btns {
+        font-size: 0.6rem !important;
+        margin: 0 auto !important;
+
+        .Sign-up {
+          margin: 0 !important;
+          font-size: 0.6rem;
+        }
+
+      }
+    }
+
+    .header-image {
+      width: 75% !important;
+    }
+
+
+    header .invoicing-header .invoice-content-header {
+      font-size: 18px !important;
+    }
+
+    header .invoicing-header .invoice-content-text {
+      font-size: 10px;
+
+    }
+
+    header .invoicing-header {
+      flex-direction: column !important;
+    }
+
+    .installment {
+      padding: 1rem;
+      text-align: center;
+      margin: 0 auto;
+
+      .txt-container {
+        padding-top: 1rem !important;
+      }
+
+      .img-con img {
+        width: 100% !important;
+      }
+    }
+
+
+
+
+
+    .section-clients {
+      padding: 1rem;
+    }
+
+    .Third-section {
+      padding: 1rem;
+
+      .txt-container {
+        margin-top: 1rem;
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        .txt-con-two {
+          h6 {
+            margin: 1rem !important;
+          }
+        }
+
+
+
+      }
+    }
+
+    .client-finance {
+      padding: 1rem;
+      text-align: center !important;
+
+      .txt-container {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .online-payment {
+
+    align-items: center;
+
+    .latest-technology {
+      padding: 1rem;
+
+      .txt-container {
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    header {
+      height: 125vh !important;
+      align-items: center;
+
+      .Sign-up {
+        font-size: 0.7rem
+      }
+
+      .header-content {
+
+
+        .payment-img {
+          width: 100% !important;
+          margin: auto !important;
+        }
+      }
+    }
+  }
+
+  .contact-page .contact-content {
+    padding-top: 360px !important;
+  }
+
+  .pricing-page {
+    padding-top: -1rem !important;
+
+    .start-price {
+      top: 0;
+      margin: 0;
+      padding: 1rem;
+
+      .Sign-up {
+        font-size: 0.6rem !important;
+        margin: 0 auto;
+      }
+
+      .start-now-content .right-column .start-now-features {
+        width: 100%;
+        margin: auto;
+      }
+
+      .start-now-content .images-container img {
+        width: 100%;
+        margin: auto;
+      }
+
+
+      h1 {
+        font-size: 15px;
+      }
+
+      .start-now-content {
+        flex-direction: column;
+      }
+
+    }
+
+    .flags .flags-data {
+      flex-direction: column;
+    }
+
+    .pricing-data {
+      h1 {
+        font-size: 1rem;
+      }
+
+      h4 {
+
+        margin-top: 0 !important;
+        font-size: 0.75rem;
+      }
+
+    }
+
+    .currency {
+      padding: 1rem;
+
+      .cards {
+        padding: 1rem !important;
+        flex-direction: column;
+
+        font-size: 1rem;
+
+        .card1,
+        .card2 {
+          padding: 1rem;
+          width: auto;
+          height: auto;
+          margin: auto !important;
+
+        }
+
+        .card1-data,
+        .card2-data {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .payouts-page {
+    .pay-header {
+      padding: 1rem;
+      margin-top: 5rem !important;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .payouts-options {
+      padding: 0 1rem;
+    }
+
+    .make-money {
+      padding: 1rem;
+      text-align: center;
+
+      .image-composition .v {
+        bottom: -227px;
+
+
+      }
+
+      .image-composition .hr-1 {
+        top: 255px;
+      }
+
+      .image-composition .hr-2 {
+        top: 330px;
+      }
+
+
+    }
+  }
+
+  .sharelink-page {
+    .shareable-links-header {
+      margin-top: 50px !important;
+      text-align: center;
+
+    }
+
+    header .shareable-links-header .right-col .images-contaner .image1 {
+      margin: auto !important;
+      left: 0 !important;
+      width: 50%;
+    }
+
+    .business-features-section h3 {
+      margin-bottom: 100px;
+    }
+  }
+
+  .invoice-page {
+
+
+    .start-now {
+      height: 138vh;
+      margin: auto !important;
+      padding: 1rem;
+      padding-bottom: 5rem;
+    }
+
+    .Sign-up {
+      font-size: 0.5rem !important;
+    }
+
+    header {
+
+      height: 120vh !important;
+    }
+
+
+
+
+
+    .start-now {
+      h1 {
+        width: 100%;
+      }
+
+      .start-now-content {
+        .Sign-up {
+          margin: 0 auto !important;
+        }
+
+        .images-container {
+          padding-top: -3rem;
+
+          .image1 {
+            max-width: 120%;
+            left: -4rem;
+            position: relative;
+          }
+
+          .image2 {
+
+            max-width: 60%;
+            position: absolute;
+            bottom: 18px;
+            right: 20px;
+          }
+        }
+
+        .right-column {
+          .start-now-features {
+            width: auto !important;
+          }
+
+        }
+      }
+    }
+
+
+
+
+    .invoicing-header {
+      padding: 1rem;
+
+      img {
+        max-width: 100%;
+        padding-top: 2rem;
+      }
+
+      .invoice-content-text {
+
+        text-align: center;
+        font-size: 14px;
+
+      }
+    }
+
+    header .invoicing-header .invoice-content-header {
+      font-size: 20px;
+      text-align: center;
+    }
+
+
+
+    .invoicing-content .features {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .start-now .start-now-content .images-container {
+      padding: 4rem !important;
+    }
+
+    .start-now h1 {
+      font-size: 20px;
+    }
+  }
+
+  .subscription-page {
+    header {
+      height: 110vh !important;
+
+      .invoicing-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .invoice-header-image {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+
+        .header-text {
+          h1 {
+            font-size: 20px !important;
+            text-align: center;
+          }
+
+          .invoice-content-text {
+            font-size: 14px !important;
+            text-align: center;
+          }
+
+          .header-image {
+            margin: auto !important;
+
+            img {
+              width: 100%;
+            }
+          }
+
+        }
+      }
+    }
+
+    .subscription {
+      padding: 1rem;
+      align-items: center;
+    }
+
+    .btns {
+      font-size: 0.6rem !important;
+    }
+
+    .txt-container {
+      text-align: center;
+      padding: 1rem;
+      padding-bottom: 4rem;
+    }
+
+  }
+
+  .careers-page {
+    .about-company {
+      .head {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .features {
+      padding-top: 700px;
+
+      h2 {
+        font-size: 33px !important;
+        padding-top: 3rem;
+      }
+
+      .feature {
+
+        .title,
+        p {
+          text-align: center;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .about-page {
+    .about .about__header {
+      text-align: center;
+      padding: 1rem;
+
+    }
+
+    .partners {
+      h2 {
+        padding-top: 3.5rem !important;
+      }
+    }
+
+    .mb-5 {
+      margin-bottom: 0rem !important;
+    }
+
+    .mt-5 {
+      margin-top: -1rem !important;
+    }
+
+  }
+}

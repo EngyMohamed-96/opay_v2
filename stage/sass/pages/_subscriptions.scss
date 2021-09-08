@@ -1,0 +1,128 @@
+.subscription-page {
+  header .invoicing-header .invoice-header-image {
+    width: 90%;
+  }
+
+  .header-content {
+    padding-bottom: 9rem !important;
+    .header-text {
+      .btn {
+        margin-top: 40px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .contact-sales {
+      color: #179070;
+      margin: 2rem;
+      font-weight: bold;
+      align-items: center;
+    }
+  }
+
+  .subscription {
+    margin-top: 3rem;
+
+    h2 {
+      color: #179070;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    h4 {
+      text-align: center;
+      color: #dedfdf;
+    }
+
+    .txt-container {
+      padding-top: 6rem;
+      .title {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .btns {
+          padding-left: 0;
+      }
+
+      p {
+        span {
+          color: #179070;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .img-con {
+      padding-top: 3rem;
+      width: 100%;
+
+      img {
+        width: 70%;
+        height: 40%;
+        margin-left: 10rem;
+      }
+    }
+  }
+
+  .ready {
+    margin-top: 5rem;
+
+    h2 {
+      color: #179070;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    h4 {
+      text-align: center;
+      color: #dedfdf;
+    }
+
+    .txt-container {
+      margin-top: 8rem;
+
+      h3 {
+        color: #5a7184;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      .contact {
+        color: #fff;
+        background-color: #179070;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1.563rem;
+        padding: 0.7rem 1.5rem;
+      }
+    }
+
+    .img-con {
+      padding-top: 3rem;
+      width: 70%;
+
+      img {
+        width: 100%;
+        height: 40%;
+        margin-left: 5rem;
+      }
+    }
+  }
+}
