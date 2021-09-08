@@ -32,9 +32,39 @@ html {
 }
 
 .header-content {
+    .slogan {
+        @include breakpoint(mobile) {
+            top: 68vh !important;
+        }
+
+        @include breakpoint(smmobile) {
+            top: 81vh !important;
+        }
+    }
+
     @include breakpoint(mobile) {
         margin-top: 8rem !important;
+
+
     }
+
+    .header-text {
+        .d-flex {
+            @include breakpoint(tablet) {
+                justify-content: flex-start !important;
+            }
+
+            @include breakpoint(mobile) {
+                justify-content: flex-start !important;
+            }
+
+            @include breakpoint(smmobile) {
+                justify-content: flex-start !important;
+            }
+        }
+    }
+
+
 
     @include breakpoint(smmobile) {
         margin-top: 8rem !important;

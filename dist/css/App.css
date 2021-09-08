@@ -4541,8 +4541,44 @@ footer .copy-right .fas {
 }
 
 @media only screen and (max-width: 575px) {
+  .header-content .slogan {
+    top: 68vh !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header-content .slogan {
+    top: 81vh !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
   .header-content {
     margin-top: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-content .header-text .d-flex {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header-content .header-text .d-flex {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header-content .header-text .d-flex {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
 }
 
