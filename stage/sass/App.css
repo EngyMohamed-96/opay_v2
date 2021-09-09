@@ -1825,8 +1825,8 @@
 }
 
 .pricing-page header {
-  height: 40vh !important;
   padding-bottom: 3rem;
+  height: auto !important;
 }
 
 .pricing-page header .header-content {
@@ -4755,6 +4755,11 @@ html {
     padding-bottom: 6rem !important;
     min-height: auto !important;
   }
+}
+
+.pricing-page header {
+  height: auto !important;
+  min-height: auto !important;
 }
 
 @media screen and (max-width: 1024px) {
