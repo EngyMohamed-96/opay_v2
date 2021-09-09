@@ -98,6 +98,15 @@ html {
         @include breakpoint(mobile) {
             height: auto !important;
             padding-bottom: 2rem !important;
+            min-height: auto !important;
+        }
+    }
+}
+
+.installements-page {
+    header {
+        @include breakpoint(mobile) {
+            padding-bottom: 6rem !important;
         }
     }
 }
