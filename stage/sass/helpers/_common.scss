@@ -42,7 +42,7 @@ html {
     .slogan {
         @include breakpoint(mobile) {
             font-size: 6rem !important;
-            top: 60vh !important;
+            // top: 60vh !important;
         }
 
         @include breakpoint(smmobile) {

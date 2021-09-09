@@ -68,6 +68,16 @@
           max-width: 18rem;
         }
 
+        @include breakpoint(mobile) {
+          margin: 2rem auto;
+          max-width: 23rem !important;
+        }
+
+        @include breakpoint(smmobile) {
+          margin: 2rem auto;
+          max-width: 18rem !important;
+        }
+
         img {
           width: 100%;
         }
@@ -144,7 +154,7 @@
     padding: 4rem 0 4rem 0;
 
     .txt-container {
-      margin: 8rem 0rem 0rem 2rem;
+      margin: 3rem 0 !important;
 
       h2 {
         font-size: 2rem;

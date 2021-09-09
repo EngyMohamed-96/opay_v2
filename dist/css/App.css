@@ -2217,6 +2217,20 @@
   }
 }
 
+@media only screen and (max-width: 575px) {
+  .online-payment .payments-header .header-content .header-image {
+    margin: 2rem auto;
+    max-width: 23rem !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .online-payment .payments-header .header-content .header-image {
+    margin: 2rem auto;
+    max-width: 18rem !important;
+  }
+}
+
 .online-payment .payments-header .header-content .header-image img {
   width: 100%;
 }
@@ -2290,7 +2304,7 @@
 }
 
 .online-payment .latest-technology .txt-container {
-  margin: 8rem 0rem 0rem 2rem;
+  margin: 3rem 0 !important;
 }
 
 .online-payment .latest-technology .txt-container h2 {
@@ -3610,6 +3624,12 @@ header .header-wrapper p {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  .slogan {
+    top: 65vh !important;
+  }
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4622,7 +4642,6 @@ html {
 @media only screen and (max-width: 575px) {
   .header-content .slogan {
     font-size: 6rem !important;
-    top: 60vh !important;
   }
 }
 
