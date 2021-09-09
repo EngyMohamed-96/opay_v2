@@ -3626,7 +3626,7 @@ header .header-wrapper p {
 
 @media only screen and (max-width: 575px) {
   .slogan {
-    top: 65vh !important;
+    top: 75vh !important;
   }
 }
 
@@ -5103,7 +5103,7 @@ html {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin-top: 0;
+    margin-top: 2rem;
     padding: 1rem !important;
   }
   .homepage .header-content .header-wrapper h1 {
