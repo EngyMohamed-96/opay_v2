@@ -5482,7 +5482,7 @@ html {
     margin-bottom: 100px;
   }
   .invoice-page .start-now {
-    height: 100vh;
+    height: 100vh !important;
     margin: auto !important;
     padding: 1rem;
     padding-bottom: 5rem;
