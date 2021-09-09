@@ -197,6 +197,10 @@
     height: 650px;
     padding-top: 56px;
 
+    @include breakpoint(mobile) {
+      height: 100vh !important;
+    }
+
     h1 {
       text-align: center;
       color: #5a7184;

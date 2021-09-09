@@ -2980,6 +2980,12 @@
   padding-top: 56px;
 }
 
+@media only screen and (max-width: 575px) {
+  .invoice-page .start-now {
+    height: 100vh !important;
+  }
+}
+
 .invoice-page .start-now h1 {
   text-align: center;
   color: #5a7184;
@@ -5482,7 +5488,7 @@ html {
     margin-bottom: 100px;
   }
   .invoice-page .start-now {
-    height: 100vh !important;
+    height: 138vh;
     margin: auto !important;
     padding: 1rem;
     padding-bottom: 5rem;
