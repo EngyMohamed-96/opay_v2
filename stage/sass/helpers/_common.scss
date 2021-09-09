@@ -20,7 +20,14 @@
     background: #179070;
 }
 
+body {
+    overflow-x: hidden !important;
+
+}
+
 html {
+    overflow-x: hidden !important;
+
     @include breakpoint(smlaptop) {
         font-size: 14px !important;
     }

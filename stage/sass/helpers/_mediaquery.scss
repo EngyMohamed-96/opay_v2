@@ -476,7 +476,7 @@
   .seven-section {
     padding: 1rem;
     margin: 0 !important;
-    height: 30vh;
+    // height: 30vh;
 
     .bg-steps {
       display: none !important;
@@ -484,8 +484,8 @@
     }
 
     .steps {
-      margin: 0;
-      height: 50vh;
+      margin: 0 0 3rem 0;
+      // height: 50vh;
 
       .icon {
 
@@ -506,7 +506,7 @@
     .btns {
       padding: 0 !important;
       margin: auto;
-      margin-top: -14rem;
+      // margin-top: -14rem;
 
       .Sign-up {
         margin: 0 auto !important;
@@ -795,41 +795,41 @@
       padding: 1rem;
       height: auto !important;
 
+      .bg-section {
+        position: absolute;
+      }
+
       .txt-container {
-        margin-top: -45%;
+        // margin-top: -64%;
+        margin-top: 0 !important;
       }
 
       .img-con {
         margin: auto !important;
 
         img {
-          margin-top: -58rem;
+          // margin-top: -62rem;
         }
       }
     }
 
     .fifth-section {
-      padding: 1rem !important;
-      height: auto !important;
-      padding-bottom: 2rem !important;
-
+      // padding: 1rem !important;
+      // height: auto !important;
+      // padding-bottom: 2rem !important;
 
       .img-con {
 
-        margin-left: -4rem;
+        // margin-left: -4rem;
       }
 
       .txt-container {
-        margin: auto !important;
-        margin-top: -3rem !important;
+        margin: 2rem 1rem;
 
-        .txt-con-two {
-          margin-top: 2rem;
-        }
+
 
       }
     }
-
 
     .six-section {
       padding: 1rem;
