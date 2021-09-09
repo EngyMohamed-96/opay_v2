@@ -87,3 +87,17 @@ html {
 
     }
 }
+
+.installements-page,
+.invoice-page,
+.online-payment,
+.payouts-page,
+.sharelink-page,
+.subscription-page {
+    header {
+        @include breakpoint(mobile) {
+            height: auto !important;
+            padding-bottom: 2rem !important;
+        }
+    }
+}

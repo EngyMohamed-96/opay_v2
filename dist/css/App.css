@@ -4693,6 +4693,18 @@ html {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  .installements-page header,
+  .invoice-page header,
+  .online-payment header,
+  .payouts-page header,
+  .sharelink-page header,
+  .subscription-page header {
+    height: auto !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #opay-logo {
     width: 5rem;
@@ -5299,7 +5311,6 @@ html {
     text-align: center;
   }
   .online-payment header {
-    height: 125vh !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
