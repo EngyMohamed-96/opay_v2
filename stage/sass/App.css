@@ -5434,9 +5434,6 @@ html {
   .invoice-page .Sign-up {
     font-size: 0.5rem !important;
   }
-  .invoice-page header {
-    height: 120vh !important;
-  }
   .invoice-page .start-now h1 {
     width: 100%;
   }
@@ -5496,9 +5493,6 @@ html {
   }
   .invoice-page .start-now h1 {
     font-size: 20px;
-  }
-  .subscription-page header {
-    height: 110vh !important;
   }
   .subscription-page header .invoicing-header {
     -webkit-box-orient: vertical;
