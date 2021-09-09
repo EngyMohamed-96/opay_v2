@@ -2976,14 +2976,8 @@
 .invoice-page .start-now {
   width: 100%;
   background-color: #e8fbf6;
-  height: 650px;
   padding-top: 56px;
-}
-
-@media only screen and (max-width: 575px) {
-  .invoice-page .start-now {
-    height: 100vh !important;
-  }
+  padding-bottom: 0 !important;
 }
 
 .invoice-page .start-now h1 {
@@ -2992,7 +2986,7 @@
   font-size: 32px;
   font-weight: 600;
   width: 50%;
-  margin: 0 auto;
+  margin: 2rem 0 0 0;
 }
 
 .invoice-page .start-now .start-now-content {
@@ -3004,7 +2998,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0px;
   width: 100%;
 }
 
@@ -3038,6 +3031,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2rem !important;
 }
 
 .invoice-page .start-now .start-now-content .right-column div:last-child {
@@ -5488,7 +5482,6 @@ html {
     margin-bottom: 100px;
   }
   .invoice-page .start-now {
-    height: 138vh;
     margin: auto !important;
     padding: 1rem;
     padding-bottom: 5rem;

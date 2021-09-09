@@ -194,27 +194,29 @@
   .start-now {
     width: 100%;
     background-color: #e8fbf6;
-    height: 650px;
+    // height: 650px;
     padding-top: 56px;
+    padding-bottom: 0 !important;
 
-    @include breakpoint(mobile) {
-      height: 100vh !important;
-    }
+    // @include breakpoint(mobile) {
+    //   height: 100vh !important;
+    // }
 
     h1 {
+
       text-align: center;
       color: #5a7184;
       font-size: 32px;
       font-weight: 600;
       width: 50%;
-      margin: 0 auto;
+      margin: 2rem 0 0 0;
     }
 
     .start-now-content {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 50px 0px;
+      // margin: 50px 0px;
       width: 100%;
 
       .images-container {
@@ -238,6 +240,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 2rem !important;
 
         & div {
           &:last-child {
