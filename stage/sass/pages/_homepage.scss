@@ -671,6 +671,16 @@ header {
     opacity: 0.9;
     margin: 3% 0 3% 15%;
 
+    @include breakpoint(mobile) {
+      width: 85%;
+
+    }
+
+    @include breakpoint(smmobile) {
+      width: 85%;
+
+    }
+
     img {
       width: 100%;
       filter: drop-shadow(0.313rem 0.063rem 0.25rem #5a7184);
@@ -746,6 +756,7 @@ header {
   @include breakpoint(smmobile) {
     padding: 4rem 1rem !important;
 
+
   }
 
   .bg-section {
@@ -769,8 +780,14 @@ header {
     justify-content: center;
     align-items: flex-start;
 
+    @include breakpoint(mobile) {
+      margin: 4.5rem 0 3rem 0 !important;
+
+    }
+
     @include breakpoint(smmobile) {
-      margin: 5rem 0;
+      margin: 3rem 0 !important;
+
     }
 
     h2 {

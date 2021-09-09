@@ -3797,6 +3797,18 @@ header .header-wrapper p {
   margin: 3% 0 3% 15%;
 }
 
+@media only screen and (max-width: 575px) {
+  .second_section .img-con {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .second_section .img-con {
+    width: 85%;
+  }
+}
+
 .second_section .img-con img {
   width: 100%;
   -webkit-filter: drop-shadow(0.313rem 0.063rem 0.25rem #5a7184);
@@ -3909,9 +3921,15 @@ header .header-wrapper p {
           align-items: flex-start;
 }
 
+@media only screen and (max-width: 575px) {
+  .fourth-section .txt-container {
+    margin: 4.5rem 0 3rem 0 !important;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .fourth-section .txt-container {
-    margin: 5rem 0;
+    margin: 3rem 0 !important;
   }
 }
 
