@@ -1,4 +1,18 @@
 .sharelink-page {
+    .opay-col {
+        @include breakpoint(mobile) {
+            flex-direction: column !important;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+
+        @include breakpoint(smmobile) {
+            flex-direction: column !important;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+    }
+
     header {
         height: auto !important;
         // min-height: 100vh;
@@ -211,7 +225,16 @@
     .business-features-section {
         background-color: #5A7184;
         text-align: center;
-        padding: 48px;
+
+        padding: 55px;
+
+        @include breakpoint(mobile) {
+            padding: 3rem 1rem;
+        }
+
+        @include breakpoint(smmobile) {
+            padding: 3rem 1rem;
+        }
 
         h3 {
             color: white;

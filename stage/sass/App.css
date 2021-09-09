@@ -2427,6 +2427,28 @@
      object-fit: cover;
 }
 
+@media only screen and (max-width: 575px) {
+  .sharelink-page .opay-col {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sharelink-page .opay-col {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
+
 .sharelink-page header {
   height: auto !important;
 }
@@ -2668,7 +2690,19 @@
 .sharelink-page .business-features-section {
   background-color: #5A7184;
   text-align: center;
-  padding: 48px;
+  padding: 55px;
+}
+
+@media only screen and (max-width: 575px) {
+  .sharelink-page .business-features-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sharelink-page .business-features-section {
+    padding: 3rem 1rem;
+  }
 }
 
 .sharelink-page .business-features-section h3 {
