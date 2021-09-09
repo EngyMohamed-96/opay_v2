@@ -97,16 +97,16 @@ html {
     header {
         @include breakpoint(mobile) {
             height: auto !important;
-            padding-bottom: 2rem !important;
+            padding-bottom: 6rem !important;
             min-height: auto !important;
         }
     }
 }
 
-.installements-page {
-    header {
-        @include breakpoint(mobile) {
-            padding-bottom: 6rem !important;
-        }
-    }
-}
+// .installements-page {
+//     header {
+//         @include breakpoint(mobile) {
+//             padding-bottom: 6rem !important;
+//         }
+//     }
+// }
