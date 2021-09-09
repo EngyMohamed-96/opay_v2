@@ -505,6 +505,15 @@
   padding-left: 2rem;
   text-transform: uppercase;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .installements-page .installment {
@@ -539,9 +548,13 @@
   padding-left: 0;
 }
 
+.installements-page .installment .img-con {
+  width: 50%;
+  margin: 3rem auto;
+}
+
 .installements-page .installment .img-con img {
-  width: 60%;
-  height: 40%;
+  width: 100%;
   opacity: 0.8;
 }
 
@@ -633,6 +646,10 @@
 
 .installements-page .divide-section {
   margin-top: 6rem;
+}
+
+.installements-page .adjust-contactSales {
+  margin-left: 3rem;
 }
 
 .contact-page header::before {

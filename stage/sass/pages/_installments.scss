@@ -118,6 +118,9 @@
     padding-left: 2rem;
     text-transform: uppercase;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .installment {
@@ -152,9 +155,11 @@
     }
 
     .img-con {
+      width: 50%;
+      margin: 3rem auto;
+
       img {
-        width: 60%;
-        height: 40%;
+        width: 100%;
         opacity: 0.8;
       }
     }
@@ -248,6 +253,7 @@
       color: #179070;
       font-weight: bold;
       font-size: 1rem;
+
       text-decoration: none;
     }
   }
@@ -260,5 +266,9 @@
 
   .divide-section {
     margin-top: 6rem;
+  }
+
+  .adjust-contactSales {
+    margin-left: 3rem;
   }
 }
