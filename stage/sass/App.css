@@ -5469,13 +5469,15 @@ html {
     text-align: center;
   }
   .payouts-page .make-money .image-composition .v {
-    bottom: -227px;
+    bottom: -210px;
   }
   .payouts-page .make-money .image-composition .hr-1 {
     top: 255px;
+    right: 120px;
   }
   .payouts-page .make-money .image-composition .hr-2 {
     top: 330px;
+    right: 120px;
   }
   .sharelink-page .shareable-links-header {
     margin-top: 50px !important;
