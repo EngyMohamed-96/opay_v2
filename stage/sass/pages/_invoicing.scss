@@ -1,26 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 .invoice-page {
+  .row {
+    align-items: center;
+  }
   header {
-    height: auto !important;
-    // min-height: 100vh;
-
+    .main-title {
+      color: #179070;
+      font: 600 30px "Poppins", sans-serif;
+    }
     .bg {
       height: 100%;
     }
-
+    .links {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+    }
     .header-content {
-
       @include breakpoint(smlaptop) {
         display: flex;
         align-items: center;
 
         &-data {
-
-          // display: flex;
-          // justify-content: center;
           position: relative;
-          // align-items: center;
 
           @include breakpoint(smlaptop) {
             top: -3rem;
@@ -31,7 +34,6 @@
             padding: 0 1rem;
           }
         }
-
       }
 
       @include breakpoint(lgmobile) {
@@ -40,11 +42,7 @@
 
       .payment-primaryTitle {
         color: #5a7184;
-        font-weight: bold;
-
-        span {
-          color: #179070;
-        }
+        font: 700 40px "Poppins", sans-serif;
       }
 
       p {
@@ -52,13 +50,8 @@
       }
 
       .header-image {
-        width: 100%;
-        max-width: 23rem;
-        margin: 0 auto;
-
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
-          max-width: 18rem;
         }
 
         img {
@@ -81,6 +74,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    
       }
 
       p {
@@ -192,31 +186,22 @@
 
   // last section
   .start-now {
-    width: 100%;
     background-color: #e8fbf6;
-    // height: 650px;
     padding-top: 56px;
-    padding-bottom: 0 !important;
-
-    // @include breakpoint(mobile) {
-    //   height: 100vh !important;
-    // }
+    padding: 60px 0;
 
     h1 {
-
       text-align: center;
       color: #5a7184;
-      font-size: 32px;
-      font-weight: 600;
-      width: 50%;
-      margin: 2rem 0 0 0;
+      font: 600 30px "Poppins", sans-serif;
+      width: 600px;
+      margin: auto;
     }
 
     .start-now-content {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      // margin: 50px 0px;
       width: 100%;
 
       .images-container {
@@ -244,8 +229,6 @@
 
         & div {
           &:last-child {
-            margin-left: -60px;
-
             a {
               &:hover {
                 color: #179070;
@@ -255,7 +238,6 @@
         }
 
         .start-now-features {
-          width: 420px;
           margin-bottom: 12px;
           margin-top: 52px;
 

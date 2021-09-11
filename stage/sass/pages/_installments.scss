@@ -1,25 +1,30 @@
 .installements-page {
-
   header {
     height: auto !important;
-    // min-height: 100vh;
-
+    .row {
+      align-items: center;
+    }
     .bg {
       height: 100%;
     }
 
     .header-content {
-
+      height: 100vh;
+      .links {
+        display: flex;
+        align-items: center;
+      }
+      .main-title {
+        color: #179070;
+        font: 600 30px "Poppins", sans-serif;
+        margin-bottom: 15px;
+      }
       @include breakpoint(smlaptop) {
         display: flex;
         align-items: center;
 
         &-data {
-
-          // display: flex;
-          // justify-content: center;
           position: relative;
-          // align-items: center;
 
           @include breakpoint(smlaptop) {
             top: -3rem;
@@ -30,7 +35,6 @@
             padding: 0 1rem;
           }
         }
-
       }
 
       @include breakpoint(lgmobile) {
@@ -47,17 +51,13 @@
       }
 
       p {
-        color: #5a7184;
+        color: #2c3e50;
+        font: 400 20px "Poppins", sans-serif;
       }
 
       .header-image {
-        width: 100%;
-        max-width: 23rem;
-        margin: 0 auto;
-
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
-          max-width: 18rem;
         }
 
         img {
@@ -125,39 +125,50 @@
 
   .installment {
     margin-top: 5rem;
-
+    .row {
+      align-items: center;
+    }
     .txt-container {
       padding-top: 5rem;
 
       h2 {
-        color: #34495e;
-        font-weight: bold;
-        font-size: 1.5rem;
-
-        span {
+        color: #5a7184;
+        font: 600 30px "Poppins", sans-serif;
+        & > span {
           font: 500 22px "Poppins", sans-serif;
+          span {
+            font: 700 25px "Poppins", sans-serif;
+          }
         }
       }
 
       p {
         font-size: 0.8rem;
         margin-top: 10px;
-
+        font: 400 16px "Poppins", sans-serif;
         span {
           color: #179070;
           font-weight: bold;
+          display: block;
         }
       }
 
       .btns {
         padding-left: 0;
+        a {
+          &:last-child {
+            color: #179070;
+            &:hover {
+              color: #179070;
+            }
+          }
+        }
       }
     }
 
     .img-con {
-      width: 50%;
+      width: 70%;
       margin: 3rem auto;
-
       img {
         width: 100%;
         opacity: 0.8;
@@ -167,7 +178,7 @@
 
   .section-clients {
     padding: 30px 0;
-
+    background-color: #fbfcfc;
     .section-clients-content {
       .client-logo {
         width: unset;
@@ -185,17 +196,27 @@
 
     .txt-container {
       p {
+        color: #2c3e50;
+        font: 400 15px "Poppins", sans-serif;
+        line-height: 30px;
+      }
+      h2 {
         span {
-          color: #179070;
-          font-weight: bold;
+          font: 600 25px "Poppins", sans-serif;
+          color: #5a7184;
         }
       }
 
       .txt-con-two {
-        h6 {
-          color: #179070;
-          margin: 2rem;
-          font-weight: bold;
+        a {
+          &:first-child {
+            color: #fff;
+          }
+          &:last-child {
+            color: #179070;
+            margin: 2rem;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -214,8 +235,8 @@
       }
 
       p {
-        font-size: 1rem;
-        color: #5a7184;
+        font: 400 20px 'Poppins', sans-serif;;
+        color: #5A7184;
       }
 
       .contact-sales {
@@ -227,6 +248,9 @@
     }
 
     .img-con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img {
         width: 60%;
         height: 40%;
@@ -245,8 +269,8 @@
     }
 
     p {
-      font-size: 1rem;
-      color: #5a7184;
+      font: 400 20px 'Poppins', sans-serif;;
+      color: #5A7184;
     }
 
     .contact-sales {

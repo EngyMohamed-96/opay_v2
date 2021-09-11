@@ -1,284 +1,272 @@
 .sharelink-page {
-    .opay-col {
-        @include breakpoint(mobile) {
-            flex-direction: column !important;
-            text-align: left;
-            margin-bottom: 1rem;
-        }
-
-        @include breakpoint(smmobile) {
-            flex-direction: column !important;
-            text-align: left;
-            margin-bottom: 1rem;
-        }
+  .opay-col {
+    @include breakpoint(mobile) {
+      flex-direction: column !important;
+      text-align: left;
+      margin-bottom: 1rem;
     }
 
-    header {
-        height: auto !important;
-        // min-height: 100vh;
-
-        .bg {
-            height: 100%;
-        }
-
-        .header-content {
-
-            @include breakpoint(smlaptop) {
-                display: flex;
-                align-items: center;
-
-                &-data {
-
-                    // display: flex;
-                    // justify-content: center;
-                    position: relative;
-                    // align-items: center;
-
-                    @include breakpoint(smlaptop) {
-                        top: -3rem;
-                    }
-
-                    @include breakpoint(lgmobile) {
-                        top: 3rem !important;
-                        padding: 0 1rem;
-                    }
-                }
-
-            }
-
-            @include breakpoint(lgmobile) {
-                height: auto;
-            }
-
-            .payment-primaryTitle {
-                color: #5a7184;
-                font-weight: bold;
-
-                span {
-                    color: #179070;
-                }
-            }
-
-            p {
-                color: #5a7184;
-            }
-
-            .header-image {
-                width: 100%;
-                max-width: 23rem;
-                margin: 0 auto;
-
-                @include breakpoint(lgmobile) {
-                    margin: 4rem auto;
-                    max-width: 18rem;
-                }
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        .invoicing-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            img {
-                max-width: 100%;
-            }
-
-            .header-text {
-                min-height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            p {
-                color: #5a7184;
-            }
-
-            .invoice-content-header {
-                text-transform: capitalize;
-                font-weight: Bold;
-                font-family: "Poppins", sans-serif;
-                color: #5a7184;
-                font-size: 36px;
-
-                span {
-                    color: #179070;
-                }
-            }
-
-            .invoice-content-text {
-                font-family: "Poppins", sans-serif;
-                font-size: 18px;
-                margin-bottom: 2px;
-                color: #2c3e50;
-                font-weight: 500;
-
-                p {
-                    margin-bottom: 2px;
-                }
-            }
-        }
+    @include breakpoint(smmobile) {
+      flex-direction: column !important;
+      text-align: left;
+      margin-bottom: 1rem;
     }
+  }
 
-    .btns {
-        text-decoration: none;
+  header {
+    .bg {
+      height: 100%;
+    }
+    .row {
+      align-items: center;
+    }
+    .header-content {
+      .main-title {
         color: #179070;
-        padding-left: 2rem;
-        text-transform: uppercase;
+        font: 600 30px "Poppins", sans-serif;
+      }
+      .links {
+        margin-top: 50px;
+      }
+      @include breakpoint(smlaptop) {
+        display: flex;
+        align-items: center;
+
+        &-data {
+          position: relative;
+
+          @include breakpoint(smlaptop) {
+            top: -3rem;
+          }
+
+          @include breakpoint(lgmobile) {
+            top: 3rem !important;
+            padding: 0 1rem;
+          }
+        }
+      }
+
+      @include breakpoint(lgmobile) {
+        height: auto;
+      }
+
+      .payment-primaryTitle {
+        color: #5a7184;
         font-weight: bold;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .header-image {
+        @include breakpoint(lgmobile) {
+          margin: 4rem auto;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
-    .contact-sales {
-        text-decoration: none;
-        color: #1dcf9f;
+    .invoicing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      .header-text {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font: 600 50px "Poppins", sans-serif;
+          span {
+            color: #179070;
+          }
+        }
+      }
+
+      p {
+        color: #5a7184;
+      }
+
+      .invoice-content-header {
+        text-transform: capitalize;
+        font-weight: Bold;
+        font-family: "Poppins", sans-serif;
+        color: #5a7184;
+        font-size: 36px;
+
+        span {
+          color: #179070;
+        }
+      }
+
+      .invoice-content-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 2px;
+        color: #2c3e50;
+        font-weight: 500;
+
+        p {
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .btns {
+    text-decoration: none;
+    color: #179070;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .contact-sales {
+    text-decoration: none;
+    color: #1dcf9f;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .steps-section {
+    background-color: white;
+    text-align: center;
+    padding: 60px 0;
+
+    h3 {
+      color: #34495e;
+      font-weight: 600;
+      line-height: 40px;
+      text-transform: capitalize;
+
+      span {
+        color: #179070;
+      }
+    }
+
+    .steps {
+      margin-top: 30px;
+        
+      .single-step {
+        position: relative;
+        margin: 5px 0;
+        text-align: left;
+        padding: 20px 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 8px;
+        position: relative;
+        border-radius: 10px;
+        height: 100% !important;
+        .icon {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          bottom: 0;
+          opacity: 0.5;
+
+          svg {
+            opacity: 0.3;
+            z-index: -1;
+            max-width: 80%;
+            height: 100%;
+          }
+        }
+
+        .step-data {
+          z-index: 1;
+
+          h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #34495e;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+          }
+
+          p {
+            font-size: 14px;
+            flex: 1;
+          }
+
+          a {
+            text-decoration: none;
+            color: #179070;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .business-features-section {
+    background-color: #71AA9A;
+    text-align: center;
+
+    padding: 55px;
+
+    @include breakpoint(mobile) {
+      padding: 3rem 1rem;
+    }
+
+    @include breakpoint(smmobile) {
+      padding: 3rem 1rem;
+    }
+
+    h3 {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 32px;
+
+      span {
+        color: #1DCF9F;
         text-transform: uppercase;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-weight: bold;
-        font-size: 1.2rem;
-        cursor: pointer;
+      }
     }
 
-    .steps-section {
-        width: 100%;
-        background-color: white;
-        text-align: center;
-        padding-top: 60px;
+    .business-features-content {
+      display: flex;
+      justify-content: center;
+      color: white;
+      height: 550px;
 
-        h3 {
-            color: #34495E;
-            font-weight: 600;
-            line-height: 40px;
-            text-transform: capitalize;
+      .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 16px;
 
-            span {
-                color: #179070;
-            }
+        img {
+          width: 100%;
+          object-fit: contain;
         }
 
-        .steps {
-            margin-top: 30px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        p {
+          font-weight: 500;
 
-            .single-step {
-                position: relative;
-                margin: 5px 5px;
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                height: 250px;
-                padding: 50px 20px 20px 20px;
-                box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 8px;
-                position: relative;
-
-                .icon {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    opacity: 0.5;
-
-                    svg {
-
-                        opacity: 0.2;
-                        z-index: -1;
-                    }
-                }
-
-                .step-data {
-                    z-index: 1;
-
-                    h3 {
-                        font-size: 18px;
-                        font-weight: 600;
-                        color: #34495E;
-                        text-transform: uppercase;
-                        margin-bottom: 8px;
-                    }
-
-                    p {
-                        font-size: 14px;
-                        flex: 1;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: #179070;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        font-size: 16px;
-
-                    }
-                }
-            }
-
+          span {
+            font-weight: 900;
+          }
         }
+      }
     }
-
-    .business-features-section {
-        background-color: #5A7184;
-        text-align: center;
-
-        padding: 55px;
-
-        @include breakpoint(mobile) {
-            padding: 3rem 1rem;
-        }
-
-        @include breakpoint(smmobile) {
-            padding: 3rem 1rem;
-        }
-
-        h3 {
-            color: white;
-            font-weight: 600;
-            margin-bottom: 32px;
-
-            span {
-                color: #1DCF9F;
-                text-transform: uppercase;
-            }
-        }
-
-        .business-features-content {
-            display: flex;
-            justify-content: center;
-            color: white;
-            height: 550px;
-
-            .col {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                margin: 0 16px;
-
-                img {
-                    width: 100%;
-                    height: 400px;
-                    object-fit: contain;
-                }
-
-                p {
-                    font-weight: 500;
-
-                    span {
-                        font-weight: 900;
-                    }
-                }
-            }
-
-
-
-        }
-
-
-    }
+  }
 }

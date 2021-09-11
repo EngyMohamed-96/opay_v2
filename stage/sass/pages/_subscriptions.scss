@@ -5,24 +5,28 @@
 
   header {
     height: auto !important;
-    // min-height: 100vh;
-
+    .row {
+      align-items: center;
+    }
+    .main-title {
+      color: #179070;
+      font: 600 40px "Poppins", sans-serif;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+    }
     .bg {
       height: 100%;
     }
 
     .header-content {
-
       @include breakpoint(smlaptop) {
         display: flex;
         align-items: center;
 
         &-data {
-
-          // display: flex;
-          // justify-content: center;
           position: relative;
-          // align-items: center;
 
           @include breakpoint(smlaptop) {
             top: -3rem;
@@ -33,7 +37,6 @@
             padding: 0 1rem;
           }
         }
-
       }
 
       @include breakpoint(lgmobile) {
@@ -42,7 +45,7 @@
 
       .payment-primaryTitle {
         color: #5a7184;
-        font-weight: bold;
+        font: 700 51px "Poppins", sans-serif;
 
         span {
           color: #179070;
@@ -51,12 +54,24 @@
 
       p {
         color: #5a7184;
+        font: 400 20px "Poppins", sans-serif;
       }
 
       .header-image {
-        width: 100%;
-        max-width: 23rem;
-        margin: 0 auto;
+        position: relative;
+        .standard {
+          position: absolute;
+          left: 45px;
+          top: 180px;
+          max-width: 50%;
+          z-index: 1;
+        }
+        .customizied {
+          position: absolute;
+          top: 200px;
+          right: 20px;
+          max-width: 50%;
+        }
 
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
@@ -141,58 +156,46 @@
 
     h2 {
       color: #179070;
-      font-weight: bold;
-      font-size: 1.5rem;
       text-align: center;
       padding-bottom: 1rem;
+      font: 600 35px "Poppins", sans-serif;
     }
 
     h4 {
       text-align: center;
       color: #dedfdf;
+      font: 600 30px "Poppins", sans-serif;
     }
 
     .txt-container {
       padding-top: 6rem;
-
-      .title {
-        font-size: 2rem;
-        font-weight: 600;
+      .title,
+      p {
+        font: 400 23px "Poppins", sans-serif;
+        color: #2C3E50 !important;
       }
-
       .btns {
         padding-left: 0;
-      }
-
-      p {
-        span {
-          color: #179070;
-          font-weight: bold;
-        }
       }
     }
 
     .img-con {
       padding-top: 3rem;
-      width: 100%;
-
       img {
-        width: 70%;
-        height: 40%;
-        margin-left: 10rem;
 
         @include breakpoint(mobile) {
           width: 100% !important;
           margin: auto !important;
         }
-
       }
     }
   }
 
   .ready {
     margin-top: 5rem;
-
+    .row {
+      align-items: center;
+    }
     h2 {
       color: #179070;
       font-weight: bold;
@@ -234,12 +237,30 @@
 
     .img-con {
       padding-top: 3rem;
-      width: 70%;
-
+      position: relative;
+      max-width: 50%;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        background-color: transparent;
+        border-radius: 15px;
+        border: 1px solid #71AA9A;
+        width: 100%;
+        height: 90%;
+        z-index: -1;
+      }
       img {
         width: 100%;
-        height: 40%;
+        height: auto;
         margin-left: 5rem;
+        &.plan {
+          position: absolute;
+          right: -260px;
+          bottom: 30px;
+          max-width: 80%;
+        }
       }
     }
   }

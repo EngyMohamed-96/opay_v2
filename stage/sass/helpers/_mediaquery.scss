@@ -1,70 +1,10 @@
-// @media screen and (max-width:1366px) and (max-height:900px) {
-//   html {
-//     font-size: 15px !important;
-//   }
-// }
-
-// @media screen and (max-width:1366px) and (max-height:768px) {
-//   html {
-//     font-size: 13px !important;
-//   }
-// }
-
-// @media screen and (max-width: 1680px) {
-
-
-//   html {
-//     font-size: 18px !important;
-//   }
-
-//   header {
-
-
-
-//     .img-container {
-
-
-//       .secure {
-//         width: 80%;
-//       }
-
-//     }
-
-//     .header-wrapper {
-//       margin-top: -3rem;
-
-//       &.change {
-//         margin-top: -3rem;
-//       }
-
-//       &.S-change {
-//         margin-top: -3rem;
-//       }
-
-//     }
-
-//   }
-
-
-// }
-
-
-
-
 @media screen and (max-width: 1024px) {
-
-
-  // html {
-  //   font-size: 16px !important;
-  // }
-
   #opay-logo {
     width: 5rem;
   }
 
   .navbar {
     .nav-list {
-
       opacity: 0;
       visibility: hidden;
       display: none !important;
@@ -75,10 +15,7 @@
       opacity: 1 !important;
     }
   }
-
-
 }
-
 
 /* Start Contact-us Page */
 @media (max-width: 767px) {
@@ -159,10 +96,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
-
   .contact-page {
-
     /* Start Header */
     header {
       overflow: unset;
@@ -239,10 +173,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
-
   .contact-page {
-
     /* Start Header */
     header {
       .header-content {
@@ -310,7 +241,7 @@
   }
 }
 
-// /* End Contact-us Page */
+/* End Contact-us Page */
 
 // /* Start Careers Page */
 @media (max-width: 767px) {
@@ -341,7 +272,6 @@
     }
   }
 }
-
 
 @media (min-width: 576px) and (max-width: 767px) {
   .careers-page {
@@ -445,183 +375,33 @@
   }
 }
 
+/* End Careers Page */
 
-// /* End Careers Page */
-
-@media(max-width: 575px) {
-
+@media (max-width: 575px) {
   .s-dropdown {
     width: 54rem !important;
     height: auto;
     font-size: 13px !important;
 
     ul {
-
       flex-direction: column;
       align-items: flex-start !important;
       left: -1 !important;
       padding: 0 !important;
     }
   }
-
-  .divide-section {
-    padding: 1rem;
-    margin: 0 auto !important;
-
-    h1 {
-      font-size: 1.5rem !important;
-    }
-  }
-
-  .seven-section {
-    padding: 1rem;
-    margin: 0 !important;
-    // height: 30vh;
-
-    .bg-steps {
-      display: none !important;
-
-    }
-
-    .steps {
-      margin: 0 0 3rem 0;
-      // height: 50vh;
-
-      .icon {
-
-        height: 1rem !important;
-
-        font-size: 2rem !important;
-      }
-
-      .sev-text {
-        margin-top: 2rem;
-
-        h4 {
-          font-size: 0.7rem !important;
-        }
-      }
-    }
-
-    .btns {
-      padding: 0 !important;
-      margin: auto;
-      // margin-top: -14rem;
-
-      .Sign-up {
-        margin: 0 auto !important;
-        padding: 0.3rem 0.6rem;
-      }
-    }
-
-
-  }
-
-  .txt-container {
-    .Sign-up {
-      font-size: 0.6rem !important;
-
-      padding: 0.7rem 0.9rem;
-    }
-  }
-
-  .bg-footer {
-
-    background-size: cover;
-    background-image: url(../imgs/footerbg.png);
-    background-repeat: no-repeat;
-    height: 8rem !important;
-  }
-
-  footer {
-
-    padding: 3rem 1rem 1rem 1rem;
-
-
-
-    .footer-logos {
-
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
-      margin: 0 auto !important;
-
-      .logos-partaions img {
-        width: 15% !important;
-      }
-
-      .social-icons {
-        left: 0 !important;
-
-        h3 {
-          text-align: center;
-        }
-      }
-
-      .footer-logo {
-        margin: auto !important;
-
-        svg {
-          width: 50%;
-          position: relative;
-          left: 3rem !important;
-        }
-
-      }
-
-
-
-    }
-
-    .copy-right {
-      justify-content: center !important;
-      flex-direction: column !important;
-      align-items: center !important;
-
-      p {
-        font-size: 0.5rem !important;
-
-      }
-
-      .languages {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -4rem !important;
-
-
-        .lang {
-          font-size: 0.8rem;
-          margin: 0 auto !important;
-          padding: 0.5rem !important;
-          margin-top: 4rem !important;
-
-          i {
-            font-size: 0.9rem;
-          }
-        }
-      }
-
-    }
-  }
-
   .homepage {
-
     .txt-container {
-
       h2 {
         font-size: 1.5rem !important;
-
       }
 
       p {
         font-size: 0.9rem !important;
-
       }
     }
 
     .header-content {
-
       .swiper-slide {
         height: 90vh;
       }
@@ -654,15 +434,12 @@
           p {
             text-align: center !important;
           }
-
         }
 
         &.S-change {
           p {
             text-align: center !important;
-
           }
-
         }
       }
 
@@ -677,9 +454,7 @@
         }
 
         .worldDotts {
-
           width: 43% !important;
-
         }
 
         img {
@@ -689,12 +464,10 @@
           width: 65%;
         }
       }
-
     }
 
     header {
       .headerSlide {
-
         margin-top: -15rem !important;
       }
     }
@@ -702,49 +475,12 @@
     .slogan {
       font-size: 3.375rem;
       top: 365px;
-
-    }
-
-
-
-
-
-    .section-clients {
-      margin: -5rem 0rem 1rem 0;
-      padding: 1rem;
-      justify-content: space-between !important;
-
-      h3 {
-        font-size: 18px !important;
-      }
-
-      .client-logo {
-        width: 6rem !important;
-
-        &.makeItSmall {
-          width: 3rem !important;
-        }
-
-        svg {
-
-          width: 90%;
-          height: 90%;
-        }
-
-        img {
-          width: 80%;
-          height: 80%;
-        }
-      }
-
     }
 
     .second_section {
       padding: 1rem !important;
       height: auto !important;
       position: relative;
-
-
 
       .my-order1 {
         order: 1;
@@ -754,8 +490,6 @@
         order: 2;
       }
 
-
-
       .img-con {
         width: 100%;
         opacity: 0.9;
@@ -764,11 +498,8 @@
 
         img {
           width: 100% !important;
-          // margin-top: -55rem !important;
-
         }
       }
-
     }
 
     .Third-section {
@@ -778,18 +509,13 @@
         margin-top: 1rem !important;
 
         margin: auto !important;
-
-
       }
 
       .img-con {
-
         margin-top: 2rem;
         padding-bottom: 2rem;
-
       }
     }
-
 
     .fourth-section {
       padding: 1rem;
@@ -806,7 +532,6 @@
 
       .img-con {
         margin: auto !important;
-
       }
     }
 
@@ -829,133 +554,6 @@
 
       .img-container {
         margin: 0 auto !important;
-
-      }
-
-    }
-
-
-
-  }
-
-  .installements-page {
-
-    .header-content {
-      padding: 1rem;
-
-      .btns {
-        font-size: 0.6rem !important;
-        margin: 0 auto !important;
-
-        .Sign-up {
-          margin: 0 !important;
-          font-size: 0.6rem;
-        }
-
-      }
-    }
-
-    .header-image {
-      width: 75% !important;
-    }
-
-
-    header .invoicing-header .invoice-content-header {
-      font-size: 18px !important;
-    }
-
-    header .invoicing-header .invoice-content-text {
-      font-size: 10px;
-
-    }
-
-    header .invoicing-header {
-      flex-direction: column !important;
-    }
-
-    .installment {
-      padding: 1rem;
-      text-align: center;
-      margin: 0 auto;
-
-      .txt-container {
-        padding-top: 1rem !important;
-      }
-
-      .img-con img {
-        width: 100% !important;
-      }
-    }
-
-
-
-
-
-    .section-clients {
-      padding: 1rem;
-    }
-
-    .Third-section {
-      padding: 1rem;
-
-      .txt-container {
-        margin-top: 1rem;
-
-        h2 {
-          font-size: 1.2rem;
-        }
-
-        .txt-con-two {
-          h6 {
-            margin: 1rem !important;
-          }
-        }
-
-
-
-      }
-    }
-
-    .client-finance {
-      padding: 1rem;
-      text-align: center !important;
-
-      .txt-container {
-        padding-top: 1rem;
-      }
-    }
-  }
-
-  .online-payment {
-
-    align-items: center;
-
-    .latest-technology {
-      padding: 1rem;
-
-      .txt-container {
-        h2 {
-          font-size: 1.5rem;
-          text-align: center;
-        }
-      }
-    }
-
-    header {
-      // height: 125vh !important;
-      align-items: center;
-
-      .Sign-up {
-        font-size: 0.7rem
-      }
-
-      .header-content {
-
-
-        .payment-img {
-          width: 100% !important;
-          margin: auto !important;
-        }
       }
     }
   }
@@ -987,7 +585,6 @@
         margin: auto;
       }
 
-
       h1 {
         font-size: 15px;
       }
@@ -995,7 +592,6 @@
       .start-now-content {
         flex-direction: column;
       }
-
     }
 
     .flags .flags-data {
@@ -1008,11 +604,9 @@
       }
 
       h4 {
-
         margin-top: 0 !important;
         font-size: 0.75rem;
       }
-
     }
 
     .currency {
@@ -1030,7 +624,6 @@
           width: auto;
           height: auto;
           margin: auto !important;
-
         }
 
         .card1-data,
@@ -1061,8 +654,6 @@
 
       .image-composition .v {
         bottom: -210px;
-
-
       }
 
       .image-composition .hr-1 {
@@ -1074,127 +665,11 @@
         top: 330px;
         right: 120px;
       }
-
-
-    }
-  }
-
-  .sharelink-page {
-    .shareable-links-header {
-      margin-top: 50px !important;
-      text-align: center;
-
-    }
-
-    header .shareable-links-header .right-col .images-contaner .image1 {
-      margin: auto !important;
-      left: 0 !important;
-      width: 50%;
-    }
-
-    .business-features-section h3 {
-      margin-bottom: 100px;
-    }
-  }
-
-  .invoice-page {
-
-
-    .start-now {
-      //  height: 138vh;
-      margin: auto !important;
-      padding: 1rem;
-      padding-bottom: 5rem;
-    }
-
-    .Sign-up {
-      font-size: 0.5rem !important;
-    }
-
-    .start-now {
-      h1 {
-        width: 100%;
-      }
-
-      .start-now-content {
-        .Sign-up {
-          margin: 0 auto !important;
-        }
-
-        .images-container {
-          padding-top: -3rem;
-
-          .image1 {
-            max-width: 120%;
-            left: -4rem;
-            position: relative;
-          }
-
-          .image2 {
-
-            max-width: 60%;
-            position: absolute;
-            bottom: 18px;
-            right: 20px;
-          }
-        }
-
-        .right-column {
-          .start-now-features {
-            width: auto !important;
-          }
-
-        }
-      }
-    }
-
-
-
-
-    .invoicing-header {
-      padding: 1rem;
-
-      img {
-        max-width: 100%;
-        padding-top: 2rem;
-      }
-
-      .invoice-content-text {
-
-        text-align: center;
-        font-size: 14px;
-
-      }
-    }
-
-    header .invoicing-header .invoice-content-header {
-      font-size: 20px;
-      text-align: center;
-    }
-
-
-
-    .invoicing-content .features {
-      padding: 1rem;
-      display: flex;
-      flex-direction: column !important;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .start-now .start-now-content .images-container {
-      padding: 4rem !important;
-    }
-
-    .start-now h1 {
-      font-size: 20px;
     }
   }
 
   .subscription-page {
     header {
-      // height: 110vh !important;
-
       .invoicing-header {
         flex-direction: column;
         justify-content: center;
@@ -1204,7 +679,6 @@
           width: 100%;
           margin: 0 auto;
         }
-
 
         .header-text {
           h1 {
@@ -1224,7 +698,6 @@
               width: 100%;
             }
           }
-
         }
       }
     }
@@ -1243,7 +716,6 @@
       padding: 1rem;
       padding-bottom: 4rem;
     }
-
   }
 
   .careers-page {
@@ -1264,7 +736,6 @@
       }
 
       .feature {
-
         .title,
         p {
           text-align: center;
@@ -1281,7 +752,6 @@
     .about .about__header {
       text-align: center;
       padding: 1rem;
-
     }
 
     .partners {
@@ -1297,6 +767,540 @@
     .mt-5 {
       margin-top: -1rem !important;
     }
-
   }
 }
+
+/* Start Installment Page  */
+@media (max-width: 575px) {
+  .installements-page {
+    .header-content {
+      padding: 1rem;
+      text-align: center;
+      .btns {
+        margin: 0 auto !important;
+
+        .Sign-up {
+          margin: 0 !important;
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    header .invoicing-header .invoice-content-header {
+      font-size: 18px !important;
+    }
+
+    header .invoicing-header .invoice-content-text {
+      font-size: 10px;
+    }
+
+    header .invoicing-header {
+      flex-direction: column !important;
+    }
+
+    .installment {
+      padding: 1rem;
+      text-align: center;
+      margin: 0 auto;
+
+      .txt-container {
+        padding-top: 1rem !important;
+        h2 {
+          font-size: 15px;
+          & > span {
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+        .btns {
+          justify-content: center;
+        }
+      }
+
+      .img-con img {
+        width: 100% !important;
+      }
+    }
+
+    .section-clients {
+      padding: 1rem;
+      justify-content: space-between !important;
+      .primary-title {
+        h3 {
+          font-size: 2rem;
+        }
+      }
+
+      .client-logo {
+        width: 6rem !important;
+
+        &.makeItSmall {
+          width: 3rem !important;
+        }
+
+        svg {
+          width: 90%;
+          height: 90%;
+        }
+
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+    .Third-section {
+      padding: 1rem;
+
+      .txt-container {
+        margin-top: 1rem;
+        margin-left: 0;
+        text-align: center;
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        .txt-con-two {
+          h6 {
+            margin: 1rem !important;
+          }
+        }
+      }
+    }
+
+    .client-finance {
+      padding: 1rem;
+      text-align: center !important;
+
+      .txt-container,
+      .txt-container2 {
+        padding-top: 1rem;
+        a {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .installements-page {
+    header {
+      .header-content-data {
+        text-align: center;
+        .links {
+          justify-content: center;
+        }
+      }
+    }
+    .installment {
+      .txt-container {
+        text-align: center;
+        .btns {
+          justify-content: center;
+        }
+      }
+    }
+    .Third-section {
+      .txt-container {
+        text-align: center;
+        .txt-con-two {
+          justify-content: center;
+        }
+      }
+    }
+    .client-finance {
+      .txt-container,
+      .txt-container2 {
+        text-align: center;
+        a {
+          font-size: 1.5rem !important;
+        }
+      }
+      .img-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+  .installements-page {
+    .Third-section {
+      .row {
+        align-items: center;
+      }
+      .img-con {
+        margin-top: 0;
+      }
+      .txt-container {
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .client-finance {
+      .row {
+        align-items: center;
+      }
+      .txt-container,
+      .txt-container2 {
+        p {
+          font-size: 16px;
+        }
+        a {
+          font-size: 1.5rem !important;
+        }
+      }
+      .img-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+/* End Installment Page  */
+/* Start sharelink-page Page  */
+@media (max-width: 767px) {
+  .sharelink-page {
+    .header-content {
+      .header-content-data {
+        .header-text {
+          text-align: center;
+        }
+      }
+    }
+    .steps-section {
+      .steps {
+        .single-step {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sharelink-page {
+    .steps-section {
+      .steps {
+        .single-step {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/* End sharelink-page Page  */
+/* Start invoice-page Page  */
+@media (max-width: 767px) {
+  .invoice-page {
+    header {
+      .header-content {
+        text-align: center;
+        .payment-primaryTitle {
+          font-size: 25px;
+        }
+        .links {
+          justify-content: center;
+        }
+      }
+    }
+    .start-now {
+      margin: auto !important;
+      padding: 1rem;
+      padding-bottom: 5rem;
+    }
+
+    .start-now {
+      h1 {
+        width: 400px;
+      }
+
+      .start-now-content {
+        .Sign-up {
+          margin: 0 auto !important;
+        }
+
+        .images-container {
+          padding-top: -3rem;
+
+          .image1 {
+            max-width: 120%;
+            left: -4rem;
+            position: relative;
+          }
+
+          .image2 {
+            max-width: 60%;
+            position: absolute;
+            bottom: 18px;
+            right: 20px;
+          }
+        }
+
+        .right-column {
+          .start-now-features {
+            width: auto !important;
+          }
+        }
+      }
+    }
+
+    .invoicing-header {
+      padding: 1rem;
+
+      img {
+        max-width: 100%;
+        padding-top: 2rem;
+      }
+
+      .invoice-content-text {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+
+    header .invoicing-header .invoice-content-header {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .invoicing-content .features {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .start-now .start-now-content .images-container {
+      padding: 4rem !important;
+    }
+
+    .start-now h1 {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .invoice-page {
+    header {
+      .payment-primaryTitle {
+        font-size: 20px !important;
+      }
+    }
+    .start-now {
+      h1 {
+        width: 100%;
+      }
+      .right-column {
+        .links {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .invoice-page {
+    .start-now {
+      h1 {
+        width: 70%;
+      }
+      .right-column {
+        .links {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+/* End invoice-page Page  */
+/* Start online-payment Page  */
+@media (max-width: 991px) {
+  .online-payment {
+    align-items: center;
+    header {
+      align-items: center;
+      text-align: center;
+      .row {
+        flex-direction: column-reverse;
+      }
+      h1 {
+        font-size: 25px !important;
+      }
+      .links {
+        justify-content: center;
+      }
+    }
+  }
+}
+/* End online-payment Page */
+
+/* Start online-payment */
+@media (max-width: 575px) {
+  .online-payment {
+    .latest-technology {
+      .img {
+        &::before {
+          display: none !important;
+        }
+      }
+      .txt-container {
+        h2 {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .online-payment {
+    .latest-technology {
+      .txt-container {
+        p {
+          text-align: center;
+        }
+        .Sign-up {
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .online-payment {
+    .latest-technology {
+      .img {
+        &::before {
+          left: -18px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .online-payment {
+    .latest-technology {
+      .row {
+        align-items: center;
+      }
+      .txt-container {
+        h2 {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+/* End online-payment  */
+
+/* Start choose-opay */
+@media (max-width: 767px) {
+  .choose-opay {
+    .data {
+      &.Clipboard,
+      &.hourglass {
+        border-right: none !important;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .choose-opay {
+    .data {
+      &.hourglass {
+        border-right: none !important;
+      }
+      &.lock {
+        img {
+          max-width: 15% !important;
+        }
+      }
+    }
+  }
+}
+/* Start choose-opay */
+
+/* Start Divid-Section */
+@media (max-width: 767px) {
+  .divide-section {
+    .head {
+      h1 {
+        font-size: 27px;
+      }
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .divide-section {
+    .steps {
+      .item {
+        h4 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+/* End Divid-Section */
+
+/* Start Footer */
+@media (max-width: 767px) {
+  footer {
+    .upper-footer {
+      .solution,
+      .support,
+      .about,
+      .contact-us {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+    }
+    .middle-footer {
+      .content {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        img {
+          max-width: 40%;
+        }
+      }
+    }
+    .bottom-footer {
+      .copyright {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) and (max-width: 1199px) {
+  footer {
+    .bottom-footer {
+      .selection {
+        flex-direction: column;
+        align-items: unset;
+        margin-left: 30px;
+        .lang {
+          margin-left: 0;
+        }
+        .lang,
+        .country {
+          select {
+            &.form-control {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Footer */
