@@ -5260,50 +5260,6 @@ html {
     top: 330px;
     right: 120px;
   }
-  .subscription-page header .invoicing-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .subscription-page header .invoicing-header .invoice-header-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .subscription-page header .invoicing-header .header-text h1 {
-    font-size: 20px !important;
-    text-align: center;
-  }
-  .subscription-page header .invoicing-header .header-text .invoice-content-text {
-    font-size: 14px !important;
-    text-align: center;
-  }
-  .subscription-page header .invoicing-header .header-text .header-image {
-    margin: auto !important;
-  }
-  .subscription-page header .invoicing-header .header-text .header-image img {
-    width: 100%;
-  }
-  .subscription-page .subscription {
-    padding: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .subscription-page .btns {
-    font-size: 0.6rem !important;
-  }
-  .subscription-page .txt-container {
-    text-align: center;
-    padding: 1rem;
-    padding-bottom: 4rem;
-  }
   .careers-page .about-company .head h2 {
     font-size: 25px;
   }
@@ -5336,6 +5292,57 @@ html {
   }
 }
 
+/* Start subscription Page  */
+@media (max-width: 575px) {
+  .subscription-page header .header-content .header-content-data .header-text {
+    text-align: center !important;
+  }
+  .subscription-page header .header-content .header-content-data .header-text .payment-primaryTitle {
+    font-size: 35px !important;
+  }
+  .subscription-page header .invoicing-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscription-page header .invoicing-header .invoice-header-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscription-page header .invoicing-header .header-text .invoice-content-text {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .subscription-page header .invoicing-header .header-text .header-image {
+    margin: auto !important;
+  }
+  .subscription-page header .invoicing-header .header-text .header-image img {
+    width: 100%;
+  }
+  .subscription-page .subscription {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscription-page .btns {
+    font-size: 0.6rem !important;
+  }
+  .subscription-page .txt-container {
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* End subscription Page  */
 /* Start Installment Page  */
 @media (max-width: 575px) {
   .installements-page .header-content {

@@ -668,56 +668,6 @@
     }
   }
 
-  .subscription-page {
-    header {
-      .invoicing-header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .invoice-header-image {
-          width: 100%;
-          margin: 0 auto;
-        }
-
-        .header-text {
-          h1 {
-            font-size: 20px !important;
-            text-align: center;
-          }
-
-          .invoice-content-text {
-            font-size: 14px !important;
-            text-align: center;
-          }
-
-          .header-image {
-            margin: auto !important;
-
-            img {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    .subscription {
-      padding: 1rem;
-      align-items: center;
-    }
-
-    .btns {
-      font-size: 0.6rem !important;
-    }
-
-    .txt-container {
-      text-align: center;
-      padding: 1rem;
-      padding-bottom: 4rem;
-    }
-  }
-
   .careers-page {
     .about-company {
       .head {
@@ -769,6 +719,66 @@
     }
   }
 }
+
+
+/* Start subscription Page  */
+@media(max-width: 575px) {
+  .subscription-page {
+    header {
+      .header-content {
+        .header-content-data {
+          .header-text {
+            text-align: center !important;
+            .payment-primaryTitle {
+              font-size: 35px !important;
+            }
+          }
+        }
+      }
+      .invoicing-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .invoice-header-image {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .header-text {
+          .invoice-content-text {
+            font-size: 14px !important;
+            text-align: center;
+          }
+
+          .header-image {
+            margin: auto !important;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .subscription {
+      padding: 1rem;
+      align-items: center;
+    }
+
+    .btns {
+      font-size: 0.6rem !important;
+    }
+
+    .txt-container {
+      text-align: center;
+      padding: 1rem;
+      padding-bottom: 4rem;
+    }
+  }
+}
+/* End subscription Page  */
 
 /* Start Installment Page  */
 @media (max-width: 575px) {
