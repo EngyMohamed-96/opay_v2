@@ -16,10 +16,6 @@
         &-data {
           position: relative;
 
-          @include breakpoint(smlaptop) {
-            top: -3rem;
-          }
-
           @include breakpoint(lgmobile) {
             top: 3rem !important;
             padding: 0 1rem;
@@ -59,7 +55,6 @@
 
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
-          max-width: 18rem;
         }
 
         @include breakpoint(mobile) {

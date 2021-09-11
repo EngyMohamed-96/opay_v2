@@ -634,40 +634,6 @@
     }
   }
 
-  .payouts-page {
-    .pay-header {
-      padding: 1rem;
-      margin-top: 5rem !important;
-
-      h3 {
-        font-size: 1.5rem;
-      }
-    }
-
-    .payouts-options {
-      padding: 0 1rem;
-    }
-
-    .make-money {
-      padding: 1rem;
-      text-align: center;
-
-      .image-composition .v {
-        bottom: -210px;
-      }
-
-      .image-composition .hr-1 {
-        top: 255px;
-        right: 120px;
-      }
-
-      .image-composition .hr-2 {
-        top: 330px;
-        right: 120px;
-      }
-    }
-  }
-
   .careers-page {
     .about-company {
       .head {
@@ -720,9 +686,241 @@
   }
 }
 
+/* Start payouts Page  */
+@media (max-width: 575px) {
+  .payouts-page {
+    header {
+      .header-content-data {
+        text-align: center;
+        .payment-primaryTitle {
+          font-size: 30px;
+        }
+      }
+    }
 
+    .option-section {
+      .payouts-options {
+        h2 {
+          font-size: 1.9rem;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      .options-content {
+        flex-direction: column;
+        .options {
+          .content {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .make-money {
+      .content {
+        margin-bottom: 30px;
+        text-align: center;
+        h2,
+        h4 {
+          font-size: 25px;
+        }
+        .make-moneybtns {
+          justify-content: center !important;
+        }
+      }
+      .image-composition {
+        justify-content: center;
+        img {
+          max-width: 70%;
+          &.hr-1 {
+            right: 120px;
+          }
+          &.hr-2 {
+            right: 110px;
+            top: 170px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .payouts-page {
+    header {
+      .header-content {
+        margin-top: 80px;
+      }
+      .header-content-data {
+        text-align: center;
+        .payment-primaryTitle {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .option-section {
+      .payouts-options {
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      .options-content {
+        flex-direction: column;
+        .options {
+          width: 100%;
+          .content {
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+              flex-grow: 1 !important;
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+    .make-money {
+      .content {
+        margin-bottom: 30px;
+        text-align: center;
+        h2,
+        h4 {
+          font-size: 25px;
+        }
+        .make-moneybtns {
+          justify-content: center !important;
+        }
+      }
+      .image-composition {
+        justify-content: center;
+        img {
+          max-width: 70%;
+          &.hr-1 {
+            right: 190px;
+          }
+          &.hr-2 {
+            right: 220px;
+            top: 210px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .payouts-page {
+    header {
+      height: 100vh;
+      .header-content {
+
+      }
+      .header-content-data {
+        text-align: center;
+        .payment-primaryTitle {
+          font-size: 30px;
+        }
+      }
+    }
+    .option-section {
+      .payouts-options {
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      .options-content {
+        flex-direction: column;
+        .options {
+          width: 100%;
+          .content {
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+              flex-grow: 1 !important;
+              flex-basis: 50%;
+            }
+          }
+        }
+      }
+    }
+    .make-money {
+      .content {
+        h2,
+        h4 {
+          font-size: 26px;
+        }
+      }
+      .image-composition {
+        img {
+          max-width: 80%;
+          &.hr-1 {
+            right: 90px;
+          }
+          &.hr-2 {
+            right: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .payouts-page {
+    header {
+      height: 100vh;
+      .header-content-data {
+        .payment-primaryTitle {
+          font-size: 30px;
+        }
+      }
+    }
+    .option-section {
+      .option-img,
+      .options {
+        flex-basis: 60% !important;
+      }
+    }
+    .make-money {
+      .image-composition {
+        img {
+          &.hr-1 {
+            right: 140px;
+          }
+          &.hr-2 {
+            right: 155px;
+            top: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(min-width: 1200px) and (max-width: 1399px) {
+  .payouts-page {
+    header {
+      height: 100vh;
+    }
+  }
+}
+@media(min-width: 1400px) {
+  .payouts-page {
+    header {
+      height: 100vh;
+      .header-content {
+        margin-top: 100px;
+      }
+    }
+  }
+}
+/* Start payouts Page  */
 /* Start subscription Page  */
-@media(max-width: 575px) {
+@media (max-width: 575px) {
   .subscription-page {
     header {
       .header-content {
@@ -731,6 +929,21 @@
             text-align: center !important;
             .payment-primaryTitle {
               font-size: 35px !important;
+            }
+            .links {
+              justify-content: center;
+            }
+          }
+          .header-image {
+            img {
+              &.standard {
+                left: 15px;
+                top: 85px;
+              }
+              &.customizied {
+                top: 100px;
+                right: 20px;
+              }
             }
           }
         }
@@ -765,16 +978,154 @@
     .subscription {
       padding: 1rem;
       align-items: center;
-    }
-
-    .btns {
-      font-size: 0.6rem !important;
+      h2 {
+        font-size: 21px;
+      }
+      h4 {
+        font-size: 23px;
+      }
+      .txt-container {
+        padding-top: 0;
+        .btns {
+          flex-direction: column;
+        }
+      }
     }
 
     .txt-container {
       text-align: center;
       padding: 1rem;
       padding-bottom: 4rem;
+    }
+    .ready {
+      .img-con {
+        max-width: 70%;
+        img {
+          &.plan {
+            right: -100px;
+            bottom: -60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .subscription-page {
+    header {
+      .header-content {
+        .header-content-data {
+          .header-text {
+            text-align: center !important;
+            .payment-primaryTitle {
+              font-size: 35px !important;
+            }
+            .links {
+              justify-content: center;
+            }
+          }
+          .header-image {
+            img {
+              &.standard {
+                left: 15px;
+                top: 150px;
+              }
+              &.customizied {
+                top: 170px;
+                right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .subscription {
+      padding: 1rem;
+      align-items: center;
+      h2 {
+        font-size: 21px;
+      }
+      h4 {
+        font-size: 23px;
+      }
+      .txt-container {
+        padding-top: 0;
+        .btns {
+          justify-content: center;
+        }
+      }
+    }
+    .ready {
+      .img-con {
+        max-width: 70%;
+        img {
+          &.plan {
+            right: -100px;
+            bottom: -60px;
+          }
+        }
+      }
+      .txt-container {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscription-page {
+    header {
+      .header-content-data {
+        .header-text {
+          .payment-primaryTitle {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .subscription {
+      .row {
+        align-items: center;
+      }
+      .txt-container {
+        .title,
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .ready {
+      .img-con {
+        img {
+          &.plan {
+            right: -150px;
+            bottom: 10px;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .subscription-page {
+    header {
+      .header-content {
+        .payment-primaryTitle {
+          font-size: 38px;
+        }
+      }
+      .header-image {
+        img {
+          &.standard {
+            left: 15px !important;
+            top: 130px !important;
+          }
+          &.customizied {
+            top: 150px !important;
+            right: 20px !important;
+          }
+        }
+      }
     }
   }
 }
@@ -935,7 +1286,7 @@
     }
   }
 }
-@media(min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .installements-page {
     .Third-section {
       .row {

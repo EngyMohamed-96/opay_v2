@@ -35,10 +35,6 @@
         &-data {
           position: relative;
 
-          @include breakpoint(smlaptop) {
-            top: -3rem;
-          }
-
           @include breakpoint(lgmobile) {
             top: 3rem !important;
             padding: 0 1rem;

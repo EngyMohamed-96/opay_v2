@@ -2,7 +2,16 @@
   p {
     color: #5a7184;
   }
-
+  .row {
+    align-items: center;
+  }
+  .main-title {
+    color: #179070;
+    font: 600 40px "Poppins", sans-serif;
+  }
+  .links {
+    margin-top: 50px;
+  }
   .header-content {
     h1 {
       font-size: 3rem;
@@ -11,45 +20,24 @@
   }
 
   header {
-    height: auto !important;
-    // min-height: 100vh;
-
     .bg {
       height: 100%;
     }
 
     .header-content {
-
       @include breakpoint(smlaptop) {
         display: flex;
         align-items: center;
-
+        height: 100%;
         &-data {
-
-          // display: flex;
-          // justify-content: center;
           position: relative;
-          // align-items: center;
 
-          @include breakpoint(smlaptop) {
-            top: -3rem;
-          }
-
-          @include breakpoint(lgmobile) {
-            top: 3rem !important;
-            padding: 0 1rem;
-          }
         }
-
-      }
-
-      @include breakpoint(lgmobile) {
-        height: auto;
       }
 
       .payment-primaryTitle {
         color: #5a7184;
-        font-weight: bold;
+        font: 600 50px "Poppins", sans-serif;
 
         span {
           color: #179070;
@@ -61,13 +49,8 @@
       }
 
       .header-image {
-        width: 100%;
-        max-width: 23rem;
-        margin: 0 auto;
-
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
-          max-width: 18rem;
         }
 
         img {
@@ -142,25 +125,93 @@
     }
   }
 
-  .card-image {
-    width: 100%;
-    height: 100%px;
-    object-fit: cover;
-  }
+  .option-section {
+    padding: 60px 0;
 
-  .options {
-    background-color: #fbfcfc;
-  }
+    .payouts-options {
+      h2 {
+        margin-top: 3rem;
+        font-size: 2.4rem;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #5a7184 !important;
+        span {
+          color: #179070;
+        }
+      }
 
-  .img {
-    width: 100%;
-    height: 100%px;
-    object-fit: cover;
+      p {
+        font: 500 21px "Poppins", sans-serif;
+        width: 750px;
+        margin: auto;
+        line-height: 40px;
+      }
+    }
+    .options-content {
+      display: flex;
+      align-items: center;
+      .option-img {
+        flex-basis: 40%;
+        .card-image {
+          width: 100%;
+        }
+      }
+      .options {
+        flex-basis: 60%;
+        text-align: center;
+        padding: 20px 35px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 11px 1px #0000004d;
+        background-color: #fbfcfc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          svg {
+            max-width: 80%;
+          }
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
   }
-
   .make-money {
     background-color: #fbfcfc;
     min-height: 40rem;
+    h2,
+    h4 {
+      font: 600 40px "Poppins", sans-serif;
+    }
+    p {
+      color: #2c3e50;
+      font: 500 21px "Poppins", sans-serif;
+    }
+    .image-composition {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      img {
+        max-width: 50%;
+        &.hr-1 {
+          position: absolute;
+          right: 170px;
+          top: 115px;
+        }
+        &.hr-2 {
+          position: absolute;
+          right: 220px;
+          top: 200px;
+        }
+      }
+    }
   }
 
   .text-green {
@@ -178,54 +229,9 @@
     font-size: 36px;
   }
 
-  .image-composition {
-    background-color: aqua;
-
-    img {
-      position: absolute;
-    }
-
-    .v {
-      bottom: -264px;
-      width: 17rem;
-      height: 14rem;
-      right: -56px;
-      border-radius: 10px;
-      object-position: center;
-    }
-
-    .hr-1 {
-      top: 315px;
-      right: 170px;
-      width: 22rem;
-      z-index: 2;
-    }
-
-    .hr-2 {
-      top: 384px;
-      right: 203px;
-      width: 14rem;
-      z-index: 2;
-    }
-  }
-
   .link {
     text-decoration: none;
     font-weight: bold;
-  }
-
-  .payouts-options {
-    h2 {
-      margin-top: 3rem;
-      font-size: 2.4rem;
-      text-transform: capitalize;
-      font-weight: 700;
-      color: #5a7184 !important;
-    }
-
-    p {
-      line-height: 2;
-    }
   }
 
   .Sign-up {
@@ -234,7 +240,7 @@
 
   .options {
     .d-flex-custom {
-      &>div {
+      & > div {
         width: 100%;
       }
     }
@@ -276,30 +282,5 @@
 
   .m0 {
     margin-top: 0 !important;
-  }
-
-  @media screen and (min-width: 1200px) {
-    .image-composition {
-      .v {
-        top: 0;
-        width: 20rem;
-        height: 30rem;
-        right: 0;
-      }
-
-      .hr-1 {
-        top: 135px;
-        right: 149px;
-        width: 22rem;
-        z-index: 2;
-      }
-
-      .hr-2 {
-        top: 262px;
-        right: 258px;
-        width: 14rem;
-        z-index: 2;
-      }
-    }
   }
 }

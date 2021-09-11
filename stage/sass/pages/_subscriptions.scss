@@ -75,7 +75,6 @@
 
         @include breakpoint(lgmobile) {
           margin: 4rem auto;
-          max-width: 18rem;
         }
 
         img {
@@ -182,7 +181,7 @@
     .img-con {
       padding-top: 3rem;
       img {
-
+        max-width: 100%;
         @include breakpoint(mobile) {
           width: 100% !important;
           margin: auto !important;

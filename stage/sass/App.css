@@ -209,7 +209,6 @@
 @media only screen and (max-width: 768px) {
   .subscription-page header .header-content .header-image {
     margin: 4rem auto;
-    max-width: 18rem;
   }
 }
 
@@ -337,6 +336,10 @@
 
 .subscription-page .subscription .img-con {
   padding-top: 3rem;
+}
+
+.subscription-page .subscription .img-con img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -1455,13 +1458,24 @@
   color: #5a7184;
 }
 
+.payouts-page .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payouts-page .main-title {
+  color: #179070;
+  font: 600 40px "Poppins", sans-serif;
+}
+
+.payouts-page .links {
+  margin-top: 50px;
+}
+
 .payouts-page .header-content h1 {
   font-size: 3rem;
   font-weight: 500;
-}
-
-.payouts-page header {
-  height: auto !important;
 }
 
 .payouts-page header .bg {
@@ -1476,34 +1490,16 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100%;
   }
   .payouts-page header .header-content-data {
     position: relative;
   }
 }
 
-@media only screen and (max-width: 1366px) and (max-width: 1366px) {
-  .payouts-page header .header-content-data {
-    top: -3rem;
-  }
-}
-
-@media only screen and (max-width: 1366px) and (max-width: 768px) {
-  .payouts-page header .header-content-data {
-    top: 3rem !important;
-    padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .payouts-page header .header-content {
-    height: auto;
-  }
-}
-
 .payouts-page header .header-content .payment-primaryTitle {
   color: #5a7184;
-  font-weight: bold;
+  font: 600 50px "Poppins", sans-serif;
 }
 
 .payouts-page header .header-content .payment-primaryTitle span {
@@ -1514,16 +1510,9 @@
   color: #5a7184;
 }
 
-.payouts-page header .header-content .header-image {
-  width: 100%;
-  max-width: 23rem;
-  margin: 0 auto;
-}
-
 @media only screen and (max-width: 768px) {
   .payouts-page header .header-content .header-image {
     margin: 4rem auto;
-    max-width: 18rem;
   }
 }
 
@@ -1620,27 +1609,138 @@
   }
 }
 
-.payouts-page .card-image {
-  width: 100%;
-  height: 100%px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.payouts-page .option-section {
+  padding: 60px 0;
 }
 
-.payouts-page .options {
+.payouts-page .option-section .payouts-options h2 {
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #5a7184 !important;
+}
+
+.payouts-page .option-section .payouts-options h2 span {
+  color: #179070;
+}
+
+.payouts-page .option-section .payouts-options p {
+  font: 500 21px "Poppins", sans-serif;
+  width: 750px;
+  margin: auto;
+  line-height: 40px;
+}
+
+.payouts-page .option-section .options-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payouts-page .option-section .options-content .option-img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.payouts-page .option-section .options-content .option-img .card-image {
+  width: 100%;
+}
+
+.payouts-page .option-section .options-content .options {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 11px 1px #0000004d;
+          box-shadow: 0px 0px 11px 1px #0000004d;
   background-color: #fbfcfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.payouts-page .img {
-  width: 100%;
-  height: 100%px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.payouts-page .option-section .options-content .options .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.payouts-page .option-section .options-content .options .content svg {
+  max-width: 80%;
+}
+
+.payouts-page .option-section .options-content .options .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .payouts-page .make-money {
   background-color: #fbfcfc;
   min-height: 40rem;
+}
+
+.payouts-page .make-money h2,
+.payouts-page .make-money h4 {
+  font: 600 40px "Poppins", sans-serif;
+}
+
+.payouts-page .make-money p {
+  color: #2c3e50;
+  font: 500 21px "Poppins", sans-serif;
+}
+
+.payouts-page .make-money .image-composition {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.payouts-page .make-money .image-composition img {
+  max-width: 50%;
+}
+
+.payouts-page .make-money .image-composition img.hr-1 {
+  position: absolute;
+  right: 170px;
+  top: 115px;
+}
+
+.payouts-page .make-money .image-composition img.hr-2 {
+  position: absolute;
+  right: 220px;
+  top: 200px;
 }
 
 .payouts-page .text-green {
@@ -1658,53 +1758,9 @@
   font-size: 36px;
 }
 
-.payouts-page .image-composition {
-  background-color: aqua;
-}
-
-.payouts-page .image-composition img {
-  position: absolute;
-}
-
-.payouts-page .image-composition .v {
-  bottom: -264px;
-  width: 17rem;
-  height: 14rem;
-  right: -56px;
-  border-radius: 10px;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.payouts-page .image-composition .hr-1 {
-  top: 315px;
-  right: 170px;
-  width: 22rem;
-  z-index: 2;
-}
-
-.payouts-page .image-composition .hr-2 {
-  top: 384px;
-  right: 203px;
-  width: 14rem;
-  z-index: 2;
-}
-
 .payouts-page .link {
   text-decoration: none;
   font-weight: bold;
-}
-
-.payouts-page .payouts-options h2 {
-  margin-top: 3rem;
-  font-size: 2.4rem;
-  text-transform: capitalize;
-  font-weight: 700;
-  color: #5a7184 !important;
-}
-
-.payouts-page .payouts-options p {
-  line-height: 2;
 }
 
 .payouts-page .Sign-up {
@@ -1761,27 +1817,6 @@
 
 .payouts-page .m0 {
   margin-top: 0 !important;
-}
-
-@media screen and (min-width: 1200px) {
-  .payouts-page .image-composition .v {
-    top: 0;
-    width: 20rem;
-    height: 30rem;
-    right: 0;
-  }
-  .payouts-page .image-composition .hr-1 {
-    top: 135px;
-    right: 149px;
-    width: 22rem;
-    z-index: 2;
-  }
-  .payouts-page .image-composition .hr-2 {
-    top: 262px;
-    right: 258px;
-    width: 14rem;
-    z-index: 2;
-  }
 }
 
 .about {
@@ -2303,12 +2338,6 @@
   }
 }
 
-@media only screen and (max-width: 1366px) and (max-width: 1366px) {
-  .online-payment .payments-header .header-content-data {
-    top: -3rem;
-  }
-}
-
 @media only screen and (max-width: 1366px) and (max-width: 768px) {
   .online-payment .payments-header .header-content-data {
     top: 3rem !important;
@@ -2358,7 +2387,6 @@
 @media only screen and (max-width: 768px) {
   .online-payment .payments-header .header-content .header-image {
     margin: 4rem auto;
-    max-width: 18rem;
   }
 }
 
@@ -2625,12 +2653,6 @@
   }
   .sharelink-page header .header-content-data {
     position: relative;
-  }
-}
-
-@media only screen and (max-width: 1366px) and (max-width: 1366px) {
-  .sharelink-page header .header-content-data {
-    top: -3rem;
   }
 }
 
@@ -2933,12 +2955,6 @@
   }
   .invoice-page header .header-content-data {
     position: relative;
-  }
-}
-
-@media only screen and (max-width: 1366px) and (max-width: 1366px) {
-  .invoice-page header .header-content-data {
-    top: -3rem;
   }
 }
 
@@ -3290,7 +3306,6 @@ html {
 
 header {
   width: 100vw;
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -3624,10 +3639,6 @@ header .navbar a:hover {
 
 header .navbar a #login {
   padding: 0;
-}
-
-header .header-content {
-  margin-top: 8rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -5235,31 +5246,6 @@ html {
   .pricing-page .currency .cards .card2-data {
     text-align: center;
   }
-  .payouts-page .pay-header {
-    padding: 1rem;
-    margin-top: 5rem !important;
-  }
-  .payouts-page .pay-header h3 {
-    font-size: 1.5rem;
-  }
-  .payouts-page .payouts-options {
-    padding: 0 1rem;
-  }
-  .payouts-page .make-money {
-    padding: 1rem;
-    text-align: center;
-  }
-  .payouts-page .make-money .image-composition .v {
-    bottom: -210px;
-  }
-  .payouts-page .make-money .image-composition .hr-1 {
-    top: 255px;
-    right: 120px;
-  }
-  .payouts-page .make-money .image-composition .hr-2 {
-    top: 330px;
-    right: 120px;
-  }
   .careers-page .about-company .head h2 {
     font-size: 25px;
   }
@@ -5292,6 +5278,223 @@ html {
   }
 }
 
+/* Start payouts Page  */
+@media (max-width: 575px) {
+  .payouts-page header .header-content-data {
+    text-align: center;
+  }
+  .payouts-page header .header-content-data .payment-primaryTitle {
+    font-size: 30px;
+  }
+  .payouts-page .option-section .payouts-options h2 {
+    font-size: 1.9rem;
+  }
+  .payouts-page .option-section .payouts-options p {
+    width: 100%;
+  }
+  .payouts-page .option-section .options-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .payouts-page .option-section .options-content .options .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payouts-page .make-money .content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .payouts-page .make-money .content h2,
+  .payouts-page .make-money .content h4 {
+    font-size: 25px;
+  }
+  .payouts-page .make-money .content .make-moneybtns {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .payouts-page .make-money .image-composition {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payouts-page .make-money .image-composition img {
+    max-width: 70%;
+  }
+  .payouts-page .make-money .image-composition img.hr-1 {
+    right: 120px;
+  }
+  .payouts-page .make-money .image-composition img.hr-2 {
+    right: 110px;
+    top: 170px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .payouts-page header .header-content {
+    margin-top: 80px;
+  }
+  .payouts-page header .header-content-data {
+    text-align: center;
+  }
+  .payouts-page header .header-content-data .payment-primaryTitle {
+    font-size: 30px;
+  }
+  .payouts-page .option-section .payouts-options h2 {
+    font-size: 3rem;
+  }
+  .payouts-page .option-section .payouts-options p {
+    width: 100%;
+  }
+  .payouts-page .option-section .options-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .payouts-page .option-section .options-content .options {
+    width: 100%;
+  }
+  .payouts-page .option-section .options-content .options .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payouts-page .option-section .options-content .options .content div {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .payouts-page .make-money .content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .payouts-page .make-money .content h2,
+  .payouts-page .make-money .content h4 {
+    font-size: 25px;
+  }
+  .payouts-page .make-money .content .make-moneybtns {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .payouts-page .make-money .image-composition {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payouts-page .make-money .image-composition img {
+    max-width: 70%;
+  }
+  .payouts-page .make-money .image-composition img.hr-1 {
+    right: 190px;
+  }
+  .payouts-page .make-money .image-composition img.hr-2 {
+    right: 220px;
+    top: 210px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .payouts-page header {
+    height: 100vh;
+  }
+  .payouts-page header .header-content-data {
+    text-align: center;
+  }
+  .payouts-page header .header-content-data .payment-primaryTitle {
+    font-size: 30px;
+  }
+  .payouts-page .option-section .payouts-options h2 {
+    font-size: 3rem;
+  }
+  .payouts-page .option-section .payouts-options p {
+    width: 100%;
+  }
+  .payouts-page .option-section .options-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .payouts-page .option-section .options-content .options {
+    width: 100%;
+  }
+  .payouts-page .option-section .options-content .options .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .payouts-page .option-section .options-content .options .content div {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .payouts-page .make-money .content h2,
+  .payouts-page .make-money .content h4 {
+    font-size: 26px;
+  }
+  .payouts-page .make-money .image-composition img {
+    max-width: 80%;
+  }
+  .payouts-page .make-money .image-composition img.hr-1 {
+    right: 90px;
+  }
+  .payouts-page .make-money .image-composition img.hr-2 {
+    right: 110px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .payouts-page header {
+    height: 100vh;
+  }
+  .payouts-page header .header-content-data .payment-primaryTitle {
+    font-size: 30px;
+  }
+  .payouts-page .option-section .option-img,
+  .payouts-page .option-section .options {
+    -ms-flex-preferred-size: 60% !important;
+        flex-basis: 60% !important;
+  }
+  .payouts-page .make-money .image-composition img.hr-1 {
+    right: 140px;
+  }
+  .payouts-page .make-money .image-composition img.hr-2 {
+    right: 155px;
+    top: 160px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .payouts-page header {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .payouts-page header {
+    height: 100vh;
+  }
+  .payouts-page header .header-content {
+    margin-top: 100px;
+  }
+}
+
+/* Start payouts Page  */
 /* Start subscription Page  */
 @media (max-width: 575px) {
   .subscription-page header .header-content .header-content-data .header-text {
@@ -5299,6 +5502,19 @@ html {
   }
   .subscription-page header .header-content .header-content-data .header-text .payment-primaryTitle {
     font-size: 35px !important;
+  }
+  .subscription-page header .header-content .header-content-data .header-text .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subscription-page header .header-content .header-content-data .header-image img.standard {
+    left: 15px;
+    top: 85px;
+  }
+  .subscription-page header .header-content .header-content-data .header-image img.customizied {
+    top: 100px;
+    right: 20px;
   }
   .subscription-page header .invoicing-header {
     -webkit-box-orient: vertical;
@@ -5332,13 +5548,118 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  .subscription-page .btns {
-    font-size: 0.6rem !important;
+  .subscription-page .subscription h2 {
+    font-size: 21px;
+  }
+  .subscription-page .subscription h4 {
+    font-size: 23px;
+  }
+  .subscription-page .subscription .txt-container {
+    padding-top: 0;
+  }
+  .subscription-page .subscription .txt-container .btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .subscription-page .txt-container {
     text-align: center;
     padding: 1rem;
     padding-bottom: 4rem;
+  }
+  .subscription-page .ready .img-con {
+    max-width: 70%;
+  }
+  .subscription-page .ready .img-con img.plan {
+    right: -100px;
+    bottom: -60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .subscription-page header .header-content .header-content-data .header-text {
+    text-align: center !important;
+  }
+  .subscription-page header .header-content .header-content-data .header-text .payment-primaryTitle {
+    font-size: 35px !important;
+  }
+  .subscription-page header .header-content .header-content-data .header-text .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subscription-page header .header-content .header-content-data .header-image img.standard {
+    left: 15px;
+    top: 150px;
+  }
+  .subscription-page header .header-content .header-content-data .header-image img.customizied {
+    top: 170px;
+    right: 20px;
+  }
+  .subscription-page .subscription {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscription-page .subscription h2 {
+    font-size: 21px;
+  }
+  .subscription-page .subscription h4 {
+    font-size: 23px;
+  }
+  .subscription-page .subscription .txt-container {
+    padding-top: 0;
+  }
+  .subscription-page .subscription .txt-container .btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subscription-page .ready .img-con {
+    max-width: 70%;
+  }
+  .subscription-page .ready .img-con img.plan {
+    right: -100px;
+    bottom: -60px;
+  }
+  .subscription-page .ready .txt-container {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscription-page header .header-content-data .header-text .payment-primaryTitle {
+    font-size: 30px;
+  }
+  .subscription-page .subscription .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscription-page .subscription .txt-container .title,
+  .subscription-page .subscription .txt-container p {
+    font-size: 15px;
+  }
+  .subscription-page .ready .img-con img.plan {
+    right: -150px;
+    bottom: 10px;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .subscription-page header .header-content .payment-primaryTitle {
+    font-size: 38px;
+  }
+  .subscription-page header .header-image img.standard {
+    left: 15px !important;
+    top: 130px !important;
+  }
+  .subscription-page header .header-image img.customizied {
+    top: 150px !important;
+    right: 20px !important;
   }
 }
 
