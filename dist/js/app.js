@@ -46,27 +46,28 @@ $(document).ready(function () {
 
 var
 	pathes = document.querySelectorAll(".contact-content .pathes"),
-	countries = document.querySelectorAll(".contact-content .countries"),
+	countries = document.querySelectorAll(".contact-content .country"),
 	countriesArray = Array.from(countries);
 
-pathes.forEach((path) => {
-	path.addEventListener("mouseenter", function (e) {
-		pathes.forEach((ele) => {
-			ele.classList.remove("active");
+
+	countriesArray.forEach((country) => {
+		country.addEventListener("mouseenter", function (e) {
+			countriesArray.forEach((ele) => {
+				ele.classList.remove("active");
+			});
+	
+			e.currentTarget.classList.add("active");
+	
+			document
+				.querySelector("." + e.currentTarget.dataset.country)
+				.classList.add("active");
 		});
-
-		e.currentTarget.classList.add("active");
-
-		document
-			.querySelector("." + e.currentTarget.dataset.country)
-			.classList.add("active");
+	
+		//   Remove active from Pathes on mouseleave
+		country.addEventListener("mouseleave", function (e) {
+			this.classList.remove("active");
+			document
+				.querySelector("." + e.currentTarget.dataset.country)
+				.classList.remove("active");
+		});
 	});
-
-	//   Remove active from Pathes on mouseleave
-	path.addEventListener("mouseleave", function (e) {
-		this.classList.remove("active");
-		document
-			.querySelector("." + e.currentTarget.dataset.country)
-			.classList.remove("active");
-	});
-});

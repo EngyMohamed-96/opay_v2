@@ -1,146 +1,170 @@
-.about {
-  p {
-    color: #5a7184;
-    font-size: 1rem;
+.about-page {
+  header {
+    .row {
+      align-items: center;
+    }
+    .header-content {
+      position: relative;
+      padding: 60px 0;
+      .opay-left {
+        width: 450px;
+        height: 560px;
+        top: 36px;
+        left: 0;
+      }
+    }
+  }
+  .about {
+    .about__title {
+      font: 700 30px 'Poppins', sans-serif;
+      color: #179070;
+    }
+    p {
+      color: #5a7184;
+      font: 400 25px 'Poppins', sans-serif;
+    }
+
+    .about__header {
+      text-align: center;
+    }
+
+    display: flex;
+    justify-content: center;
   }
 
-  .about__header {
-    text-align: center;
-  }
-
-  display: flex;
-  justify-content: center;
-}
-
-.image {
-  position: relative;
-  width: 90%;
-  height: 100%;
-
-  border: 1px solid #71aa9a57;
-  border-radius: 1rem;
-
-  img {
-    width: 100%;
-    height: 100%;
-    transform: translate(-20px, 20px);
-    object-fit: cover;
+  .image {
+    position: relative;
+    border: 1px solid #71aa9a57;
     border-radius: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      transform: translate(-20px, 20px);
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    img.tright {
+      transform: translate(20px, 20px);
+    }
   }
 
-  img.tright {
-    transform: translate(20px, 20px);
-  }
-}
-
-.p-lg-10 {
-  padding: 10rem;
-}
-
-.story {
-  width: 80%;
-  height: 50vh;
-  align-items: center;
-}
-
-.about__title {
-  color: #179070;
-  font-weight: bold;
-  font-size: 3.125rem;
-}
-
-.about__discription {
-  color: #c4c4c4 !important;
-  font-size: 1.5rem;
-}
-
-.story__title {
-  color: #2c3e50;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.story-desc {
-  line-height: 2;
-  margin-bottom: 3rem;
-}
-
-.value__title {
-  font-weight: bold;
-  color: #5a7184;
-  font-size: 2.7rem;
-}
-
-.gray-light {
-  color: #c4c4c4;
-}
-
-.key {
-  margin-bottom: 3rem;
-}
-
-.col-center {
-  align-items: center;
-}
-
-.title {
-  color: #5a7184;
-  font-size: 2.7rem;
-  font-weight: bold;
-}
-
-.discription {
-  font-size: 1.3rem;
-}
-
-.key-value {
-  font-size: 2rem;
-  color: #5a7184;
-  font-weight: bold;
-}
-
-.about-key-value {
-  color: #5a7184;
-  padding-top: 3rem;
-}
-
-.logos {
-  align-items: center;
-
-  .logo {
-    margin-right: 2.5rem;
+  .p-lg-10 {
+    padding: 10rem;
   }
 
-  .mx-6 {
-    margin: 0 4rem;
+  .story {
+    width: 80%;
+    height: 50vh;
+    align-items: center;
   }
-}
 
-.container {
-  .w-90 {
+  .story__title {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 3rem;
+    
+  }
+
+  .story-desc {
+    line-height: 2;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  .value__title {
+    font-weight: bold;
+    color: #5a7184;
+    font-size: 2.7rem;
+  }
+
+  .gray-light {
+    color: #c4c4c4;
+  }
+
+  .key {
+    margin-bottom: 3rem;
+  }
+
+  .col-center {
+    align-items: center;
+  }
+
+  .title {
+    color: #5a7184;
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+
+  .discription {
+    font-size: 1.6rem;
     width: 90%;
+    margin: auto;
+  }
+
+  .key-value {
+    font-size: 2rem;
+    color: #5a7184;
+    font-weight: bold;
+  }
+
+  .about-key-value {
+    color: #5a7184;
+    padding: 50px 0;
+    .row {
+      align-items: center;
+      justify-content: space-between;
+    }
+    .head {
+      text-align: center;
+      margin-bottom: 50px;
+      .key__description {
+        font: 400 15px 'Poppins', sans-serif;
+      }
+    }
+    .key {
+      p {
+        font: 500 16px 'Poppins', sans-serif;
+        width: 100%;
+        span {
+          font: 600 15px 'Poppins', sans-serif;
+        }
+      }
+    }
+    p {
+      font: 500 16px 'Poppins', sans-serif;
+    }
+  }
+
+  .sponsers {
+    margin-top: 40px;
+    padding: 60px 0;
+    img {
+      max-width: 10%;
+    }
+    .top-imgs,
+    .bottom-imgs {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+     
+    }
+  }
+  .container {
+    .w-90 {
+      width: 90%;
+    }
+  }
+
+  .about .bg {
+    background-image: url("../../imgs/about/Path\ 21255.png");
+  }
+
+  .logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin: 1rem;
   }
 }
-
-.about .bg {
-  background-image: url("../../imgs/about/Path\ 21255.png");
-}
-
-.opay-left {
-  top: 0;
-  object-fit: cover;
-  object-position: bottom;
-  width: 40vw;
-  height: 100vh;
-  bottom: 0;
-  left: 0;
-}
-
-.logo img {
- 
-   width: 80%;
-   height: 80%;
-  object-fit: cover;
-  margin: 1rem;
-}
-

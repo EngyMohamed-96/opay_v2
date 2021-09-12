@@ -51,8 +51,6 @@
 
     /* Start contact-content Section */
     .contact-content {
-      padding-top: 150px;
-
       .title {
         text-align: center;
 
@@ -274,18 +272,17 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .careers-page {
-    .features {
-      padding-top: 800px;
-    }
+  .careers-page .about-company .head h2 {
+    font-size: 25px;
+  }
+  .careers-page header .header-content .content img {
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .careers-page {
     .features {
-      margin-top: 300px;
-
       .feature {
         .title {
           font-size: 19px;
@@ -299,7 +296,7 @@
   .our-team {
     .head {
       h2 {
-        font-size: 30px;
+        font-size: 30px !important;
       }
     }
 
@@ -390,6 +387,37 @@
       padding: 0 !important;
     }
   }
+  .careers-page {
+    .about-company {
+      .head {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .features {
+      h2 {
+        font-size: 33px !important;
+        padding-top: 3rem;
+      }
+
+      .feature {
+        .title,
+        p {
+          text-align: center;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* Start Home-page */
+@media (max-width: 575px) {
   .homepage {
     .txt-container {
       h2 {
@@ -400,10 +428,15 @@
         font-size: 0.9rem !important;
       }
     }
-
+    .swiper-slide {
+      img {
+        display: none;
+      }
+    }
     .header-content {
       .swiper-slide {
-        height: 90vh;
+        height: 100vh;
+   
       }
 
       .my-order1 {
@@ -423,10 +456,12 @@
         flex-direction: column !important;
         margin-top: 2rem;
         padding: 1rem !important;
-
+        p {
+          text-align: center;
+        }
         h1 {
-          font-size: 18px !important;
-          line-height: 2rem !important;
+          font-size: 22px !important;
+          line-height: 3rem !important;
           text-align: center !important;
         }
 
@@ -468,53 +503,13 @@
 
     header {
       .headerSlide {
-        margin-top: -15rem !important;
+        margin-top: -10rem !important;
       }
     }
 
     .slogan {
       font-size: 3.375rem;
       top: 365px;
-    }
-
-    .second_section {
-      padding: 1rem !important;
-      height: auto !important;
-      position: relative;
-
-      .my-order1 {
-        order: 1;
-      }
-
-      .my-order2 {
-        order: 2;
-      }
-
-      .img-con {
-        width: 100%;
-        opacity: 0.9;
-
-        margin: auto !important;
-
-        img {
-          width: 100% !important;
-        }
-      }
-    }
-
-    .Third-section {
-      padding: 1rem !important;
-
-      .txt-container {
-        margin-top: 1rem !important;
-
-        margin: auto !important;
-      }
-
-      .img-con {
-        margin-top: 2rem;
-        padding-bottom: 2rem;
-      }
     }
 
     .fourth-section {
@@ -526,8 +521,12 @@
       }
 
       .txt-container {
-        // margin-top: -64%;
+        text-align: center;
         margin-top: 0 !important;
+        .title {
+          text-align: center !important;
+          margin: auto;
+        }
       }
 
       .img-con {
@@ -538,6 +537,19 @@
     .fifth-section {
       .txt-container {
         margin: 2rem 1rem;
+        text-align: center !important;
+
+        .title {
+          font-size: 30px;
+          margin-left: auto !important;
+        }
+        h2 {
+          margin-left: auto !important;
+        }
+      }
+      .txt-con-two {
+        justify-content: center;
+        margin-left: auto;
       }
     }
 
@@ -557,47 +569,387 @@
       }
     }
   }
+  .section-clients {
+    padding: 1rem;
+    justify-content: space-between !important;
+    .primary-title {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    .section-clients-content {
+      flex-wrap: wrap;
+      .client-logo {
+        flex-basis: 45%;
 
-  .contact-page .contact-content {
-    padding-top: 360px !important;
+        &.makeItSmall {
+          width: 3rem !important;
+        }
+
+        svg {
+          width: 90%;
+          height: 90%;
+        }
+
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
   }
+  .second_section {
+    padding: 1rem !important;
+    height: auto !important;
+    position: relative;
+    .txt-container {
+      text-align: center;
+    }
+    .my-order1 {
+      order: 1;
+    }
 
+    .my-order2 {
+      order: 2;
+    }
+
+    .img-con {
+      width: 100%;
+      opacity: 0.9;
+
+      margin: auto !important;
+
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+  .Third-section {
+    padding: 1rem !important;
+
+    .txt-container {
+      margin-top: 1rem !important;
+      text-align: center;
+      margin: auto !important;
+    }
+
+    .img-con {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+@media(min-width: 576px) and (max-width: 767px) {
+  .homepage {
+    header {
+      .swiper-slide {
+        img {
+          display: none;
+        }
+      }
+      .slogan {
+        bottom: 0;
+      }
+    }
+  }
+  .section-clients {
+    .section-clients-content {
+      flex-wrap: wrap;
+      .client-logo {
+        flex-basis: 35%;
+        img {
+          max-width: 70%;
+        }
+        svg {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .second_section {
+    .txt-container {
+      text-align: center;
+      .txt-con-two {
+        justify-content: center;
+      }
+    }
+    .img-con {
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+  .Third-section {
+    .txt-container {
+      text-align: center;
+      .txt-con-two {
+        justify-content: center;
+      }
+    }
+  }
+  .fourth-section {
+    .txt-container {
+      text-align: center !important;
+      .title {
+        margin: auto;
+      }
+      .txt-con-two {
+        margin: auto;
+      }
+    }
+  }
+  .fifth-section {
+    .txt-container {
+      text-align: center !important;
+      .title {
+        margin: auto;
+      }
+      .txt-con-two {
+        margin: auto;
+      }
+    }
+  }
+  .six-section {
+    .con-data {
+      h2 {
+        padding-top: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+  .homepage {
+    header {
+      .swiper-slide {
+        &.dashboard-slider {
+          .header-wrapper {
+            h1 {
+              font-size: 1.5rem;
+            }
+            p {
+              font-size: 16px;
+            }
+
+          }
+        }
+        &.global-slider {
+          .header-wrapper {
+            &.S-change {
+              margin-top: 0 !important;
+              h1 {
+                font-size: 1.8rem;
+              }
+               p {
+                 font-size: 15px;
+               }
+            }
+          }
+        }
+        &.invoice-slider {
+          .header-wrapper {
+            h1 {
+              font-size: 1.8rem;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .second_section {
+      .row {
+        align-items: center;
+      }
+      .txt-container {
+        .title {
+          font-size: 33px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .img-con {
+        margin: 0 !important;
+      }
+    }
+    .Third-section {
+      .row {
+        align-items: center;
+      }
+      .img-con {
+        margin-top: 0;
+      }
+      .txt-container {
+        h2 {
+          font-size: 1.6rem;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+    .fourth-section {
+      .img-con {
+        width: 100%;
+      }
+      .txt-container {
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .fifth-section {
+      .row {
+        align-items: center;
+      }
+      .img-con {
+        width: 100%;
+      }
+      .txt-container {
+        .title {
+          font-size: 31px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+  .homepage {
+    header {
+      .swiper-slide {
+        &.global-slider {
+          .row {
+            align-items: center;
+          }
+          .S-change {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .second_section,
+    .Third-section {
+      .row {
+        align-items: center;
+      }
+    }
+    .fourth-section .img-con,
+    .fifth-section .img-con {
+      width: 100%;
+    }
+  }
+}
+/* End Home-page */
+
+/* Start about-page */
+@media (max-width: 767px) {
+  .about-page {
+    header {
+      .image {
+        display: none;
+      }
+      .story-desc {
+        text-align: center;
+      }
+    }
+    .about .about__header {
+      text-align: center;
+      padding: 1rem;
+    }
+    .about-key-value {
+      .image {
+        margin-bottom: 50px;
+      }
+      .key {
+        text-align: center;
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    .partners {
+      h2 {
+        padding-top: 3.5rem !important;
+      }
+    }
+
+    .mb-5 {
+      margin-bottom: 0rem !important;
+    }
+
+    .mt-5 {
+      margin-top: -1rem !important;
+    }
+    .title {
+      font-size: 2.2rem;
+    }
+    .sponsers {
+      .top-imgs {
+        margin-bottom: 30px;
+        img {
+          max-width: 20%;
+        }
+      }
+      .bottom-imgs {
+        flex-wrap: wrap;
+        img {
+          max-width: 26%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-page {
+    .about-key-value {
+      .key {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-page {
+    .about-key-value {
+      p {
+        width: 100% !important;
+      }
+    }
+    .discription {
+      font-size: 1.4rem;
+    }
+  }
+}
+/* End about-page */
+
+/* Start Pricing Page */
+@media (max-width: 991px) {
   .pricing-page {
     padding-top: -1rem !important;
-
-    .start-price {
-      top: 0;
-      margin: 0;
-      padding: 1rem;
-
-      .Sign-up {
-        font-size: 0.6rem !important;
-        margin: 0 auto;
-      }
-
-      .start-now-content .right-column .start-now-features {
-        width: 100%;
-        margin: auto;
-      }
-
-      .start-now-content .images-container img {
-        width: 100%;
-        margin: auto;
-      }
-
-      h1 {
-        font-size: 15px;
-      }
-
-      .start-now-content {
-        flex-direction: column;
+    .flags {
+      .flags-data {
+        flex-wrap: wrap;
+        .flags-content {
+          margin-bottom: 20px;
+        }
       }
     }
-
-    .flags .flags-data {
-      flex-direction: column;
-    }
-
     .pricing-data {
       h1 {
         font-size: 1rem;
@@ -615,15 +967,27 @@
       .cards {
         padding: 1rem !important;
         flex-direction: column;
-
         font-size: 1rem;
 
+        .card1 {
+          .card1-data {
+            .standard-btn {
+              top: 80% !important;
+            }
+          }
+        }
+        .card2 {
+          .card2-data {
+            .customized-btn {
+              top: 104% !important;
+            }
+          }
+        }
         .card1,
         .card2 {
           padding: 1rem;
           width: auto;
           height: auto;
-          margin: auto !important;
         }
 
         .card1-data,
@@ -632,60 +996,45 @@
         }
       }
     }
-  }
 
-  .careers-page {
-    .about-company {
-      .head {
-        h2 {
-          font-size: 25px;
-        }
-      }
-    }
-
-    .features {
-      padding-top: 700px;
-
-      h2 {
-        font-size: 33px !important;
-        padding-top: 3rem;
-      }
-
-      .feature {
-        .title,
-        p {
-          text-align: center;
-        }
-
-        .title {
-          font-size: 20px;
-        }
-      }
-    }
-  }
-
-  .about-page {
-    .about .about__header {
-      text-align: center;
+    .start-price {
+      top: 0;
+      margin: 0;
       padding: 1rem;
-    }
 
-    .partners {
-      h2 {
-        padding-top: 3.5rem !important;
+      .start-now-content .right-column .start-now-features {
+        width: 100%;
+        margin: auto;
       }
-    }
+      .start-now-content .images-container {
+        margin-bottom: 20px;
+      }
+      .start-now-content .images-container img {
+        width: 100%;
+        margin: auto;
+      }
 
-    .mb-5 {
-      margin-bottom: 0rem !important;
-    }
+      h1 {
+        font-size: 15px;
+        width: 100%;
+      }
 
-    .mt-5 {
-      margin-top: -1rem !important;
+      .start-now-content {
+        flex-direction: column;
+      }
     }
   }
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-page {
+    .flags {
+      .flags-data {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+/* End Pricing Page */
 /* Start payouts Page  */
 @media (max-width: 575px) {
   .payouts-page {
@@ -815,9 +1164,6 @@
   .payouts-page {
     header {
       height: 100vh;
-      .header-content {
-
-      }
       .header-content-data {
         text-align: center;
         .payment-primaryTitle {
@@ -901,14 +1247,14 @@
     }
   }
 }
-@media(min-width: 1200px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .payouts-page {
     header {
       height: 100vh;
     }
   }
 }
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
   .payouts-page {
     header {
       height: 100vh;
@@ -918,7 +1264,7 @@
     }
   }
 }
-/* Start payouts Page  */
+/* End payouts Page  */
 /* Start subscription Page  */
 @media (max-width: 575px) {
   .subscription-page {
@@ -1184,33 +1530,6 @@
       }
     }
 
-    .section-clients {
-      padding: 1rem;
-      justify-content: space-between !important;
-      .primary-title {
-        h3 {
-          font-size: 2rem;
-        }
-      }
-
-      .client-logo {
-        width: 6rem !important;
-
-        &.makeItSmall {
-          width: 3rem !important;
-        }
-
-        svg {
-          width: 90%;
-          height: 90%;
-        }
-
-        img {
-          width: 80%;
-          height: 80%;
-        }
-      }
-    }
     .Third-section {
       padding: 1rem;
 
@@ -1637,6 +1956,18 @@
       .copyright {
         p {
           text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  footer {
+    .bottom-footer {
+      .selection {
+        .country,
+        .lang {
+          margin-left: 0;
         }
       }
     }
