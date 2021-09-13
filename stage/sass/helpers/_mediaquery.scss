@@ -437,7 +437,6 @@
     .header-content {
       .swiper-slide {
         height: 100vh;
-   
       }
 
       .my-order1 {
@@ -570,32 +569,39 @@
         margin: 0 auto !important;
       }
     }
-  }
-  .section-clients {
-    padding: 1rem;
-    justify-content: space-between !important;
-    .primary-title {
-      h3 {
-        font-size: 2rem;
+    .section-clients {
+      padding: 1rem;
+      justify-content: space-between !important;
+      .primary-title {
+        h3 {
+          font-size: 2rem;
+        }
       }
-    }
-    .section-clients-content {
-      flex-wrap: wrap;
-      .client-logo {
-        flex-basis: 45%;
-
-        &.makeItSmall {
-          width: 3rem !important;
-        }
-
-        svg {
-          width: 90%;
-          height: 90%;
-        }
-
-        img {
-          width: 80%;
-          height: 80%;
+      .section-clients-content {
+        flex-wrap: wrap;
+        .client-logo {
+          flex-basis: 45%;
+          svg {
+            width: 90%;
+            height: 90%;
+          }
+  
+          img {
+            width: 80%;
+            height: 80%;
+          }
+          &.meituan-logo {
+            display: flex;
+            justify-content: center;
+            svg {
+              width: 60%;
+            }
+          }
+          &.makeItSmall {
+            width: 3rem !important;
+          }
+  
+        
         }
       }
     }
@@ -638,6 +644,36 @@
     .img-con {
       margin-top: 2rem;
       padding-bottom: 2rem;
+    }
+  }
+}
+@media(min-width: 576px) and (max-width: 767px) {
+  .homepage {
+    .section-clients {
+      .section-clients-content {
+        .client-logo {
+          &.meituan-logo {
+            display: flex;
+            justify-content: center;
+            svg {
+              width: 50%;
+            }
+          }
+          &.kwai-logo {
+            display: flex;
+            justify-content: flex-start;
+            img {
+              max-width: 60%;
+            }
+          }
+          &.travco-logo,
+          &.world-logo {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+        }
+      }
     }
   }
 }
@@ -1638,6 +1674,35 @@
         width: 100% !important;
       }
     }
+    .section-clients {
+      .section-clients-content {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .client-logo {
+          flex-basis: 35%;
+          &.valu-logo,
+          &.msr-logo {
+            display: flex !important;
+            justify-content: end !important;
+          }
+          &.premuim-logo {
+            display: flex;
+            justify-content: center;
+          }
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+          img {
+            &.premuim-logo,
+            &.valu-logo {
+              width: 50% !important;
+            }
+          
+          }
+        }
+      }
+    }
 
     .Third-section {
       padding: 1rem;
@@ -1687,6 +1752,35 @@
         text-align: center;
         .btns {
           justify-content: center;
+        }
+      }
+    }
+    .section-clients {
+      .section-clients-content {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .client-logo {
+          flex-basis: 35%;
+          &.valu-logo,
+          &.msr-logo {
+            display: flex !important;
+            justify-content: end !important;
+          }
+          &.premuim-logo {
+            display: flex;
+            justify-content: center;
+          }
+          &:not(:last-child) {
+            margin-bottom: 50px;
+          }
+          &.premuim-logo,
+          &.valu-logo {
+            img {
+              width: 50% !important;
+
+            }
+          }
         }
       }
     }
@@ -1823,8 +1917,8 @@
           padding-top: -3rem;
 
           .image1 {
-            max-width: 120%;
-            left: -4rem;
+            max-width: 100%;
+            left: 0;
             position: relative;
           }
 
@@ -1871,9 +1965,9 @@
       justify-content: center;
     }
 
-    .start-now .start-now-content .images-container {
-      padding: 4rem !important;
-    }
+    // .start-now .start-now-content .images-container {
+    //   padding: 4rem !important;
+    // }
 
     .start-now h1 {
       font-size: 20px;

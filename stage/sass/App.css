@@ -2950,7 +2950,7 @@
 }
 
 .sharelink-page .business-features-section {
-  background-color: #71AA9A;
+  background-color: #71aa9ab3;
   text-align: center;
   padding: 55px;
 }
@@ -2974,7 +2974,7 @@
 }
 
 .sharelink-page .business-features-section h3 span {
-  color: #1DCF9F;
+  color: #179070;
   text-transform: uppercase;
 }
 
@@ -3820,8 +3820,6 @@ header .img-container img {
 @media only screen and (max-width: 1366px) {
   header .img-container img {
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 }
 
@@ -4025,7 +4023,7 @@ header .header-wrapper p {
 }
 
 .second_section {
-  background-color: #71aa9a;
+  background-color: #71aa9ab3;
   width: 100vw;
   padding: 3rem 0;
   position: relative;
@@ -5320,33 +5318,44 @@ html {
   .homepage .six-section .img-container {
     margin: 0 auto !important;
   }
-  .section-clients {
+  .homepage .section-clients {
     padding: 1rem;
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
-  .section-clients .primary-title h3 {
+  .homepage .section-clients .primary-title h3 {
     font-size: 2rem;
   }
-  .section-clients .section-clients-content {
+  .homepage .section-clients .section-clients-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .section-clients .section-clients-content .client-logo {
+  .homepage .section-clients .section-clients-content .client-logo {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
-  .section-clients .section-clients-content .client-logo.makeItSmall {
-    width: 3rem !important;
-  }
-  .section-clients .section-clients-content .client-logo svg {
+  .homepage .section-clients .section-clients-content .client-logo svg {
     width: 90%;
     height: 90%;
   }
-  .section-clients .section-clients-content .client-logo img {
+  .homepage .section-clients .section-clients-content .client-logo img {
     width: 80%;
     height: 80%;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.meituan-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.meituan-logo svg {
+    width: 60%;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.makeItSmall {
+    width: 3rem !important;
   }
   .second_section {
     padding: 1rem !important;
@@ -5385,6 +5394,39 @@ html {
   .Third-section .img-con {
     margin-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .homepage .section-clients .section-clients-content .client-logo.meituan-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.meituan-logo svg {
+    width: 50%;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.kwai-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.kwai-logo img {
+    max-width: 60%;
+  }
+  .homepage .section-clients .section-clients-content .client-logo.travco-logo, .homepage .section-clients .section-clients-content .client-logo.world-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -6215,6 +6257,39 @@ html {
   .installements-page .installment .img-con img {
     width: 100% !important;
   }
+  .installements-page .section-clients .section-clients-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo.valu-logo, .installements-page .section-clients .section-clients-content .client-logo.msr-logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo.premuim-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo img.premuim-logo, .installements-page .section-clients .section-clients-content .client-logo img.valu-logo {
+    width: 50% !important;
+  }
   .installements-page .Third-section {
     padding: 1rem;
   }
@@ -6259,6 +6334,39 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .installements-page .section-clients .section-clients-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo.valu-logo, .installements-page .section-clients .section-clients-content .client-logo.msr-logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo.premuim-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .installements-page .section-clients .section-clients-content .client-logo.premuim-logo img, .installements-page .section-clients .section-clients-content .client-logo.valu-logo img {
+    width: 50% !important;
   }
   .installements-page .Third-section .txt-container {
     text-align: center;
@@ -6380,8 +6488,8 @@ html {
     padding-top: -3rem;
   }
   .invoice-page .start-now .start-now-content .images-container .image1 {
-    max-width: 120%;
-    left: -4rem;
+    max-width: 100%;
+    left: 0;
     position: relative;
   }
   .invoice-page .start-now .start-now-content .images-container .image2 {
@@ -6423,9 +6531,6 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .invoice-page .start-now .start-now-content .images-container {
-    padding: 4rem !important;
   }
   .invoice-page .start-now h1 {
     font-size: 20px;

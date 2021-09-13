@@ -416,7 +416,6 @@ header {
 
       @include breakpoint(smlaptop) {
         height: 100%;
-        object-fit: contain;
       }
     }
   }
@@ -588,7 +587,7 @@ header {
 }
 
 .second_section {
-  background-color: #71aa9a;
+  background-color: #71aa9ab3;
   width: 100vw;
   padding: 3rem 0;
   position: relative;
