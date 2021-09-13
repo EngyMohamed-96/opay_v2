@@ -50,11 +50,11 @@ html {
         }
     }
 
-    @include breakpoint(mobile) {
-        margin-top: 8rem !important;
+    // @include breakpoint(mobile) {
+    //     margin-top: 8rem !important;
 
 
-    }
+    // }
 
     .header-text {
         .d-flex {
@@ -74,9 +74,9 @@ html {
 
 
 
-    @include breakpoint(smmobile) {
-        margin-top: 8rem !important;
-    }
+    // @include breakpoint(smmobile) {
+    //     margin-top: 8rem !important;
+    // }
 }
 
 .homepage {
@@ -88,30 +88,47 @@ html {
     }
 }
 
+.invoice-page,
+.sharelink-page,
+.installements-page,
+.subscription-page,
+.payouts-page {
+    header {
+        .container {
+            height: 100%;
+          }
+          .header-content-data {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    }
+}
+
 .installements-page,
 .invoice-page,
-.online-payment,
 .payouts-page,
 .sharelink-page,
 .subscription-page {
     header {
         @include breakpoint(mobile) {
-            height: auto !important;
+            // height: auto !important;
             padding-bottom: 6rem !important;
             min-height: auto !important;
         }
     }
 }
 
-// .installements-page {
-//     header {
-//         @include breakpoint(mobile) {
-//             padding-bottom: 6rem !important;
-//         }
-//     }
-// }
-
 .pricing-page header {
     height: auto !important;
     min-height: auto !important;
+}
+
+.careers-page,
+.about-page,
+.contact-page {
+    header {
+        height: 80vh;
+    }
 }

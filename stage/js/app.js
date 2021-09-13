@@ -12,9 +12,13 @@ $(document).ready(function () {
 	imgs.height(maxHeight);
 
 
-	let flags = $(".pricing-page .flags .flags-data .flags-content");
+	let flags = $(".pricing-page .flags .flags-data .flags-content"),
+		currencyCard = $(".currency .cards");
 	flags.click(function () {
 		$(this).addClass("active").siblings().removeClass("active");
+		currencyCard.hide();
+		$($(this).data("flag")).css("display", "flex");
+		console.log($(this).data("flag"));
 	})
 
 	window.addEventListener('resize', function (e) {
@@ -26,15 +30,16 @@ $(document).ready(function () {
 	new WOW().init();
 
 	var swiper = new Swiper(".homeSlider", {
-		// autoplay: {
-		// 	delay: 10000
-		// },
+		autoplay: {
+			delay: 10000
+		},
 		effect: 'fade',
 		fadeEffect: {
 			crossFade: true
 		},
 		pagination: {
 			el: ".swiper-pagination",
+			clickable: true,
 		},
 	});
 

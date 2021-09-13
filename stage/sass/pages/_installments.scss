@@ -37,9 +37,9 @@
         }
       }
 
-      @include breakpoint(lgmobile) {
-        height: auto;
-      }
+      // @include breakpoint(lgmobile) {
+      //   height: auto;
+      // }
 
       .payment-primaryTitle {
         color: #5a7184;
@@ -184,7 +184,10 @@
         width: unset;
 
         img {
-          max-width: 70%;
+          max-width: 60%;
+          &.msr-logo {
+            max-width: 70% !important;
+          }
         }
       }
     }

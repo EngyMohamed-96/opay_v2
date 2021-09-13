@@ -32,10 +32,6 @@
         }
       }
 
-      @include breakpoint(lgmobile) {
-        height: auto;
-      }
-
       .payment-primaryTitle {
         color: #5a7184;
         font: 700 40px "Poppins", sans-serif;
@@ -192,6 +188,7 @@
       font: 600 30px "Poppins", sans-serif;
       width: 600px;
       margin: auto;
+      margin-bottom: 20px;
     }
 
     .start-now-content {
@@ -222,16 +219,6 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 2rem !important;
-
-        & div {
-          &:last-child {
-            a {
-              &:hover {
-                color: #179070;
-              }
-            }
-          }
-        }
 
         .start-now-features {
           margin-bottom: 12px;
@@ -268,6 +255,9 @@
           }
 
           a {
+            &.Sign-up {
+              color: #fff;
+            }
             color: #179070;
             text-transform: uppercase;
             text-decoration: none;

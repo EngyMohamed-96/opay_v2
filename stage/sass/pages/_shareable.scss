@@ -42,10 +42,6 @@
         }
       }
 
-      @include breakpoint(lgmobile) {
-        height: auto;
-      }
-
       .payment-primaryTitle {
         color: #5a7184;
         font-weight: bold;
@@ -170,13 +166,14 @@
         position: relative;
         border-radius: 10px;
         height: 100% !important;
+        z-index: 0;
         .icon {
           position: absolute;
           bottom: 0;
           left: 0;
           bottom: 0;
           opacity: 0.5;
-
+          z-index: -1;
           svg {
             opacity: 0.3;
             z-index: -1;

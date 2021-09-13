@@ -112,10 +112,6 @@
   width: 90%;
 }
 
-.subscription-page header {
-  height: auto !important;
-}
-
 .subscription-page header .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -164,12 +160,6 @@
   .subscription-page header .header-content-data {
     top: 3rem !important;
     padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .subscription-page header .header-content {
-    height: auto;
   }
 }
 
@@ -324,10 +314,15 @@
   padding-top: 6rem;
 }
 
-.subscription-page .subscription .txt-container .title,
+.subscription-page .subscription .txt-container .title {
+  color: #179070;
+  font: 600 23px "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
 .subscription-page .subscription .txt-container p {
-  font: 400 23px "Poppins", sans-serif;
   color: #2C3E50 !important;
+  font: 400 17px "Poppins", sans-serif;
 }
 
 .subscription-page .subscription .txt-container .btns {
@@ -487,12 +482,6 @@
   .installements-page header .header-content-data {
     top: 3rem !important;
     padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .installements-page header .header-content {
-    height: auto;
   }
 }
 
@@ -666,7 +655,11 @@
 }
 
 .installements-page .section-clients .section-clients-content .client-logo img {
-  max-width: 70%;
+  max-width: 60%;
+}
+
+.installements-page .section-clients .section-clients-content .client-logo img.msr-logo {
+  max-width: 70% !important;
 }
 
 .installements-page .Third-section {
@@ -1100,13 +1093,16 @@
   margin-bottom: 30px;
 }
 
-.contact-page .contact-form .contact-footer button {
+.contact-page .contact-form .contact-footer a {
   background-color: #179070;
   color: #fff;
   border-radius: 999px;
   font: 500 20px "Poppins", sans-serif;
   padding-left: 30px;
   padding-right: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 .careers-page {
@@ -2130,6 +2126,10 @@
           justify-content: center;
 }
 
+.pricing-page .currency .cards:not(:first-child) {
+  display: none;
+}
+
 .pricing-page .currency .cards .card1,
 .pricing-page .currency .cards .card2 {
   border-radius: 20px;
@@ -2189,13 +2189,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 1.5rem;
+}
+
+.pricing-page .currency .cards .card1 .card1-data .data-list ul li ol li {
+  font-size: 14px;
+  color: #5a7184;
 }
 
 .pricing-page .currency .cards .card1 .card1-data .data-list ul li h4 {
@@ -2276,7 +2281,7 @@
   background-color: #2c3e50;
   text-transform: uppercase;
   position: absolute;
-  top: 120%;
+  top: 130%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -2285,6 +2290,20 @@
 .pricing-page .currency .cards .card2 .card2-data .customized-btn a {
   color: #fff;
   text-decoration: none;
+}
+
+.pricing-page .currency .cards.NG h3 {
+  font-size: 20px !important;
+  color: #5A7184 !important;
+}
+
+.pricing-page .currency .cards.NG h3 span {
+  font: 600 30px "Poppins", sans-serif;
+  color: #179070 !important;
+}
+
+.pricing-page .currency .cards.NG .standard-btn {
+  top: 90% !important;
 }
 
 .pricing-page .start-price {
@@ -2397,6 +2416,23 @@
   font-weight: bold;
 }
 
+.online-payment .payments-header .container {
+  height: 100%;
+}
+
+.online-payment .payments-header .header-content-data {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media only screen and (max-width: 1366px) {
   .online-payment .payments-header .header-content {
     display: -webkit-box;
@@ -2415,12 +2451,6 @@
   .online-payment .payments-header .header-content-data {
     top: 3rem !important;
     padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .online-payment .payments-header .header-content {
-    height: auto;
   }
 }
 
@@ -2466,14 +2496,12 @@
 @media only screen and (max-width: 575px) {
   .online-payment .payments-header .header-content .header-image {
     margin: 2rem auto;
-    max-width: 23rem !important;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .online-payment .payments-header .header-content .header-image {
     margin: 2rem auto;
-    max-width: 18rem !important;
   }
 }
 
@@ -2736,12 +2764,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .sharelink-page header .header-content {
-    height: auto;
-  }
-}
-
 .sharelink-page header .header-content .payment-primaryTitle {
   color: #5a7184;
   font-weight: bold;
@@ -2881,6 +2903,7 @@
   position: relative;
   border-radius: 10px;
   height: 100% !important;
+  z-index: 0;
 }
 
 .sharelink-page .steps-section .steps .single-step .icon {
@@ -2889,6 +2912,7 @@
   left: 0;
   bottom: 0;
   opacity: 0.5;
+  z-index: -1;
 }
 
 .sharelink-page .steps-section .steps .single-step .icon svg {
@@ -3035,12 +3059,6 @@
   .invoice-page header .header-content-data {
     top: 3rem !important;
     padding: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .invoice-page header .header-content {
-    height: auto;
   }
 }
 
@@ -3222,6 +3240,7 @@
   font: 600 30px "Poppins", sans-serif;
   width: 600px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .invoice-page .start-now .start-now-content {
@@ -3267,10 +3286,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 2rem !important;
-}
-
-.invoice-page .start-now .start-now-content .right-column div:last-child a:hover {
-  color: #179070;
 }
 
 .invoice-page .start-now .start-now-content .right-column .start-now-features {
@@ -3325,6 +3340,10 @@
   font-weight: 600;
 }
 
+.invoice-page .start-now .start-now-content .right-column .get-started a.Sign-up {
+  color: #fff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
@@ -3346,7 +3365,7 @@ html {
 }
 
 .swiper-pagination-bullet {
-  background: none;
+  background: #2C3E50;
 }
 
 .bg {
@@ -3377,6 +3396,7 @@ html {
 
 header {
   width: 100vw;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -3513,18 +3533,26 @@ header .navbar .nav-wrapper .menu-btn {
   transition: all 0.3s ease-in-out;
   opacity: 0;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .navbar .nav-wrapper .menu-btn svg {
-  width: 2.7rem;
-}
-
-header .navbar .nav-wrapper .menu-btn #menu-btn-svg-1 {
-  fill: #179070;
-}
-
-header .navbar .nav-wrapper .menu-btn #menu-btn-svg-2 {
-  fill: #1dcf9f;
+header .navbar .nav-wrapper .menu-btn span {
+  width: 30px;
+  height: 2px;
+  background-color: #210f60;
+  margin-bottom: 4px;
 }
 
 header .navbar .nav-list {
@@ -3716,12 +3744,6 @@ header .header-content {
   height: 100%;
 }
 
-@media only screen and (max-width: 575px) {
-  header .header-content {
-    height: auto;
-  }
-}
-
 header .header-content .swiper-slide.dashboard-slider p, header .header-content .swiper-slide.global-slider p, header .header-content .swiper-slide.invoice-slider p {
   color: #2c3e50;
 }
@@ -3854,10 +3876,10 @@ header .header-wrapper p {
 }
 
 .slogan {
-  font-size: 8.375rem;
+  font-size: 7rem;
   color: #2c3e50;
   position: absolute;
-  bottom: 6px;
+  bottom: 40px;
   font-family: "Product Sans", sans-serif;
   font-weight: bold;
   margin: 0;
@@ -4811,12 +4833,6 @@ html {
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .header-content {
-    margin-top: 8rem !important;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .header-content .header-text .d-flex {
     -webkit-box-pack: start !important;
@@ -4842,25 +4858,42 @@ html {
 }
 
 @media only screen and (max-width: 375px) {
-  .header-content {
-    margin-top: 8rem !important;
-  }
-}
-
-@media only screen and (max-width: 375px) {
   .homepage .header-content {
     margin-top: 0 !important;
   }
 }
 
+.invoice-page header .container,
+.sharelink-page header .container,
+.installements-page header .container,
+.subscription-page header .container,
+.payouts-page header .container {
+  height: 100%;
+}
+
+.invoice-page header .header-content-data,
+.sharelink-page header .header-content-data,
+.installements-page header .header-content-data,
+.subscription-page header .header-content-data,
+.payouts-page header .header-content-data {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media only screen and (max-width: 575px) {
   .installements-page header,
   .invoice-page header,
-  .online-payment header,
   .payouts-page header,
   .sharelink-page header,
   .subscription-page header {
-    height: auto !important;
     padding-bottom: 6rem !important;
     min-height: auto !important;
   }
@@ -4869,6 +4902,12 @@ html {
 .pricing-page header {
   height: auto !important;
   min-height: auto !important;
+}
+
+.careers-page header,
+.about-page header,
+.contact-page header {
+  height: 80vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5022,6 +5061,9 @@ html {
 
 /* End Contact-us Page */
 @media (max-width: 767px) {
+  .careers-page header {
+    height: unset;
+  }
   .careers-page header::before {
     display: none;
   }
@@ -5223,10 +5265,13 @@ html {
   }
   .homepage header .headerSlide {
     margin-top: -10rem !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .homepage .slogan {
     font-size: 3.375rem;
-    top: 365px;
+    bottom: 0;
   }
   .homepage .fourth-section {
     padding: 1rem;
@@ -5513,11 +5558,18 @@ html {
 /* End Home-page */
 /* Start about-page */
 @media (max-width: 767px) {
-  .about-page header .image {
-    display: none;
+  .about-page header .image img {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
+  }
+  .about-page header .story__title {
+    font-size: 2.4rem;
   }
   .about-page header .story-desc {
     text-align: center;
+  }
+  .about-page .about p {
+    font-size: 23px;
   }
   .about-page .about .about__header {
     text-align: center;
@@ -5525,6 +5577,10 @@ html {
   }
   .about-page .about-key-value .image {
     margin-bottom: 50px;
+  }
+  .about-page .about-key-value .image img {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
   }
   .about-page .about-key-value .key {
     text-align: center;
@@ -5605,8 +5661,56 @@ html {
             flex-direction: column;
     font-size: 1rem;
   }
-  .pricing-page .currency .cards .card1 .card1-data .standard-btn {
-    top: 80% !important;
+  .pricing-page .currency .cards.NG .standard-btn {
+    top: 84% !important;
+  }
+  .pricing-page .currency .cards.NG h3 {
+    font-size: 15px !important;
+  }
+  .pricing-page .currency .cards.NG h3 span {
+    font-size: 20px !important;
+  }
+  .pricing-page .currency .cards.NG ul {
+    padding-left: 0;
+  }
+  .pricing-page .currency .cards.NG ul li h4 {
+    font-size: 0.9rem !important;
+    padding-left: 0 !important;
+  }
+  .pricing-page .currency .cards.NG ul li ol {
+    padding-left: 0 !important;
+  }
+  .pricing-page .currency .cards.NG ul li ol > li {
+    padding-left: 0px !important;
+    font-size: 10px !important;
+    margin-bottom: 7px;
+  }
+  .pricing-page .currency .cards.NG ul li svg {
+    width: 10px !important;
+    margin-right: 10px !important;
+  }
+  .pricing-page .currency .cards.EG .card1 .card1-data .data-list ul {
+    padding-left: 0 !important;
+  }
+  .pricing-page .currency .cards.EG .card1 .card1-data .data-list ul li {
+    padding-left: 1rem;
+  }
+  .pricing-page .currency .cards.EG .card1 .card1-data .data-list ul li h4 {
+    font-size: 0.9rem !important;
+  }
+  .pricing-page .currency .cards.EG .card1 .card1-data .data-list ul li svg {
+    width: 10px !important;
+  }
+  .pricing-page .currency .cards.EG .card1 .card1-data .standard-btn {
+    top: 78% !important;
+  }
+  .pricing-page .currency .cards .card2 .card2-data p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .pricing-page .currency .cards .card2 .card2-data p:last-of-type span {
+    font-size: 16px !important;
   }
   .pricing-page .currency .cards .card2 .card2-data .customized-btn {
     top: 104% !important;
@@ -5620,6 +5724,7 @@ html {
   .pricing-page .currency .cards .card1-data,
   .pricing-page .currency .cards .card2-data {
     text-align: center;
+    margin-top: 1rem !important;
   }
   .pricing-page .start-price {
     top: 0;
@@ -5881,7 +5986,7 @@ html {
     text-align: center !important;
   }
   .subscription-page header .header-content .header-content-data .header-text .payment-primaryTitle {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
   .subscription-page header .header-content .header-content-data .header-text .links {
     -webkit-box-pack: center;
@@ -5947,6 +6052,12 @@ html {
     text-align: center;
     padding: 1rem;
     padding-bottom: 4rem;
+  }
+  .subscription-page .txt-container .title {
+    font-size: 17px;
+  }
+  .subscription-page .txt-container p {
+    font-size: 14px !important;
   }
   .subscription-page .ready .img-con {
     max-width: 70%;
@@ -6082,6 +6193,10 @@ html {
   }
   .installements-page .installment .txt-container h2 > span span {
     font-size: 20px;
+  }
+  .installements-page .installment .txt-container p {
+    font-size: 14px;
+    margin-bottom: 30px;
   }
   .installements-page .installment .txt-container .btns {
     -webkit-box-pack: center;
@@ -6221,6 +6336,10 @@ html {
   .sharelink-page .steps-section .steps .single-step {
     text-align: center;
   }
+  .sharelink-page .steps-section .steps .single-step.paid {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 /* End sharelink-page Page  */
@@ -6243,7 +6362,7 @@ html {
     padding-bottom: 5rem;
   }
   .invoice-page .start-now h1 {
-    width: 400px;
+    width: 100%;
   }
   .invoice-page .start-now .start-now-content .Sign-up {
     margin: 0 auto !important;
@@ -6327,7 +6446,7 @@ html {
 
 /* End invoice-page Page  */
 /* Start online-payment Page  */
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .online-payment {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -6339,12 +6458,6 @@ html {
             align-items: center;
     text-align: center;
   }
-  .online-payment header .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .online-payment header h1 {
     font-size: 25px !important;
   }
@@ -6353,13 +6466,43 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .online-payment .start_securing h2 {
+    font-size: 17px;
+  }
+  .online-payment .choose-opay a {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .online-payment header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .online-payment header .header-content h3 {
+    font-size: 50px !important;
+  }
+  .online-payment header h1 {
+    font-size: 35px !important;
+  }
+  .online-payment header .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .online-payment .start_securing h2 {
+    font-size: 30px;
+  }
 }
 
 /* End online-payment Page */
 /* Start online-payment */
 @media (max-width: 575px) {
   .online-payment .latest-technology .img::before {
-    display: none !important;
+    left: 0;
   }
   .online-payment .latest-technology .txt-container h2 {
     font-size: 1.5rem !important;
@@ -6478,4 +6621,82 @@ html {
 }
 
 /* End Footer */
+/* Start Common Media */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-page header,
+  .contact-page header {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .careers-page header {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .invoice-page header .header-image,
+  .sharelink-page header .header-image,
+  .installements-page header .header-image,
+  .subscription-page header .header-image,
+  .payouts-page header .header-image {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .invoice-page header .header-image,
+  .online-payment header .header-image,
+  .sharelink-page header .header-image,
+  .installements-page header .header-image,
+  .subscription-page header .header-image,
+  .payouts-page header .header-image {
+    max-width: 60% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar.is-active {
+    min-height: 30rem;
+  }
+  .navbar .nav-list li.links {
+    z-index: -1 !important;
+  }
+  .navbar .nav-list li.sign-btn {
+    margin-top: 30px !important;
+  }
+  .navbar .nav-list li a {
+    font-size: 16px;
+  }
+  .invoice-page header .header-text p,
+  .sharelink-page header .header-text p,
+  .installements-page header .header-text p,
+  .subscription-page header .header-text p,
+  .payouts-page header .header-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .invoice-page header .header-text p,
+  .online-payment header .header-text p,
+  .sharelink-page header .header-text p,
+  .installements-page header .header-text p,
+  .subscription-page header .header-text p,
+  .payouts-page header .header-text p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+
+/* End Common Media */
 /*# sourceMappingURL=App.css.map */

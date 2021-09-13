@@ -236,13 +236,15 @@
         font: 700 30px "Poppins", sans-serif;
         margin-bottom: 30px;
       }
-      button {
+      a {
         background-color: #179070;
         color: #fff;
         border-radius: 999px;
         font: 500 20px "Poppins", sans-serif;
         padding-left: 30px;
         padding-right: 30px;
+        box-shadow: none;
+        outline: none;
       }
     }
   }
