@@ -953,6 +953,33 @@
 /* End about-page */
 
 /* Start Pricing Page */
+@media(min-width: 576px) and (max-width: 991px) {
+  .pricing-page {
+    .currency {
+.cards {
+  &.NG {
+    .standard-btn {
+      top: 280px !important
+    }
+  }
+}
+    }
+  }
+}
+@media(max-width: 575px) {
+  .pricing-page {
+    .currency {
+.cards {
+  &.NG {
+    .standard-btn {
+      top: 295px !important
+    }
+  }
+}
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .pricing-page {
     padding-top: -1rem !important;
@@ -983,9 +1010,6 @@
         flex-direction: column;
         font-size: 1rem;
         &.NG {
-          .standard-btn {
-            top: 84% !important;
-          }
           h3 {
             font-size: 15px !important;
             span {
