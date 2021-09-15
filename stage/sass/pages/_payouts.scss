@@ -28,7 +28,6 @@
       @include breakpoint(smlaptop) {
         display: flex;
         align-items: center;
-        height: 100%;
         &-data {
           position: relative;
 

@@ -98,7 +98,6 @@
     /* Start Header */
     header {
       overflow: unset;
-
       &::before {
         top: -50px;
       }
@@ -175,6 +174,7 @@
     /* Start Header */
     header {
       .header-content {
+        margin-top: 10rem;
         .heading {
           text-align: center;
         }
@@ -197,7 +197,7 @@
       .title {
         .icon {
           svg {
-            width: 5%;
+            width: 7%;
           }
         }
       }
@@ -418,7 +418,15 @@
 }
 
 /* Start Home-page */
-@media (max-width: 575px) {
+@media(min-width: 576px) and (max-width: 767px) {
+  .homepage {
+    .slogan {
+      font-size: 3.375rem;
+      bottom: -50px;
+    }
+  }
+}
+@media(max-width: 767px) {
   .homepage {
     .txt-container {
       h2 {
@@ -429,25 +437,17 @@
         font-size: 0.9rem !important;
       }
     }
-    .swiper-slide {
-      img {
-        display: none;
-      }
+    header {
+      padding: 60px 0;
+      height: auto !important;
+      overflow: unset;
     }
     .header-content {
+      padding-top: 5rem;
+      margin-top: 20px !important;
       .swiper-slide {
-        height: 100vh;
+        height: auto !important;
       }
-
-      .my-order1 {
-        order: 1;
-      }
-
-      .my-order2 {
-        order: 2;
-      }
-
-      padding-top: 0 !important;
 
       .header-wrapper {
         display: flex;
@@ -458,9 +458,10 @@
         padding: 1rem !important;
         p {
           text-align: center;
+          font-size: 16px;
         }
         h1 {
-          font-size: 22px !important;
+          font-size: 20px !important;
           line-height: 3rem !important;
           text-align: center !important;
         }
@@ -479,8 +480,9 @@
       }
 
       .img-container {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
+        margin-top: 20px;
 
         .secure {
           position: absolute;
@@ -494,9 +496,8 @@
 
         img {
           position: relative;
-
           margin: auto !important;
-          width: 65%;
+          width: 100%;
         }
       }
     }
@@ -507,10 +508,13 @@
         justify-content: center;
       }
     }
-
+  }
+}
+@media (max-width: 575px) {
+  .homepage {
     .slogan {
       font-size: 3.375rem;
-      bottom: 0;
+      bottom: -60px;
     }
 
     .fourth-section {
@@ -680,16 +684,6 @@
 @media(min-width: 576px) and (max-width: 767px) {
   .homepage {
 
-    header {
-      .swiper-slide {
-        img {
-          display: none;
-        }
-      }
-      .slogan {
-        bottom: 0;
-      }
-    }
   }
   .section-clients {
     .section-clients-content {
@@ -1029,12 +1023,13 @@
     }
     .pricing-data {
       h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
       }
 
       h4 {
         margin-top: 0 !important;
-        font-size: 0.75rem;
+        font-size: 1.1rem;
+        line-height: 20px;
       }
     }
 
@@ -1171,6 +1166,16 @@
 }
 /* End Pricing Page */
 /* Start payouts Page  */
+@media(max-width: 991px) {
+  .payouts-page {
+    header {
+      height: unset;
+      .header-content-data {
+        margin-top: 60px;
+      }
+    }
+  }
+}
 @media (max-width: 575px) {
   .payouts-page {
     header {
@@ -1298,7 +1303,6 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .payouts-page {
     header {
-      height: 100vh;
       .header-content-data {
         text-align: center;
         .payment-primaryTitle {
@@ -2236,8 +2240,7 @@
 /* Start Common Media */
 @media(min-width: 768px) and (max-width: 991px) {
 
-.about-page,
-.contact-page {
+.about-page {
     header {
         height: 60vh;
     }
@@ -2286,7 +2289,7 @@
 @media(max-width: 992px) {
   .navbar {
     &.is-active {
-      min-height: 30rem;
+      min-height: 30rem !important;
     }
     .nav-list {
       li {
@@ -2294,10 +2297,14 @@
           z-index: -1 !important;
         }
         &.sign-btn {
-          margin-top: 30px !important;
+          margin-top: 20px !important;
         }
         a {
           font-size: 16px;
+          &.Sign-up {
+            font-size: 10px;
+            margin-top: 10px;
+          }
         }
       }
     }

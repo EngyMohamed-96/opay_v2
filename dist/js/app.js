@@ -29,9 +29,9 @@ $(document).ready(function () {
 	new WOW().init();
 
 	var swiper = new Swiper(".homeSlider", {
-		// autoplay: {
-		// 	delay: 10000
-		// },
+		autoplay: {
+			delay: 10000
+		},
 		effect: 'fade',
 		fadeEffect: {
 			crossFade: true
@@ -45,6 +45,19 @@ $(document).ready(function () {
 	$('.menu-btn').click(function () {
 		$('.navbar').toggleClass('is-active')
 	})
+	// Show Popup
+	let popup = $(".contact-page .popup"),
+		sendBtn = $(".contact-page .contact-form input[type='submit']");
+		sendBtn.click(function(e) {
+			e.preventDefault();
+			popup.css("display", "flex");
+			$("html").css("overflow-y", "hidden");
+			setTimeout(function(){
+				popup.css("display", "none");
+				$("html").css("overflow-y", "auto");
+			}, 1000);
+		})
+
 });
 
 

@@ -22,11 +22,12 @@
 
 body {
     overflow-x: hidden !important;
-
+    overflow-y: auto;
 }
 
 html {
     overflow-x: hidden !important;
+    overflow-y: auto;
 
     @include breakpoint(smlaptop) {
         font-size: 14px !important;
@@ -39,23 +40,6 @@ html {
 }
 
 .header-content {
-    .slogan {
-        @include breakpoint(mobile) {
-            font-size: 6rem !important;
-            // top: 60vh !important;
-        }
-
-        @include breakpoint(smmobile) {
-            top: 81vh !important;
-        }
-    }
-
-    // @include breakpoint(mobile) {
-    //     margin-top: 8rem !important;
-
-
-    // }
-
     .header-text {
         .d-flex {
             @include breakpoint(tablet) {
@@ -72,11 +56,6 @@ html {
         }
     }
 
-
-
-    // @include breakpoint(smmobile) {
-    //     margin-top: 8rem !important;
-    // }
 }
 
 .homepage {
@@ -125,10 +104,20 @@ html {
     min-height: auto !important;
 }
 
-.careers-page,
-.about-page,
-.contact-page {
+.careers-page {
     header {
         height: 80vh;
+    }
+}
+
+.about-page {
+    header {
+        height: unset;
+    }
+}
+
+.contact-page {
+    header {
+        height: unset;
     }
 }

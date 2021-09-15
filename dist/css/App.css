@@ -830,6 +830,12 @@
   padding: 70px 0;
 }
 
+.contact-page .contact-content .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact-page .contact-content .title {
   color: #179070;
   font: 700 26px "Poppins", sans-serif;
@@ -859,8 +865,13 @@
   font: 400 18px "Poppins", sans-serif;
 }
 
+.contact-page .contact-content .map {
+  overflow: hidden;
+}
+
 .contact-page .contact-content .map svg {
   width: 100%;
+  height: 100%;
 }
 
 .contact-page .contact-content .map svg path.pathes {
@@ -1103,6 +1114,70 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+
+.contact-page section.popup {
+  background-color: #758391cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.contact-page section.popup .popup-content {
+  border-radius: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+.contact-page section.popup .popup-content img {
+  width: 15%;
+}
+
+.contact-page section.popup .popup-content h2 {
+  color: #179070;
+  font: 600 35px 'Poppins', sans-serif;
+}
+
+.contact-page section.popup .popup-content p {
+  color: #5A7184;
+}
+
+.contact-page section.popup .popup-content p:first-of-type {
+  font: 500 20px 'Poppins', sans-serif;
+}
+
+.contact-page section.popup .popup-content p:last-of-type {
+  font: 400 20px 'Poppins', sans-serif;
 }
 
 .careers-page {
@@ -1486,7 +1561,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
   }
   .payouts-page header .header-content-data {
     position: relative;
@@ -2293,7 +2367,8 @@
 }
 
 .pricing-page .currency .cards.NG h3 {
-  font-size: 20px !important;
+  font-size: 14px !important;
+  margin-left: 40px;
   color: #5A7184 !important;
 }
 
@@ -3365,7 +3440,7 @@ html {
 }
 
 .swiper-pagination-bullet {
-  background: #2C3E50;
+  background: none;
 }
 
 .bg {
@@ -3381,12 +3456,6 @@ html {
 @media screen and (max-width: 600px) {
   .homepage header .img-container {
     width: 30rem;
-  }
-  .homepage header {
-    height: auto !important;
-  }
-  .homepage header .header-content {
-    padding-top: 8rem;
   }
 }
 
@@ -3444,7 +3513,7 @@ header .dropdown-item:hover {
 header .navbar {
   height: 5rem;
   background-color: rgba(255, 255, 255, 0.6);
-  z-index: 29999;
+  z-index: 20;
   position: fixed;
   padding: 0;
   top: 0;
@@ -3887,18 +3956,6 @@ header .header-wrapper p {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer !important;
-}
-
-@media only screen and (max-width: 1366px) {
-  .slogan {
-    margin-bottom: 0rem;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .slogan {
-    top: 69vh !important;
-  }
 }
 
 .d-flex {
@@ -4381,6 +4438,10 @@ header .header-wrapper p {
   margin: 0 auto;
 }
 
+.fifth-section .img-con.pos {
+  width: 100%;
+}
+
 .fifth-section .img-con img {
   width: 100%;
   height: 100%;
@@ -4801,10 +4862,12 @@ footer .bottom-footer .selection .country select.form-control {
 
 body {
   overflow-x: hidden !important;
+  overflow-y: auto;
 }
 
 html {
   overflow-x: hidden !important;
+  overflow-y: auto;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -4816,18 +4879,6 @@ html {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 13px !important;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .header-content .slogan {
-    font-size: 6rem !important;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .header-content .slogan {
-    top: 81vh !important;
   }
 }
 
@@ -4902,10 +4953,16 @@ html {
   min-height: auto !important;
 }
 
-.careers-page header,
-.about-page header,
-.contact-page header {
+.careers-page header {
   height: 80vh;
+}
+
+.about-page header {
+  height: unset;
+}
+
+.contact-page header {
+  height: unset;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5029,6 +5086,9 @@ html {
     /* Start contact-form Section */
     /* End contact-form Section */
   }
+  .contact-page header .header-content {
+    margin-top: 10rem;
+  }
   .contact-page header .header-content .heading {
     text-align: center;
   }
@@ -5039,7 +5099,7 @@ html {
     font-size: 19px;
   }
   .contact-page .contact-content .title .icon svg {
-    width: 5%;
+    width: 7%;
   }
   .contact-page .contact-content .content p {
     width: 100%;
@@ -5187,31 +5247,31 @@ html {
 }
 
 /* Start Home-page */
-@media (max-width: 575px) {
+@media (min-width: 576px) and (max-width: 767px) {
+  .homepage .slogan {
+    font-size: 3.375rem;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 767px) {
   .homepage .txt-container h2 {
     font-size: 1.5rem !important;
   }
   .homepage .txt-container p {
     font-size: 0.9rem !important;
   }
-  .homepage .swiper-slide img {
-    display: none;
+  .homepage header {
+    padding: 60px 0;
+    height: auto !important;
+    overflow: unset;
   }
   .homepage .header-content {
-    padding-top: 0 !important;
+    padding-top: 5rem;
+    margin-top: 20px !important;
   }
   .homepage .header-content .swiper-slide {
-    height: 100vh;
-  }
-  .homepage .header-content .my-order1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .homepage .header-content .my-order2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    height: auto !important;
   }
   .homepage .header-content .header-wrapper {
     display: -webkit-box;
@@ -5232,9 +5292,10 @@ html {
   }
   .homepage .header-content .header-wrapper p {
     text-align: center;
+    font-size: 16px;
   }
   .homepage .header-content .header-wrapper h1 {
-    font-size: 22px !important;
+    font-size: 20px !important;
     line-height: 3rem !important;
     text-align: center !important;
   }
@@ -5245,8 +5306,9 @@ html {
     text-align: center !important;
   }
   .homepage .header-content .img-container {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
   }
   .homepage .header-content .img-container .secure {
     position: absolute;
@@ -5259,7 +5321,7 @@ html {
   .homepage .header-content .img-container img {
     position: relative;
     margin: auto !important;
-    width: 65%;
+    width: 100%;
   }
   .homepage header .headerSlide {
     margin-top: -10rem !important;
@@ -5267,9 +5329,12 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+@media (max-width: 575px) {
   .homepage .slogan {
     font-size: 3.375rem;
-    bottom: 0;
+    bottom: -60px;
   }
   .homepage .fourth-section {
     padding: 1rem;
@@ -5431,12 +5496,6 @@ html {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .homepage header .swiper-slide img {
-    display: none;
-  }
-  .homepage header .slogan {
-    bottom: 0;
-  }
   .section-clients .section-clients-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -5698,11 +5757,12 @@ html {
     margin-bottom: 20px;
   }
   .pricing-page .pricing-data h1 {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .pricing-page .pricing-data h4 {
     margin-top: 0 !important;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
+    line-height: 20px;
   }
   .pricing-page .currency {
     padding: 1rem;
@@ -5815,6 +5875,15 @@ html {
 
 /* End Pricing Page */
 /* Start payouts Page  */
+@media (max-width: 991px) {
+  .payouts-page header {
+    height: unset;
+  }
+  .payouts-page header .header-content-data {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 575px) {
   .payouts-page header .header-content-data {
     text-align: center;
@@ -5941,9 +6010,6 @@ html {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .payouts-page header {
-    height: 100vh;
-  }
   .payouts-page header .header-content-data {
     text-align: center;
   }
@@ -6737,8 +6803,7 @@ html {
 /* End Footer */
 /* Start Common Media */
 @media (min-width: 768px) and (max-width: 991px) {
-  .about-page header,
-  .contact-page header {
+  .about-page header {
     height: 60vh;
   }
 }
@@ -6780,16 +6845,20 @@ html {
 
 @media (max-width: 992px) {
   .navbar.is-active {
-    min-height: 30rem;
+    min-height: 30rem !important;
   }
   .navbar .nav-list li.links {
     z-index: -1 !important;
   }
   .navbar .nav-list li.sign-btn {
-    margin-top: 30px !important;
+    margin-top: 20px !important;
   }
   .navbar .nav-list li a {
     font-size: 16px;
+  }
+  .navbar .nav-list li a.Sign-up {
+    font-size: 10px;
+    margin-top: 10px;
   }
   .invoice-page header .header-text p,
   .sharelink-page header .header-text p,

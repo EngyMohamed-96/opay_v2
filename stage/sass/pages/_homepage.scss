@@ -18,7 +18,7 @@ html {
 }
 
 .swiper-pagination-bullet {
-  background: #2C3E50;
+  background: none;
 }
 
 .bg {
@@ -35,12 +35,6 @@ html {
   @media screen and (max-width: 600px) {
     header .img-container {
       width: 30rem;
-    }
-    header {
-      height: auto !important;
-      .header-content {
-        padding-top: 8rem;
-      }
     }
   }
 
@@ -92,7 +86,7 @@ header {
   .navbar {
     height: 5rem;
     background-color: rgba($color: #fff, $alpha: 0.6);
-    z-index: 29999;
+    z-index: 20;
     position: fixed;
     padding: 0;
     top: 0;
@@ -483,13 +477,6 @@ header {
   transition: all 0.3s ease-in-out;
   cursor: pointer !important;
 
-  @include breakpoint(smlaptop) {
-    margin-bottom: 0rem;
-  }
-
-  @include breakpoint(mobile) {
-    top: 69vh !important;
-  }
 }
 
 .d-flex {
@@ -882,6 +869,9 @@ header {
 
   .img-con {
     // margin-top: -28%;
+    &.pos {
+      width: 100%;
+    }
     width: 50%;
     height: auto;
     margin: 0 auto;
